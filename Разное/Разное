@@ -1,0 +1,83 @@
+Восстановление GRUB
+
+необходимо загрузиться в предпочитаемой системе, GRUB которой хотите восстановить, открыть окно терминала и проверить, какая система примонтирована в настоящий момент. Выполните следующую команду:
+
+lsblk
+
+Теперь мы можем приступить к повторной установке загрузчика Grub на ней. Необходимо выполнить следующую команду:
+
+sudo grub-install /dev/sda
+
+И остаётся только обновить GRUB:
+
+sudo update-grub
+
+Вот и все. Теперь можно перезагрузить компьютер, чтобы убедиться, что выбранная система Linux находится первой в меню загрузчика GRUB.
+
+==========================
+
+Конвертация конфига conky
+cp /usr/share/doc/conky-1.11.5_pre/convert.lua ~/convert.lua
+chmod +x convert.lua
+./convert.lua .conkyrc .conkyrc_new
+
+==========================
+
+Удаление папки .wine удаляет ВСЕ содержимое. Чтобы просто удалить одну или несколько конкретных программ, запустите в терминале:
+
+wine uninstaller
+
+Иногда при удалении программ Wine ссылки на них остаются в меню приложений, а удаление их через редактор меню приводит к проблемам со всем меню приложений.
+
+В этом случае необходимо вручную удалить необходимые ярлыки, для этого:
+
+Откройте папку ~/.local/share/applications/wine/Программы (~ - это ваша домашняя директория).
+Найдите необходимые файлы с расширением .desktop и удалите их.
+Тоже самое можно проделать и в терминале:
+
+rm ~/.local/share/applications/wine/Программы
+rm ~/.local/share/applications/wine*
+
+==========================
+
+Запуск Dolphin под root
+
+sudo pkexec env DISPLAY=$DISPLAY XAUTHORITY=$XAUTHORITY KDE_SESSION_VERSION=5 KDE_FULL_SESSION=true dbus-launch dolphin
+
+==========================
+
+Переменная среды TERM=xterm-256color
+
+Проследите чтобы переменная среды TERM (указывающая тип терминала) имела значение «xterm-256color».
+
+Проверить можно командой:
+$> env | grep TERM=
+
+Чтобы назначить TERM на постоянной основе обычно добавляют такую строчку в файл .profile в домашнем каталоге пользователя:
+export TERM=xterm-256color
+
+Либо можно указать TERM лишь одному приложению при запуске.
+Вот так:
+$> TERM=xterm-256color mc
+
+Или так:
+$> env TERM=xterm-256color mc
+
+==========================
+
+Форматирование флешки:
+
+sudo dd if=/dev/zero of=/dev/sdb status=progress
+
+Запись образа на флешку, например:
+
+sudo dd if=/home/dedandrey/Загрузки/Sabayon_Linux_19.03_amd64_KDE.iso of=/dev/sdb status=progress
+
+Монтирование ISO Образа в Linux:
+
+sudo mkdir -p /mnt/mount_point
+sudo mount -o loop /home/user/disk.iso /mnt/mount_point
+
+Размонтирование ISO Файла в Linux
+
+sudo umount /mnt/mount_point

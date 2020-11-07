@@ -1,0 +1,50 @@
+Manjaro:
+
+Удаление бесполезных зависимостей (сирот) в Arch Linux
+
+Посмотреть, какие пакеты не используются ничем в системе можно командой
+
+sudo pacman -Qdt
+
+Удалить всех так называемых «сирот» можно командой
+
+sudo pacman -Rsn $(pacman -Qdtq)
+
+*****
+
+Очистка кэша:
+
+sudo pacman -Scc
+
+*****
+Управление принтерами:
+
+http://localhost:631/admin
+
+*****
+
+Чрут в лайве:
+lsblk
+sudo mount /dev/sda5 /mnt
+sudo manjaro-chroot /mnt /bin/bash
+grub-install /dev/sda
+grub-mkconfig -o /boot/grub/grub.cfg
+sudo mkinitcpio -P
+exit
+reboot
+
+*****
+
+1. Установите новый загрузчик GRUB следующей командой:
+
+sudo grub-install /dev/sda
+
+2. Выполните проверку, чтобы убедиться, что установка была завершена без ошибок:
+
+sudo grub-install --recheck /dev/sda
+
+3. И, наконец, обновите конфигурацию только что установленного загрузчика GRUB:
+
+sudo update-grub
+
+Готово! Теперь закройте терминал и перезагрузите систему, чтобы использовать ваш восстановленный GRUB.

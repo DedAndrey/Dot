@@ -1,0 +1,15 @@
+# vim: filetype=muttrc
+
+source ~/.mutt/settings
+# source ~/.mutt/colours
+source ~/.mutt/sidebar
+source ~/.mutt/notmuch
+
+source ~/.mutt/accounts/gmail
+source ~/.mutt/accounts/yandex
+#source ~/.mutt/accounts/mail
+
+# Folder hooks
+folder-hook 'gmail' 'source ~/.mutt/accounts/gmail'
+folder-hook 'yandex' 'source ~/.mutt/accounts/yandex'
+#folder-hook 'mail' 'source ~/.mutt/accounts/mail'

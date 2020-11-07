@@ -1,0 +1,15 @@
+# text/html; firefox %s
+#
+# for mutt to view html e-mails
+text/html; w3m -I %{charset} -T text/html; copiousoutput
+# text/html; html2txt %s; copiousoutput
+# text/html; elinks -dump ; copiousoutput;
+
+# application/pdf; ~/.mutt/scripts/mutt_bgrun evince %s; copiousoutput
+# text/calendar; ~/.mutt/scripts/vcalendar-filter; copiousoutput
+text/calendar; mutt-ics; copiousoutput
+application/ics; mutt-ics; copiousoutput 
+application/*; xdg-open %s
+
+application/msword; antiword -m koi8-r.txt %s; copiousoutput
+application/vnd.msword; antiword -m koi8-r.txt %s; copiousoutput

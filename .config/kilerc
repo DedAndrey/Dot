@@ -1,0 +1,1370 @@
+[Complete]
+CompleteAbbrev=1-Abbr
+autoInsertDollar=true
+completeAutoAbbrev=true
+completeShowAbbrev=true
+
+[Desktop Entry]
+DefaultProfile=Breath2.profile
+
+[Document-Settings,URL=file://:@/home/dedandrey/Документы/Резюме/Latex/Резюме.tex]
+Bookmarks=
+Highlighting=LaTeX
+Highlighting Set By User=false
+Indentation Mode=normal
+Mode=LaTeX
+Mode Set By User=false
+bibliographyBackendAutoDetected=
+bibliographyBackendUserOverride=
+kile_livePreviewEnabled=true
+kile_livePreviewStatusUserSpecified=false
+kile_livePreviewTool=LivePreview-PDFLaTeX
+
+[Document-Settings,URL=file://:@/home/dedandrey/Документы/Светофор/Светофор.tex]
+Bookmarks=
+Highlighting=LaTeX
+Highlighting Set By User=false
+Indentation Mode=normal
+Mode=LaTeX
+Mode Set By User=false
+bibliographyBackendAutoDetected=
+bibliographyBackendUserOverride=
+kile_livePreviewEnabled=true
+kile_livePreviewStatusUserSpecified=false
+kile_livePreviewTool=LivePreview-PDFLaTeX
+
+[Document-Settings,URL=file://:@/home/dedandrey/Документы/Светофор/Светофор_1.tex]
+Bookmarks=
+Highlighting=LaTeX
+Highlighting Set By User=false
+Indentation Mode=normal
+Mode=LaTeX
+Mode Set By User=false
+bibliographyBackendAutoDetected=
+bibliographyBackendUserOverride=
+kile_livePreviewEnabled=true
+kile_livePreviewStatusUserSpecified=false
+kile_livePreviewTool=LivePreview-PDFLaTeX
+
+[Document-Settings,URL=file://:@/home/dedandrey/Шаблоны/Latex/Шаблон.tex]
+Bookmarks=
+Highlighting=LaTeX
+Highlighting Set By User=false
+Indentation Mode=normal
+Mode=LaTeX
+Mode Set By User=false
+bibliographyBackendAutoDetected=
+bibliographyBackendUserOverride=
+kile_livePreviewEnabled=true
+kile_livePreviewStatusUserSpecified=false
+kile_livePreviewTool=LivePreview-PDFLaTeX/PSTricks
+
+[Document-Settings,URL=file://:@/tmp/kile-LwtUwC/test.tex]
+bibliographyBackendAutoDetected=
+bibliographyBackendUserOverride=
+kile_livePreviewEnabled=false
+kile_livePreviewStatusUserSpecified=false
+kile_livePreviewTool=LivePreview-PDFLaTeX
+
+[Document-Settings,URL=file://:@/tmp/kile-LwtUwC/test_bib.tex]
+bibliographyBackendAutoDetected=
+bibliographyBackendUserOverride=
+kile_livePreviewEnabled=false
+kile_livePreviewStatusUserSpecified=false
+kile_livePreviewTool=LivePreview-PDFLaTeX
+
+[Document-Settings,URL=file://:@/tmp/kile-LwtUwC/test_index.tex]
+bibliographyBackendAutoDetected=
+bibliographyBackendUserOverride=
+kile_livePreviewEnabled=false
+kile_livePreviewStatusUserSpecified=false
+kile_livePreviewTool=LivePreview-PDFLaTeX
+
+[Document-Settings,URL=file://:@/tmp/kile-LwtUwC/test_plain.tex]
+bibliographyBackendAutoDetected=
+bibliographyBackendUserOverride=
+kile_livePreviewEnabled=false
+kile_livePreviewStatusUserSpecified=false
+kile_livePreviewTool=LivePreview-PDFLaTeX
+
+[Editor Ext]
+DoubleQuotes=8
+InsertSpecialCharacters=true
+
+[Favorite Profiles]
+Favorites=
+
+[FileBrowserWidget]
+Allow Expansion=false
+Decoration position=2
+Show Inline Previews=true
+Show hidden files=false
+Sort by=Name
+Sort directories first=true
+Sort reversed=false
+View Style=Tree
+treeViewIconSize=0
+
+[Files]
+CleanUpAfterClose=true
+LastDocument[$e]=$HOME/Документы/Светофор/Светофор.tex
+lastDir[$e]=$HOME/
+
+[FilesOpenOnStart]
+DocsOpenOnStart0[$e]=$HOME/Документы/Светофор/Светофор.tex
+EncodingsOfDocsOpenOnStart0[$e]=UTF-8
+NoDOOS=1
+NoPOOS=0
+
+[Geometries]
+MainwindowHeight=1046
+MainwindowWidth=1920
+horizontalSplitterLeft=30
+horizontalSplitterRight=1092
+verticalSplitterBottom=0
+verticalSplitterTop=1022
+
+[IncludeGraphics]
+imagemagick=true
+
+[KFileDialog Settings]
+Recent Files[$e]=Загрузки/Abbr.cwl,file:$HOME/Документы/Светофор/Светофор_1.tex,file:$HOME/Загрузки/Abbr.cwl
+Recent URLs[$e]=file:$HOME/,file:$HOME/Документы/Светофор/
+detailViewIconSize=0
+eDP1 Height 1080=540
+eDP1 Width 1920=960
+
+[KTextEditor Document]
+Allow End of Line Detection=true
+BOM=false
+Backup Local=false
+Backup Prefix=
+Backup Remote=false
+Backup Suffix=~
+Encoding=UTF-8
+End of Line=0
+Indent On Backspace=true
+Indent On Tab=true
+Indent On Text Paste=false
+Indentation Mode=normal
+Indentation Width=4
+Keep Extra Spaces=false
+Line Length Limit=10000
+Newline at End of File=true
+On-The-Fly Spellcheck=true
+Overwrite Mode=false
+PageUp/PageDown Moves Cursor=false
+Remove Spaces=0
+ReplaceTabsDyn=false
+Show Spaces=2
+Show Tabs=true
+Smart Home=true
+Swap Directory=
+Swap File Mode=1
+Swap Sync Interval=15
+Tab Handling=2
+Tab Width=4
+Trailing Marker Size=1
+Word Wrap=false
+Word Wrap Column=80
+
+[KTextEditor Editor]
+Encoding Prober Type=1
+Fallback Encoding=ISO 8859-15
+
+[KTextEditor Renderer]
+Animate Bracket Matching=true
+Auto Color Theme Selection=false
+Color Theme=ayu Mirage
+Font=Source Code Pro,11,-1,5,50,0,0,0,0,0
+Schema=Breeze Dark
+Show Indentation Lines=true
+Show Whole Bracket Expression=true
+Word Wrap Marker=false
+
+[KTextEditor View]
+Allow Mark Menu=true
+Auto Brackets=false
+Auto Center Lines=0
+Auto Completion=true
+Backspace Remove Composed Characters=false
+Bookmark Menu Sorting=0
+Bracket Match Preview=true
+Chars To Enclose Selection=
+Default Mark Type=1
+Dynamic Word Wrap=true
+Dynamic Word Wrap Align Indent=80
+Dynamic Word Wrap At Static Marker=false
+Dynamic Word Wrap Indicators=1
+Dynamic Wrap not at word boundaries=false
+Fold First Line=true
+Folding Bar=true
+Folding Preview=true
+Icon Bar=true
+Input Mode=0
+Keyword Completion=true
+Line Modification=true
+Line Numbers=true
+Maximum Search History Size=100
+Mouse Paste At Cursor Position=true
+Persistent Selection=false
+Scroll Bar Marks=true
+Scroll Bar Mini Map=true
+Scroll Bar Mini Map All=true
+Scroll Bar Mini Map Width=60
+Scroll Bar MiniMap=true
+Scroll Bar Preview=true
+Scroll Past End=true
+Search/Replace Flags=140
+Show Line Count=true
+Show Scrollbars=0
+Show Word Count=true
+Smart Copy Cut=true
+Text Drag And Drop=true
+User Sets Of Chars To Enclose Selection=
+Vi Input Mode Steal Keys=false
+Vi Relative Line Numbers=false
+Word Completion=true
+Word Completion Minimal Word Length=3
+Word Completion Remove Tail=true
+
+[KTextEditor::Search]
+Replace History=
+Search History=Казалось,огро,бус
+
+[KileConfigDialog]
+eDP1 Height 1080=815
+eDP1 Width 1920=1404
+
+[KileMainWindow]
+MenuBar=Disabled
+State=AAAA/wAAAAD9AAAAAAAAB4AAAAP/AAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAUAAAAWAG0AYQBpAG4AVABvAG8AbABCAGEAcgAAAAAA/////wAAAAAAAAAAAAAAGAB0AG8AbwBsAHMAVABvAG8AbABCAGEAcgAAAAAA/////wAAAAAAAAAAAAAAFgBlAGQAaQB0AFQAbwBvAGwAQgBhAHIAAAAAAP////8AAAAAAAAAAAAAABYAbQBhAHQAaABUAG8AbwBsAEIAYQByAAAAAAD/////AAAAAAAAAAAAAAAmAE8AawB1AGwAYQByAFYAaQBlAHcAZQByAFQAbwBvAGwAQgBhAHIAAAAAAP////8AAAAAAAAAAA==
+ToolBarsMovable=Disabled
+eDP1 Height 1080=668
+eDP1 Width 1920=1280
+eDP1 Window-Maximized 1080x1920=true
+eDP1 XPosition=0
+eDP1 YPosition=34
+
+[KileMainWindow][Toolbar OkularViewerToolBar]
+ToolButtonStyle=IconOnly
+
+[KileMainWindow][Toolbar mainToolBar]
+ToolButtonStyle=IconOnly
+
+[KileMainWindow][Toolbar toolsToolBar]
+ToolButtonStyle=IconOnly
+
+[MainWindow]
+RestorePositionForNextInstance=false
+
+[MostFrequentlyUsedSymbols]
+counts=
+paths=
+
+[MostUsedSymbols]
+symbolViewUTF8=true
+
+[QuickPreview]
+convert=true
+dvipng=true
+envPreviewInWidget=true
+mathgroupPreviewInWidget=true
+previewTask=PDFLaTeX ---> PDF (Okular)
+selPreviewInWidget=true
+
+[Recent Files]
+File1[$e]=$HOME/Шаблоны/Latex/Шаблон.tex
+File2[$e]=$HOME/Документы/Светофор/Светофор_1.tex
+File3[$e]=$HOME/Документы/Светофор/Светофор.tex
+Name1[$e]=Шаблон.tex
+Name2[$e]=Светофор_1.tex
+Name3[$e]=Светофор.tex
+
+[Scripting]
+ScriptNameColumnWidth=100
+
+[Session Settings]
+Documents=file://:@/home/dedandrey/Документы/Светофор/Светофор.tex
+Saved Documents=file://:@/home/dedandrey/Документы/Светофор/Светофор.tex,file://:@/home/dedandrey/Документы/Светофор/Светофор.tex,file://:@/home/dedandrey/Документы/Светофор/Светофор.tex,file://:@/home/dedandrey/Документы/Светофор/Светофор.tex,file://:@/home/dedandrey/Документы/Светофор/Светофор_1.tex,file://:@/home/dedandrey/Документы/Светофор/Светофор.tex,file://:@/home/dedandrey/Документы/Светофор/Светофор.tex,file://:@/home/dedandrey/Документы/Светофор/Светофор.tex,file://:@/home/dedandrey/Документы/Светофор/Светофор.tex,file://:@/home/dedandrey/Шаблоны/Latex/Шаблон.tex,file://:@/home/dedandrey/Шаблоны/Latex/Шаблон.tex,file://:@/home/dedandrey/Шаблоны/Latex/Шаблон.tex,file://:@/home/dedandrey/Шаблоны/Latex/Шаблон.tex,file://:@/home/dedandrey/Шаблоны/Latex/Шаблон.tex,file://:@/home/dedandrey/Шаблоны/Latex/Шаблон.tex,file://:@/home/dedandrey/Документы/Резюме/Latex/Резюме.tex,file://:@/home/dedandrey/Шаблоны/Latex/Шаблон.tex,file://:@/home/dedandrey/Шаблоны/Latex/Шаблон.tex,file://:@/home/dedandrey/Шаблоны/Latex/Шаблон.tex,file://:@/home/dedandrey/Документы/Светофор/Светофор.tex,file://:@/home/dedandrey/Документы/Светофор/Светофор_1.tex,file://:@/tmp/kile-LwtUwC/test_index.tex,file://:@/tmp/kile-LwtUwC/test_index.tex,file://:@/tmp/kile-LwtUwC/test_bib.tex,file://:@/tmp/kile-LwtUwC/test_bib.tex,file://:@/tmp/kile-LwtUwC/test.tex,file://:@/tmp/kile-LwtUwC/test.tex,file://:@/tmp/kile-LwtUwC/test.tex,file://:@/tmp/kile-LwtUwC/test.tex,file://:@/tmp/kile-LwtUwC/test.tex,file://:@/tmp/kile-LwtUwC/test_plain.tex,file://:@/tmp/kile-LwtUwC/test_plain.tex
+
+[Show]
+BottomBarSize=0
+ShowSplashScreen=false
+SideBarSize=332
+SystemCheckLastVersionRunForAtStartUp=2.9.93
+
+[Structure]
+SvOpenBibitems=true
+SvOpenLabels=true
+SvOpenReferences=true
+SvOpenTodo=true
+SvShowReferences=true
+
+[Tool/Archive/Tar]
+class=Archive
+command=tar
+from=kilepr
+options=cvf %S.tar %AFL
+to=tar
+type=Process
+
+[Tool/Archive/Tar + bzip2]
+class=Archive
+command=tar
+from=kilepr
+options=jcvf %S.tar.bz2 %AFL
+to=tar.bz2
+type=Process
+
+[Tool/Archive/Tar + gzip]
+class=Archive
+command=tar
+from=kilepr
+options=zcvf %S.tar.gz %AFL
+to=tar.gz
+type=Process
+
+[Tool/Archive/Zip]
+class=Archive
+command=zip
+from=kilepr
+options=%S.zip %AFL
+to=zip
+type=Process
+
+[Tool/Asymptote/Default]
+class=Compile
+command=asy
+from=asy
+options=%S
+to=
+type=Process
+
+[Tool/BibTeX/8bit Version]
+class=Bibliography
+command=bibtex8
+from=aux
+options=%S
+to=bbl
+type=Process
+
+[Tool/BibTeX/Default]
+class=Bibliography
+command=bibtex
+from=aux
+options=%S
+to=bbl
+type=Process
+
+[Tool/Biber/Default]
+class=Bibliography
+command=biber
+from=aux
+options=%S
+to=bbl
+type=Process
+
+[Tool/ConTeXt/DVI and PS]
+class=Compile
+command=texexec
+from=
+options=--dvi --nonstopmode %source
+to=dvi
+type=Process
+
+[Tool/ConTeXt/DVI and PS Draft]
+class=Compile
+command=texexec
+from=
+options=--dvi --draft --nonstopmode %source
+to=dvi
+type=Process
+
+[Tool/ConTeXt/PDF]
+class=Compile
+command=texexec
+from=
+options=--pdf --nonstopmode %source
+to=pdf
+type=Process
+
+[Tool/ConTeXt/PDF Draft]
+class=Compile
+command=texexec
+from=
+options=--pdf --draft --nonstopmode %source
+to=pdf
+type=Process
+
+[Tool/Convert/eps2png]
+class=Convert
+command=convert
+from=eps
+options=+adjoin -antialias -trim -transparent white -density %res %S.eps %S.png
+to=png
+type=Process
+
+[Tool/Convert/pdf2png]
+class=Convert
+command=convert
+from=pdf
+options=+adjoin -antialias -trim -transparent white -density %res %S.pdf %S.png
+to=png
+type=Process
+
+[Tool/DBLaTeX/Convert to DVI]
+class=Compile
+command=dblatex
+from=xml
+options=-tdvi %S.xml
+to=dvi
+type=Process
+
+[Tool/DBLaTeX/Convert to LaTeX]
+class=Compile
+command=dblatex
+from=xml
+options=-ttex %S.xml
+to=tex
+type=Process
+
+[Tool/DBLaTeX/Convert to PDF]
+class=Compile
+command=dblatex
+from=xml
+options=-tpdf %S.xml
+to=pdf
+type=Process
+
+[Tool/DBLaTeX/Convert to Postscript]
+class=Compile
+command=dblatex
+from=xml
+options=-tps %S.xml
+to=ps
+type=Process
+
+[Tool/DVItoPDF/Black and White]
+class=Convert
+command=dvipdfmx
+from=dvi
+options=-c %S.dvi
+to=pdf
+type=Process
+
+[Tool/DVItoPDF/Default]
+class=Convert
+command=dvipdfmx
+from=dvi
+options=%S.dvi
+to=pdf
+type=Process
+
+[Tool/DVItoPDF/Landscape]
+class=Convert
+command=dvipdfmx
+from=dvi
+options=-l %S.dvi
+to=pdf
+type=Process
+
+[Tool/DVItoPNG/Default]
+class=Convert
+command=dvipng
+from=dvi
+options=-T tight -D %res -o %S.png %S.dvi
+to=png
+type=Process
+
+[Tool/DVItoPS/Default]
+class=Convert
+command=dvips
+from=dvi
+options=-o %S.ps %S.dvi
+to=ps
+type=Process
+
+[Tool/DVItoPS/dvi2eps]
+class=Convert
+command=dvips
+from=dvi
+options=-o %S.eps %S.dvi
+to=eps
+type=Process
+
+[Tool/ForwardDVI/Document Viewer]
+class=ForwardDVI
+from=dvi
+to=dvi
+type=DocumentViewer
+
+[Tool/ForwardDVI/Okular]
+class=ForwardDVI
+command=okular
+from=dvi
+options=--unique %target
+to=dvi
+type=Process
+
+[Tool/ForwardPDF/Document Viewer]
+class=ForwardDVI
+from=pdf
+to=pdf
+type=DocumentViewer
+
+[Tool/ForwardPDF/Okular]
+class=ForwardDVI
+command=okular
+from=pdf
+options=--unique %absolute_target
+to=pdf
+type=Process
+
+[Tool/LaTeX to Web/TeX4ht (LaTeX to HTML)]
+class=Compile
+command=mk4ht
+from=tex
+options=htlatex %source
+to=html
+type=Process
+
+[Tool/LaTeX to Web/TeX4ht (LaTeX to MathML)]
+class=Compile
+command=mk4ht
+from=tex
+options=xhmlatex %source
+to=xml
+type=Process
+
+[Tool/LaTeX to Web/TeX4ht (LaTeX to XML)]
+class=Compile
+command=mk4ht
+from=tex
+options=xhlatex %source
+to=xml
+type=Process
+
+[Tool/LaTeX to Web/latex2html]
+class=Compile
+command=latex2html
+from=tex
+options=%source
+to=html
+type=Process
+
+[Tool/LaTeX/Default]
+autoRun=yes
+checkForRoot=yes
+class=LaTeX
+command=latex
+from=
+jumpToFirstError=yes
+options=-interaction=nonstopmode %source
+to=dvi
+type=Process
+
+[Tool/LaTeX/Draft]
+autoRun=yes
+checkForRoot=yes
+class=LaTeX
+command=latex
+from=
+jumpToFirstError=yes
+options=-draftmode -interaction=nonstopmode %source
+to=dvi
+type=Process
+
+[Tool/LaTeX/Modern]
+autoRun=yes
+checkForRoot=yes
+class=LaTeX
+command=latex
+from=
+jumpToFirstError=yes
+options=-src-specials -interaction=nonstopmode %source
+to=dvi
+type=Process
+
+[Tool/Lilypond/DVI]
+class=Compile
+command=lilypond
+from=ly
+options=--dvi %source
+to=dvi
+type=Process
+
+[Tool/Lilypond/PDF]
+class=Compile
+command=lilypond
+from=ly
+options=--pdf %source
+to=pdf
+type=Process
+
+[Tool/Lilypond/PNG]
+class=Compile
+command=lilypond
+from=ly
+options=--png %source
+to=png
+type=Process
+
+[Tool/Lilypond/PS]
+class=Compile
+command=lilypond
+from=ly
+options=--ps %source
+to=ps
+type=Process
+
+[Tool/Lilypond/TeX]
+class=Compile
+command=lilypond
+from=ly
+options=--tex %source
+to=tex
+type=Process
+
+[Tool/LivePreview-LuaLaTeX/Default]
+autoRun=yes
+checkForRoot=no
+class=LaTeXLivePreview
+command=lualatex
+from=
+jumpToFirstError=yes
+options=--synctex=1 --interaction=nonstopmode --output-directory=%dir_target %source
+to=pdf
+type=Process
+
+[Tool/LivePreview-PDFLaTeX/Default]
+autoRun=yes
+checkForRoot=no
+class=LaTeXLivePreview
+command=pdflatex
+from=
+jumpToFirstError=yes
+options=-synctex=1 -interaction=nonstopmode -output-directory=%dir_target %source
+to=pdf
+type=Process
+
+[Tool/LivePreview-PDFLaTeX/PSTricks]
+autoRun=yes
+checkForRoot=no
+class=LaTeXLivePreview
+command=pdflatex
+from=
+jumpToFirstError=yes
+options=-shell-escape -synctex=1 -interaction=nonstopmode -output-directory=%dir_target %source
+to=pdf
+type=Process
+
+[Tool/LivePreview-XeLaTeX/Default]
+autoRun=yes
+checkForRoot=no
+class=LaTeXLivePreview
+command=xelatex
+from=
+jumpToFirstError=yes
+options=-synctex=1 -interaction=nonstopmode -output-directory=%dir_target %source
+to=pdf
+type=Process
+
+[Tool/LuaLaTeX/PDF]
+autoRun=yes
+checkForRoot=yes
+class=LaTeX
+command=lualatex
+from=
+jumpToFirstError=yes
+options=--interaction=nonstopmode %source
+to=pdf
+type=Process
+
+[Tool/LuaLaTeX/PDF Draft]
+autoRun=yes
+checkForRoot=yes
+class=LaTeX
+command=lualatex
+from=
+jumpToFirstError=yes
+options=--draftmode --interaction=nonstopmode %source
+to=pdf
+type=Process
+
+[Tool/LuaLaTeX/PDF Modern]
+autoRun=yes
+checkForRoot=yes
+class=LaTeX
+command=lualatex
+from=
+jumpToFirstError=yes
+options=--synctex=1 --interaction=nonstopmode %source
+to=pdf
+type=Process
+
+[Tool/LuaLaTeX/XDVI]
+autoRun=yes
+checkForRoot=yes
+class=LaTeX
+command=lualatex
+from=
+jumpToFirstError=yes
+options=--output-format=dvi --interaction=nonstopmode %source
+to=xdvi
+type=Process
+
+[Tool/LuaLaTeX/XDVI Draft]
+autoRun=yes
+checkForRoot=yes
+class=LaTeX
+command=lualatex
+from=
+jumpToFirstError=yes
+options=--output-format=dvi --draftmode --interaction=nonstopmode %source
+to=xdvi
+type=Process
+
+[Tool/LuaLaTeX/XDVI Modern]
+autoRun=yes
+checkForRoot=yes
+class=LaTeX
+command=lualatex
+from=
+jumpToFirstError=yes
+options=--output-format=dvi --interaction=nonstopmode %source
+to=xdvi
+type=Process
+
+[Tool/MakeIndex/Default]
+class=Compile
+command=makeindex
+from=idx
+options=%S.idx
+to=idx
+type=Process
+
+[Tool/MakeIndex/xindy]
+class=Compile
+command=xindy
+from=idx
+options=%S.idx
+to=idx
+type=Process
+
+[Tool/MetaPost/Default]
+class=Compile
+command=mpost
+from=
+options=-tex=latex -interaction=nonstopmode %source
+to=
+type=Process
+
+[Tool/PDFLaTeX/Default]
+autoRun=yes
+checkForRoot=yes
+class=LaTeX
+command=pdflatex
+from=
+jumpToFirstError=yes
+options=-interaction=nonstopmode %source
+to=pdf
+type=Process
+
+[Tool/PDFLaTeX/Draft]
+autoRun=yes
+checkForRoot=yes
+class=LaTeX
+command=pdflatex
+from=
+jumpToFirstError=yes
+options=-draftmode -interaction=nonstopmode %source
+to=pdf
+type=Process
+
+[Tool/PDFLaTeX/Modern]
+autoRun=yes
+checkForRoot=yes
+class=LaTeX
+command=pdflatex
+from=
+jumpToFirstError=yes
+options=-synctex=1 -interaction=nonstopmode %source
+to=pdf
+type=Process
+
+[Tool/PDFLaTeX/PSTricks]
+autoRun=yes
+checkForRoot=yes
+class=LaTeX
+command=pdflatex
+from=
+jumpToFirstError=yes
+options=-shell-escape -synctex=1 -interaction=nonstopmode %source
+to=pdf
+type=Process
+
+[Tool/PDFTeX/Default]
+class=Compile
+command=pdftex
+from=
+options=-interaction=nonstopmode %source
+to=pdf
+type=Process
+
+[Tool/PDFTeX/Draft]
+class=Compile
+command=pdftex
+from=
+options=-draftmode -interaction=nonstopmode %source
+to=pdf
+type=Process
+
+[Tool/PDFTeX/Modern]
+class=Compile
+command=pdftex
+from=
+options=-synctex=1 -interaction=nonstopmode %source
+to=pdf
+type=Process
+
+[Tool/PStoPDF/Default]
+class=Convert
+command=ps2pdf
+from=ps
+options=%S.ps %S.pdf
+to=pdf
+type=Process
+
+[Tool/PreviewLaTeX/Default]
+autoRun=no
+checkForRoot=no
+class=LaTeXpreview
+command=latex
+from=
+jumpToFirstError=yes
+options=-synctex=1 -interaction=nonstopmode %source
+to=dvi
+type=Process
+
+[Tool/PreviewLuaLaTeX/Default]
+autoRun=no
+checkForRoot=no
+class=LaTeXpreview
+command=lualatex
+from=
+jumpToFirstError=yes
+options=--interaction=nonstopmode %source
+to=pdf
+type=Process
+
+[Tool/PreviewPDFLaTeX/Default]
+autoRun=no
+checkForRoot=no
+class=LaTeXpreview
+command=pdflatex
+from=
+jumpToFirstError=yes
+options=-interaction=nonstopmode %source
+to=pdf
+type=Process
+
+[Tool/PreviewXeLaTeX/Default]
+autoRun=no
+checkForRoot=no
+class=LaTeXpreview
+command=xelatex
+from=
+jumpToFirstError=yes
+options=-interaction=nonstopmode %source
+to=pdf
+type=Process
+
+[Tool/QuickBuild/LaTeX]
+class=Sequence
+sequence=LaTeX
+type=Sequence
+
+[Tool/QuickBuild/LaTeX+DVItoPDF+ViewPDF]
+class=Sequence
+sequence=LaTeX,DVItoPDF,ViewPDF
+type=Sequence
+
+[Tool/QuickBuild/LaTeX+DVItoPS+PStoPDF+ViewPDF]
+class=Sequence
+sequence=LaTeX,DVItoPS,PStoPDF,ViewPDF
+type=Sequence
+
+[Tool/QuickBuild/LaTeX+DVItoPS+ViewPS]
+class=Sequence
+sequence=LaTeX,DVItoPS,ViewPS
+type=Sequence
+
+[Tool/QuickBuild/LaTeX+ForwardDVI]
+class=Sequence
+sequence=LaTeX,ForwardDVI
+type=Sequence
+
+[Tool/QuickBuild/LaTeX+ViewDVI]
+class=Sequence
+sequence=LaTeX,ViewDVI
+type=Sequence
+
+[Tool/QuickBuild/LuaLaTeX+ForwardPDF]
+class=Sequence
+sequence=LuaLaTeX,ForwardPDF
+type=Sequence
+
+[Tool/QuickBuild/LuaLaTeX+ViewPDF]
+class=Sequence
+sequence=LuaLaTeX,ViewPDF
+type=Sequence
+
+[Tool/QuickBuild/PDFLaTeX+ForwardPDF]
+class=Sequence
+sequence=PDFLaTeX,ForwardPDF
+type=Sequence
+
+[Tool/QuickBuild/PDFLaTeX+ViewPDF]
+class=Sequence
+sequence=PDFLaTeX,ViewPDF
+type=Sequence
+
+[Tool/TeX/Default]
+class=Compile
+command=tex
+from=
+options=-interaction=nonstopmode %source
+to=dvi
+type=Process
+
+[Tool/TeX/Modern]
+class=Compile
+command=tex
+from=
+options=-src-specials -interaction=nonstopmode %source
+to=dvi
+type=Process
+
+[Tool/ViewBib/JabRef]
+class=ViewBib
+command=jabref
+from=bib
+options=%dir_base/%source
+to=bib
+type=Process
+
+[Tool/ViewBib/KBib]
+class=ViewBib
+command=kbib
+from=bib
+options=%dir_base/%source
+to=bib
+type=Process
+
+[Tool/ViewBib/KBibTex]
+class=ViewBib
+command=kbibtex
+from=bib
+options=%dir_base/%source
+to=bib
+type=Process
+
+[Tool/ViewBib/Pybliographer]
+class=ViewBib
+command=pybliographic
+from=bib
+options=%dir_base/%source
+to=bib
+type=Process
+
+[Tool/ViewBib/gbib]
+class=ViewBib
+command=gbib
+from=bib
+options=%dir_base/%source
+to=bib
+type=Process
+
+[Tool/ViewDVI/Document Viewer]
+class=View
+from=dvi
+to=dvi
+type=DocumentViewer
+
+[Tool/ViewDVI/Evince]
+class=View
+command=evince
+from=dvi
+options=%target
+state=Viewer
+to=dvi
+type=Process
+
+[Tool/ViewDVI/Okular]
+class=View
+command=okular
+from=dvi
+options=%target
+state=Viewer
+to=dvi
+type=Process
+
+[Tool/ViewDVI/Okular Unique]
+class=View
+command=okular
+from=dvi
+options=--unique %target
+state=Viewer
+to=dvi
+type=Process
+
+[Tool/ViewHTML/Firefox]
+class=ViewHTML
+command=firefox
+from=html
+options=file:%dir_target/%target
+relDir=
+state=Editor
+target=
+to=html
+type=Process
+
+[Tool/ViewHTML/Konqueror]
+class=ViewHTML
+command=konqueror
+from=html
+options=file:%dir_target/%target
+relDir=
+state=Editor
+target=
+to=html
+type=Process
+
+[Tool/ViewHTML/Mozilla]
+class=ViewHTML
+command=mozilla
+from=html
+options=file:%dir_target/%target
+relDir=
+state=Editor
+target=
+to=html
+type=Process
+
+[Tool/ViewHTML/Seamonkey]
+class=ViewHTML
+command=seamonkey
+from=html
+options=file:%dir_target/%target
+relDir=
+state=Editor
+target=
+to=html
+type=Process
+
+[Tool/ViewPDF/Acroread]
+class=View
+command=acroread
+from=pdf
+options=%target
+state=Viewer
+to=pdf
+type=Process
+
+[Tool/ViewPDF/Document Viewer]
+class=View
+from=pdf
+to=pdf
+type=DocumentViewer
+
+[Tool/ViewPDF/Evince]
+class=View
+command=evince
+from=pdf
+options=%target
+state=Viewer
+to=pdf
+type=Process
+
+[Tool/ViewPDF/Okular]
+class=View
+command=okular
+from=pdf
+options=%target
+state=Viewer
+to=pdf
+type=Process
+
+[Tool/ViewPDF/Okular Unique]
+class=View
+command=okular
+from=pdf
+options=--unique %target
+state=Viewer
+to=pdf
+type=Process
+
+[Tool/ViewPS/Document Viewer]
+class=View
+from=ps
+to=ps
+type=DocumentViewer
+
+[Tool/ViewPS/Evince]
+class=View
+command=evince
+from=ps
+options=%target
+state=Viewer
+to=ps
+type=Process
+
+[Tool/ViewPS/GV]
+class=View
+command=gv
+from=ps
+options=%target
+state=Viewer
+to=ps
+type=Process
+
+[Tool/ViewPS/Okular]
+class=View
+command=okular
+from=ps
+options=%target
+state=Viewer
+to=ps
+type=Process
+
+[Tool/ViewPS/Okular Unique]
+class=View
+command=okular
+from=ps
+options=--unique %target
+state=Viewer
+to=ps
+type=Process
+
+[Tool/XeLaTeX/PDF]
+autoRun=yes
+checkForRoot=yes
+class=LaTeX
+command=xelatex
+from=
+jumpToFirstError=yes
+options=-interaction=nonstopmode %source
+to=pdf
+type=Process
+
+[Tool/XeLaTeX/PDF Draft]
+autoRun=yes
+checkForRoot=yes
+class=LaTeX
+command=xelatex
+from=
+jumpToFirstError=yes
+options=-draftmode -interaction=nonstopmode %source
+to=pdf
+type=Process
+
+[Tool/XeLaTeX/PDF Modern]
+autoRun=yes
+checkForRoot=yes
+class=LaTeX
+command=xelatex
+from=
+jumpToFirstError=yes
+options=-synctex=1 -interaction=nonstopmode %source
+to=pdf
+type=Process
+
+[Tool/XeLaTeX/XDVI]
+autoRun=yes
+checkForRoot=yes
+class=LaTeX
+command=xelatex
+from=
+jumpToFirstError=yes
+options=-no-pdf -interaction=nonstopmode %source
+to=xdvi
+type=Process
+
+[Tool/XeLaTeX/XDVI Draft]
+autoRun=yes
+checkForRoot=yes
+class=LaTeX
+command=xelatex
+from=
+jumpToFirstError=yes
+options=-no-pdf -draftmode -interaction=nonstopmode %source
+to=xdvi
+type=Process
+
+[Tool/XeLaTeX/XDVI Modern]
+autoRun=yes
+checkForRoot=yes
+class=LaTeX
+command=xelatex
+from=
+jumpToFirstError=yes
+options=-no-pdf -src-specials -interaction=nonstopmode %source
+to=xdvi
+type=Process
+
+[ToolSelectAction]
+Compile=11
+Convert=-1
+Quick=0
+View=-1
+
+[Tools]
+Archive=Tar + gzip
+Asymptote=Default
+BibTeX=Default
+Biber=Default
+ConTeXt=PDF
+Convert=pdf2png
+DBLaTeX=LaTeX
+DVItoPDF=Default
+DVItoPNG=Default
+DVItoPS=Default
+ForwardDVI=Document Viewer
+ForwardPDF=Document Viewer
+LaTeX=Default
+LaTeX to Web=latex2html
+Lilypond=PDF
+LivePreview-LuaLaTeX=Default
+LivePreview-PDFLaTeX=Default
+LivePreview-XeLaTeX=Default
+LuaLaTeX=PDF
+MakeIndex=Default
+MetaPost=Default
+PDFLaTeX=Modern
+PDFTeX=Default
+PStoPDF=Default
+PreviewLaTeX=Default
+PreviewLuaLaTeX=Default
+PreviewPDFLaTeX=Default
+PreviewTeXPaths=/home/dedandrey/Документы/Светофор
+PreviewXeLaTeX=Default
+QuickBuild=PDFLaTeX+ViewPDF
+TeX=Default
+ViewBib=KBibTex
+ViewDVI=Document Viewer
+ViewHTML=Konqueror
+ViewPDF=Document Viewer
+ViewPS=Document Viewer
+XeLaTeX=PDF
+
+[ToolsGUI]
+Archive=Archive,archive-insert
+Asymptote=Compile,application-x-executable
+BibTeX=Compile,bibtex
+Biber=Compile,bibtex
+ConTeXt=Compile,latex
+Convert=Convert,convert
+DBLaTeX=Compile,dblatex
+DVItoPDF=Convert,dvipdf
+DVItoPNG=Convert,dvipng
+DVItoPS=Convert,dvips
+ForwardDVI=View,dvisearch
+ForwardPDF=View,dvisearch
+LaTeX=Compile,latex
+LaTeX to Web=Compile,l2h
+Lilypond=Compile,lilypond
+LivePreview-LuaLaTeX=none,application-x-executable
+LivePreview-PDFLaTeX=none,application-x-executable
+LivePreview-XeLaTeX=none,application-x-executable
+LuaLaTeX=Compile,latex
+MakeIndex=Compile,makeidx
+MetaPost=Compile,mpost
+PDFLaTeX=Compile,pdflatex
+PDFTeX=Compile,pdftex
+PStoPDF=Convert,ps2pdf
+PreviewLaTeX=none,application-x-executable
+PreviewLuaLaTeX=none,application-x-executable
+PreviewPDFLaTeX=none,application-x-executable
+PreviewXeLaTeX=none,application-x-executable
+QuickBuild=Quick,quick
+TeX=Compile,texcompiler
+ViewBib=View,viewbib
+ViewDVI=View,okular
+ViewHTML=View,viewhtml
+ViewPDF=View,okular
+ViewPS=View,okular
+XeLaTeX=Compile,latex
+
+[User]
+Author=Дедиков Андрей
+
+[UserMenu]
+userMenuLocation=0
+
+[VersionInfo]
+RCVersion=8
+
+[View-Settings,View=0,URL=file://:@/home/dedandrey/Документы/Резюме/Latex/Резюме.tex]
+CursorColumn=119
+CursorLine=179
+Dynamic Word Wrap=true
+JumpList=
+TextFolding=[]
+ViMarks=.,179,92,[,179,92,],179,118
+
+[View-Settings,View=0,URL=file://:@/home/dedandrey/Документы/Светофор/Светофор.tex]
+CursorColumn=9
+CursorLine=250
+Dynamic Word Wrap=true
+JumpList=
+TextFolding=[]
+ViMarks=.,250,9,[,250,9,],250,9
+
+[View-Settings,View=0,URL=file://:@/home/dedandrey/Документы/Светофор/Светофор_1.tex]
+CursorColumn=1014
+CursorLine=92
+Dynamic Word Wrap=true
+JumpList=
+TextFolding=[]
+ViMarks=.,92,0,[,92,0,],92,1157
+
+[View-Settings,View=0,URL=file://:@/home/dedandrey/Шаблоны/Latex/Шаблон.tex]
+CursorColumn=460
+CursorLine=135
+Dynamic Word Wrap=true
+JumpList=
+TextFolding=[]
+ViMarks=.,135,460,[,135,460,],135,460
+
+[View-Settings,View=0,URL=file://:@/tmp/kile-LwtUwC/test.tex]
+CursorColumn=0
+CursorLine=0
+Dynamic Word Wrap=true
+JumpList=
+TextFolding=[]
+ViMarks=
+
+[View-Settings,View=0,URL=file://:@/tmp/kile-LwtUwC/test_bib.tex]
+CursorColumn=0
+CursorLine=0
+Dynamic Word Wrap=true
+JumpList=
+TextFolding=[]
+ViMarks=
+
+[View-Settings,View=0,URL=file://:@/tmp/kile-LwtUwC/test_index.tex]
+CursorColumn=0
+CursorLine=0
+Dynamic Word Wrap=true
+JumpList=
+TextFolding=[]
+ViMarks=
+
+[View-Settings,View=0,URL=file://:@/tmp/kile-LwtUwC/test_plain.tex]
+CursorColumn=0
+CursorLine=0
+Dynamic Word Wrap=true
+JumpList=
+TextFolding=[]
+ViMarks=

@@ -1,0 +1,41 @@
+Установка TEX Live из Интернета
+
+Скачать http://mirror.ctan.org/systems/texlive/tlnet
+Распаковать. Внутри папки запустить:
+perl install-tl -gui
+
+Для Arch KDE добавить в .bash_profile
+
+PATH=/usr/local/texlive/2020/bin/x86_64-linux:$PATH; export PATH
+MANPATH=/usr/local/texlive/2020/texmf-dist/doc/man:$MANPATH; export MANPATH
+INFOPATH=/usr/local/texlive/2020/texmf-dist/doc/info:$INFOPATH; export INFOPATH
+
+Для Ubuntu и Arch Gnome добавил в .profile
+
+export PATH="/usr/local/texlive/2020/bin/x86_64-linux:$PATH"
+export MANPATH="/usr/local/texlive/2020/texmf-dist/doc/man:$MANPATH"
+export INFOPATH="/usr/local/texlive/2020/texmf-dist/doc/info:$INFOPATH"
+
+===========================
+
+Узнаем установленную версию Latex:
+latex -v
+
+Запуск конфигуратора Latex:
+tlmgr -gui
+Обновление конфигуратора
+tlmgr update --self
+
+Менеджер пакетов tlmgr:
+
+Установить нужный TeX-пакет можно, набрав в окне терминала:
+tlgmr install <package name>
+
+Обновить версию пакета:
+tlgmr update <package name>
+
+Обновить все пакеты (кроме tlmgr):
+tlmgr update -all
+
+Обновить все пакеты, в том числе и tlmgr:
+tlmgr update --self --all
