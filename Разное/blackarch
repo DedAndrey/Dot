@@ -1,0 +1,24 @@
+curl -O https://blackarch.org/strap.sh
+sha1sum strap.sh
+sudo bash ./strap.sh
+
+Теперь загрузите свежую копию список мастер пакета и синхронизируйте пакеты:
+sudo pacman -Syyu
+
+Рекомендуется также установить список зеркал:
+sudo pacman -S blackarch-mirrorlist
+___________________________________
+
+Теперь вы можете установить инструменты из репозитория blackarch.
+
+Чтобы вывести список всех доступных инструментов запустите:
+pacman -Sgg | grep blackarch | cut -d ' ' -f2 | sort -u
+
+Чтобы установить все инструменты запустите:
+pacman -S blackarch
+
+Чтобы посмотреть категории blackarch запустите
+pacman -Sg | grep blackarch
+
+Чтобы установить категорию инструментов запустите:
+pacman -S blackarch-<категория>

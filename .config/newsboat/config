@@ -1,0 +1,32 @@
+# colors					шрифт/фон
+#color background			color1 default		# цвет интерактивной строки
+color listnormal			color9 default		# цвет статей списка
+color listnormal_unread		color2 default		# цвет непрочитанных статей в списке
+color listfocus				color3 default		# цвет текущей строки
+color listfocus_unread		color3 default		# цвет прочитанных статей в текущей строке
+color info					color4 default		# цвет строки состояния и строки помощи
+color article				color3 default		# цвет текста статьи
+
+# highlights
+highlight article "^(Feed|Title|Link|Date|Author):.*$" color4 default
+highlight article "https?://[^ ]+" color15 default protect
+
+# generals
+confirm-exit no
+browser w3m
+auto-reload yes
+cleanup-on-quit yes
+player mpv
+refresh-on-startup yes
+reload-time 20
+reload-threads 2
+notify-program notify-send
+display-article-progress yes
+download-full-page yes
+articlelist-format "%4i %f %D %?T?|%-17T| ?%t"
+articlelist-title-format "Статей в ленте '%T' (%u новых)"
+html-renderer "w3m -dump -T text/html"
+keep-articles-days 30
+datetime-format "%D, %R"
+
+macro y set browser "mpv %u"; open-in-browser ; set browser "$BROWSER %u"

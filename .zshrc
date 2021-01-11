@@ -8,13 +8,27 @@ export ZSH="/home/dedandrey/.oh-my-zsh"
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-ZSH_THEME="robbyrussell"
+# ZSH_THEME="robbyrussell"
+ZSH_THEME="af-magic"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
 # a theme from this variable instead of looking in $ZSH/themes/
 # If set to an empty array, this variable will have no effect.
 # ZSH_THEME_RANDOM_CANDIDATES=( "robbyrussell" "agnoster" )
+
+# традиционный стиль перенаправлений fd
+unsetopt MULTIOS
+# поддержка ~… и file completion после = в аргументах
+setopt MAGIC_EQUAL_SUBST
+# не обрабатывать escape sequence в echo без -e
+setopt BSD_ECHO
+# поддержка комментариев в командной строке
+setopt INTERACTIVE_COMMENTS
+# поддержка $(cmd) в $PS1 etc.
+setopt PROMPT_SUBST
+
+setopt EXTENDED_GLOB
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -45,7 +59,7 @@ ZSH_THEME="robbyrussell"
 # ENABLE_CORRECTION="true"
 
 # Uncomment the following line to display red dots whilst waiting for completion.
-# COMPLETION_WAITING_DOTS="true"
+COMPLETION_WAITING_DOTS="true"
 
 # Uncomment the following line if you want to disable marking untracked files
 # under VCS as dirty. This makes repository status check for large repositories
@@ -68,16 +82,24 @@ ZSH_THEME="robbyrussell"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git tmux sudo web-search)
+plugins=(git z vundle dirhistory fzf tmux zsh-interactive-cd)
 
 source $ZSH/oh-my-zsh.sh
 
+# fzf & fd
+# [[ -e "/usr/share/fzf/fzf-extras.zsh" ]] && source /usr/share/fzf/fzf-extras.zsh
+# export FZF_DEFAULT_COMMAND="fd --type file --color=always --follow --hidden --exclude .git"
+# export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
+## export FZF_DEFAULT_OPTS="--ansi"
+# export FZF_DEFAULT_OPTS="--height 50% --layout=reverse --border --preview 'file {}' --preview-window down:1"
+# export FZF_COMPLETION_TRIGGER="~~"
+
 # User configuration
 
-autoload -Uz compinit
-compinit
-# Completion for kitty
-kitty + complete setup zsh | source /dev/stdin
+# Path to Latex installation.
+# export PATH=/usr/local/texlive/2020/bin/x86_64-linux:$PATH
+# export MANPATH=/usr/local/texlive/2020/texmf-dist/doc/man:$MANPATH
+# export INFOPATH=/usr/local/texlive/2020/texmf-dist/doc/info:$INFOPATH
 
 # export MANPATH="/usr/local/man:$MANPATH"
 
@@ -85,11 +107,11 @@ kitty + complete setup zsh | source /dev/stdin
 # export LANG=en_US.UTF-8
 
 # Preferred editor for local and remote sessions
-if [[ -n $SSH_CONNECTION ]]; then
-  export EDITOR='vim'
-else
-  export EDITOR='vim'
-fi
+# if [[ -n $SSH_CONNECTION ]]; then
+#   export EDITOR='vim'
+# else
+#   export EDITOR='mvim'
+# fi
 
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
@@ -102,42 +124,5 @@ fi
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-alias погода='curl ru.wttr.in/'
-alias луна='curl ru.wttr.in/Moon'
 
-setopt autocd # можно вводить пути к каталогам вообще без команды cd
-setopt HIST_IGNORE_ALL_DUPS # Игнорировать все повторения команд
-setopt HIST_IGNORE_SPACE # Игнорировать лишние пробелы
-setopt IGNORE_EOF # Не считать Control+C за выход из оболочки
-setopt NO_BEEP # не пищать при дополнении или ошибках
-setopt CORRECT_ALL # исправлять неверно набранные комманды 
-setopt SH_WORD_SPLIT # zsh будет обращаться с пробелами так же, как и bash 
-SPROMPT='zsh: Заменить '\''%R'\'' на '\''%r'\'' ? [Yes/No/Abort/Edit] ' # вопрос на автокоррекцию 
-setopt menucomplete # позволяет выбирать предлагаемые zsh варианты автодополнения с помощью стрелочек.
-zstyle ':completion:*' menu select=1 _complete _ignored _approximate
-# zstyle ':completion:*' menu select=long-list select=0
-zstyle ':completion:*:*:kill:*' menu yes select
-zstyle ':completion:*:kill:*' force-list always 
-zstyle ':completion:*:*:kill:*:processes' list-colors "=(#b) #([0-9]#)*=$color[cyan]=$color[red]"
-zstyle ':completion:*' completer _expand _complete _ignored
-zstyle ':completion:*' group-name ''
-zstyle ':completion:*' list-colors ''
-zstyle ':completion:*' list-prompt '%SAt %p: Hit TAB for more, or the character to insert%s'
-zstyle ':completion:*' max-errors 1
-zstyle ':completion:*' select-prompt '%SScrolling active: current selection at %p%s'
-zstyle ':completion:*' use-compctl false
-zstyle ':completion:*' verbose true
-zstyle ':completion:*' matcher-list 'm:{a-z}={A-Z}'
-
-ttyctl -f
-
-[[ -n "${key[Home]}"     ]]  && bindkey  "${key[Home]}"     beginning-of-line
-[[ -n "${key[End]}"      ]]  && bindkey  "${key[End]}"      end-of-line
-[[ -n "${key[Insert]}"   ]]  && bindkey  "${key[Insert]}"   overwrite-mode
-[[ -n "${key[Delete]}"   ]]  && bindkey  "${key[Delete]}"   delete-char
-[[ -n "${key[Up]}"       ]]  && bindkey  "${key[Up]}"       up-line-or-history
-[[ -n "${key[Down]}"     ]]  && bindkey  "${key[Down]}"     down-line-or-history
-[[ -n "${key[Left]}"     ]]  && bindkey  "${key[Left]}"     backward-char
-[[ -n "${key[Right]}"    ]]  && bindkey  "${key[Right]}"    forward-char
-[[ -n "${key[PageUp]}"   ]]  && bindkey  "${key[PageUp]}"   beginning-of-buffer-or-history
-[[ -n "${key[PageDown]}" ]]  && bindkey  "${key[PageDown]}" end-of-buffer-or-history
+[[ -f ~/.alias_zsh ]] && . ~/.alias_zsh

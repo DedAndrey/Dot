@@ -10,11 +10,17 @@ PATH=/usr/local/texlive/2020/bin/x86_64-linux:$PATH; export PATH
 MANPATH=/usr/local/texlive/2020/texmf-dist/doc/man:$MANPATH; export MANPATH
 INFOPATH=/usr/local/texlive/2020/texmf-dist/doc/info:$INFOPATH; export INFOPATH
 
-Для Ubuntu и Arch Gnome добавил в .profile
+Для Ubuntu, Arch Gnome и MXlinux добавил в .profile
 
 export PATH="/usr/local/texlive/2020/bin/x86_64-linux:$PATH"
 export MANPATH="/usr/local/texlive/2020/texmf-dist/doc/man:$MANPATH"
 export INFOPATH="/usr/local/texlive/2020/texmf-dist/doc/info:$INFOPATH"
+
+В CtlOS добавил в .zshrc
+
+export PATH=/usr/local/texlive/2020/bin/x86_64-linux:$PATH
+export MANPATH=/usr/local/texlive/2020/texmf-dist/doc/man:$MANPATH
+export INFOPATH=/usr/local/texlive/2020/texmf-dist/doc/info:$INFOPATH
 
 ===========================
 

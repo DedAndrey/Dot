@@ -21,12 +21,17 @@ sudo pacman -Scc
 
 http://localhost:631/admin
 
+Если не пускает на страницу:
+
+sudo systemctl status cups -- смотрим статус
+sudo systemctl start cups -- стартуем сервис
+sudo systemctl enable cups -- добавляем в автозагрузку
+
 *****
 
 Чрут в лайве:
 lsblk
-sudo mount /dev/sda5 /mnt
-sudo manjaro-chroot /mnt /bin/bash
+sudo mount /dev/sda1 /mnt && sudo manjaro-chroot /mnt /bin/bash
 grub-install /dev/sda
 grub-mkconfig -o /boot/grub/grub.cfg
 sudo mkinitcpio -P

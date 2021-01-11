@@ -63,22 +63,49 @@ call vundle#begin()
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
 
-Plugin 'scrooloose/nerdtree'
 Plugin 'vim-xkbswitch'
-" Plugin 'bling/vim-airline'
+Plugin 'ryanoasis/vim-devicons'
+Plugin 'scrooloose/nerdtree'
+Plugin 'jistr/vim-nerdtree-tabs'
+Plugin 'unkiwii/vim-nerdtree-sync'
 Plugin 'Xuyuanp/nerdtree-git-plugin'
 Plugin 'tiagofumo/vim-nerdtree-syntax-highlight'
-Plugin 'ryanoasis/vim-devicons'
-Plugin 'plasticboy/vim-markdown.git'
-Plugin 'LaTeX-Suite-aka-Vim-LaTeX'
 Plugin 'xuhdev/vim-latex-live-preview'
-Plugin 'SirVer/ultisnips'
 Plugin 'lervag/vimtex'
+Plugin 'junegunn/fzf'
+Plugin 'SirVer/ultisnips'
+"Plugin 'tpope/vim-commentary'
+Plugin 'sheerun/vim-polyglot'
+Plugin 'tmux-plugins/vim-tmux-focus-events'
+"Plugin 'christoomey/vim-tmux-navigator'
+Plugin 'preservim/nerdcommenter'
 
 call vundle#end()
 filetype plugin indent on
 
-" 'vimtex
+" preservim/nerdcommenter
+filetype plugin on
+" Create default mappings
+let g:NERDCreateDefaultMappings = 1
+" Add spaces after comment delimiters by default
+let g:NERDSpaceDelims = 1
+" Use compact syntax for prettified multi-line comments
+let g:NERDCompactSexyComs = 1
+" Align line-wise comment delimiters flush left instead of following code indentation
+let g:NERDDefaultAlign = 'left'
+" Set a language to use its alternate delimiters by default
+let g:NERDAltDelims_java = 1
+" Add your own custom formats or override the defaults
+let g:NERDCustomDelimiters = { 'c': { 'left': '/**','right': '*/' } }
+" Allow commenting and inverting empty lines (useful when commenting a region)
+let g:NERDCommentEmptyLines = 1
+" Enable trimming of trailing whitespace when uncommenting
+let g:NERDTrimTrailingWhitespace = 1
+" Enable NERDCommenterToggle to check all selected lines is commented or not 
+let g:NERDToggleCheckAllLines = 1
+
+
+" vimtex
 let g:tex_flavor='latex'
 let g:vimtex_view_method='zathura'
 let g:vimtex_quickfix_mode=0
@@ -109,6 +136,8 @@ let NERDTreeShowHidden=1
 autocmd StdinReadPre * let s:std_in=1
 autocmd VimEnter * if argc() == 0 && !exists("s:std_in") && v:this_session == "" | NERDTree | endif
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
+
+" Xuyuanp/nerdtree-git-plugin
 
 let g:NERDTreeGitStatusShowIgnored = 1
 let g:NERDTreeGitStatusIndicatorMapCustom = {

@@ -1,0 +1,6 @@
+pane	0	0	:mocp	1	:*	0	:/home/dedandrey	1	mocp	:mocp
+pane	0	0	:mocp	1	:*	1	:/home/dedandrey	0	aerc	:aerc
+pane	0	0	:mocp	1	:*	2	:/home/dedandrey	0	perl	:/usr/bin/perl /usr/bin/clyrics -m -k -s 1 -P /home/dedandrey/.config/clyrics
+pane	0	0	:mocp	1	:*	3	:/home/dedandrey	0	newsboat	:newsboat
+window	0	0	1	:*	9045,236x60,0,0{118x60,0,0[118x30,0,0,0,118x29,0,31,7],117x60,119,0[117x30,119,0,5,117x29,119,31,6]}
+state	0	
