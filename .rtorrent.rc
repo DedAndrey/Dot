@@ -36,7 +36,7 @@ network.xmlrpc.size_limit.set = 4M
 directory = ~/Загрузки/torrents/
 
 # каталог куда будет сохраняться состояние торентов.
-session = ~/.rtorrent-session
+session = ~/Загрузки/torrents/.rtorrent-session
 
 # rtorrent каждые 5 секунд проверяет этот каталог на новые *.torrent 
 # файлы и если они есть то ставит их на закачку
