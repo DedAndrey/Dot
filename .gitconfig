@@ -5,3 +5,9 @@
 	editor = vim
 [alias]
 	last = log -1 HEAD
+[sendemail]
+	smtpPass = kawkiehgoeytpqzs
+	smtpserver = smtp.gmail.com
+	smtpuser = dedikovav@gmail.com
+	smtpencryption = tls
+	smtpserverport = 587
