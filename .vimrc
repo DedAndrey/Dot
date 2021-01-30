@@ -27,7 +27,8 @@ set is
 set iskeyword=@,48-57,_,192-255
 
 " Список автоматически определяемых кодировок в порядке убывания приоритета
-set fileencodings=utf-8
+set encoding=utf-8
+set fileencoding=utf-8
 
 " по умолчанию - латинская раскладка
 set iminsert=0
