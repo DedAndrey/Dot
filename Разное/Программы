@@ -29,9 +29,15 @@ abook - адресная книга
 mbsync - синхронизация почтовых ящиков (хренотень)
 -----------------
 
+## Текст
+vim
+xkb-switch - для переключения раскладок
+git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+
 ## Файлы
 ranger - файловый менеджер
 ueberzug - просмотрщик
+pdftk - работа с pdf-файлами
 highlight - подсветка синтаксиса в превью
 sxiv - картинки
 -----------------
