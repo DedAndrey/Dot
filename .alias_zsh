@@ -87,6 +87,7 @@ alias h="htop"
 alias porn='mpv http://www.pornhub.com/random'
 # RSS-читалка
 alias rss='newsboat'
+#alias update='newsboat -r && sudo pacman -Syu'
 
 # Погода, не только по городу, но и по месту. Нет привязки к регистру и языку.
 # alias wtr="curl 'wttr.in/Москва?M&lang=ru'"
