@@ -70,8 +70,11 @@ $> env TERM=xterm-256color mc
 sudo dd if=/dev/zero of=/dev/sdb status=progress
 
 Запись образа на флешку, например:
-
+dd:
 sudo dd if=/home/dedandrey/Загрузки/Sabayon_Linux_19.03_amd64_KDE.iso of=/dev/sdb status=progress
+" sudo dd if=/home/dedandrey/Загрузки/Sabayon_Linux_19.03_amd64_KDE.iso of=/dev/sdb status=progress bs=4M
+dcfldd:
+sudo dcfldd if=/home/dedandrey/Загрузки/torrents/garuda-dr460nized-linux-tkg-bmq-210107.iso of=/dev/sdb
 
 Монтирование ISO Образа в Linux:
 

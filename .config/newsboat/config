@@ -1,29 +1,28 @@
-# generals
 confirm-exit yes
-browser "w3m %u"
 auto-reload yes
 cleanup-on-quit yes
-player mpv
 refresh-on-startup yes
 reload-time 20
 reload-threads 50
 keep-articles-days 30
-notify-program notify-send
 display-article-progress yes
 download-full-page yes
 
+browser "qutebrowser %u"
+external-url-viewer "urlscan"
+html-renderer "w3m -dump -T text/html"
+
 feedlist-format " %4i %11u %> %t"
-feedlist-title-format "Новостные ленты (%u с новыми статьями, %t всего)"
+feedlist-title-format "Ваши ленты новостей (в %u из них есть новые статьи)"
+#feedlist-title-format "Новостные ленты (%u с новыми статьями, %t всего)"
 
 articlelist-format "%4i %f %D %?T?|%-17T| ?%t"
 articlelist-title-format "Статей в ленте '%T' (%u новых, %t всего)"
 
 itemview-title-format "Статья '%T'"
 
-notify-format "%d новых статей (%n непрочитанных статей, %f непрочитанных лент	)"
+#notify-program notify-send
+#notify-format "%d новых статей (%n непрочитанных статей, %f непрочитанных лент)"
 
-html-renderer "w3m -dump -T text/html"
 datetime-format "%d/%m/%y %H:%M"
 include /usr/share/doc/newsboat/contrib/colorschemes/plain
-
-#macro y set browser "mpv %u"; open-in-browser ; set browser "$BROWSER %u"

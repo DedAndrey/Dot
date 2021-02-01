@@ -1,5 +1,9 @@
 ## Интернет
 w3m - браузер и просмотрщик
+newsboat - читалка RSS лент
+	urlscan - расширенный парсер ссылок
+qutebrowser - браузер
+	beautifulsoup - импорт закладок
 -----------------
 
 ## Почта
@@ -10,26 +14,27 @@ aerc - почта
 
 catimg - просмотр картинок
 -----------------
-mutt - почта
+	mutt - почта
 
-	echo "Текст сообщения" | mutt -s "Тема" [дополнительные опции] -- <кому отправить>
-	echo "Test mail" | mutt -s "Тема Mutt" -- dedikovav@dgmail.com
-	
-	Отправка сообщения с текстом:
-	mutt -s "subject" recipient@server.com < ~/message.txt
-	Отправка сообщения с текстом и файлом:
-	mutt -s "subject" recipient@server.com -a file.zip < ~/message.txt
+		echo "Текст сообщения" | mutt -s "Тема" [дополнительные опции] -- <кому отправить>
+		echo "Test mail" | mutt -s "Тема Mutt" -- dedikovav@dgmail.com
+		
+		Отправка сообщения с текстом:
+		mutt -s "subject" recipient@server.com < ~/message.txt
+		Отправка сообщения с текстом и файлом:
+		mutt -s "subject" recipient@server.com -a file.zip < ~/message.txt
 
-khal - для работы с календарем ?
-khard - для адресов ?
-urlscan - грабит ссылки для обработки отдельно
-notmuch, notmuch-mutt - индексация сообщений
-ispell - проверка орфографии
-abook - адресная книга
-mbsync - синхронизация почтовых ящиков (хренотень)
+	khal - для работы с календарем ?
+	khard - для адресов ?
+	urlscan - грабит ссылки для обработки отдельно
+	notmuch, notmuch-mutt - индексация сообщений
+	ispell - проверка орфографии
+	abook - адресная книга
+	mbsync - синхронизация почтовых ящиков (хренотень)
 -----------------
 
 ## Текст
+nano
 vim
 xkb-switch - для переключения раскладок
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
@@ -41,6 +46,7 @@ pdftk - работа с pdf-файлами
 highlight - подсветка синтаксиса в превью
 sxiv - картинки
 -----------------
+dcfldd - запись образов USB, альтернатива dd
 vifm - файловый менеджер
 fbless - читалка электронных книг
 -----------------
