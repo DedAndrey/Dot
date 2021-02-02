@@ -1,21 +1,20 @@
 ## Интернет
-w3m - браузер и просмотрщик
-newsboat - читалка RSS лент
-	urlscan - расширенный парсер ссылок
-qutebrowser - браузер
-	beautifulsoup - импорт закладок
+nyx					мониторинг работы tor
+w3m					браузер и просмотрщик
+newsboat			читалка RSS лент
+	urlscan			расширенный парсер ссылок
+qutebrowser			браузер
+	beautifulsoup	импорт закладок
 -----------------
 
 ## Почта
-aerc - почта
-
+aerc			почта
 	aerc [-v] или [mailto:...]
 	man aerc-tutorial
 
-catimg - просмотр картинок
+catimg			просмотр картинок
 -----------------
-	mutt - почта
-
+	mutt		почта
 		echo "Текст сообщения" | mutt -s "Тема" [дополнительные опции] -- <кому отправить>
 		echo "Test mail" | mutt -s "Тема Mutt" -- dedikovav@dgmail.com
 		
@@ -24,47 +23,47 @@ catimg - просмотр картинок
 		Отправка сообщения с текстом и файлом:
 		mutt -s "subject" recipient@server.com -a file.zip < ~/message.txt
 
-	khal - для работы с календарем ?
-	khard - для адресов ?
-	urlscan - грабит ссылки для обработки отдельно
-	notmuch, notmuch-mutt - индексация сообщений
-	ispell - проверка орфографии
-	abook - адресная книга
-	mbsync - синхронизация почтовых ящиков (хренотень)
+	khal					для работы с календарем ?
+	khard					для адресов ?
+	urlscan					грабит ссылки для обработки отдельно
+	notmuch, notmuch-mutt	индексация сообщений
+	ispell					проверка орфографии
+	abook					адресная книга
+	mbsync					синхронизация почтовых ящиков (хренотень)
 -----------------
 
 ## Текст
-nano
-vim
-xkb-switch - для переключения раскладок
+nano			текстовый редактор
+vim				текстовый редактор
+xkb-switch		для переключения раскладок
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 
 ## Файлы
-ranger - файловый менеджер
-ueberzug - просмотрщик
-pdftk - работа с pdf-файлами
-highlight - подсветка синтаксиса в превью
-sxiv - картинки
+ranger			файловый менеджер
+ueberzug		просмотрщик
+pdftk			работа с pdf-файлами
+highlight		подсветка синтаксиса в превью
+sxiv			картинки
 -----------------
-dcfldd - запись образов USB, альтернатива dd
-vifm - файловый менеджер
-fbless - читалка электронных книг
+dcfldd			запись образов USB, альтернатива dd
+vifm			файловый менеджер
+fbless			читалка электронных книг
 -----------------
-pdftotext - превью .pdf
-zathura - PDF и электронные книги
-antiword - превью .doc
-docx2txt - превью .docx
-odt2txt - превью .odt
-exiftool - превью информации о медиа
-mediainfo - превью информации о медиа
-ffmpegthumbnailer - превью видео
+pdftotext			превью .pdf
+zathura				PDF и электронные книги
+antiword			превью .doc
+docx2txt			превью .docx
+odt2txt				превью .odt
+exiftool			превью информации о медиа
+mediainfo			превью информации о медиа
+ffmpegthumbnailer	превью видео
 -----------------
 
 ## Медиа
-mpv - медиапроигрыватель
-mocp - аудио, радио
-clyrics - текст песни в консоли
-mpd - аудио, радио
+mpv				медиапроигрыватель
+mocp			аудио, радио
+clyrics			текст песни в консоли
+mpd				аудио, радио
 	mpc
 	ncmpcpp
 
@@ -97,7 +96,7 @@ time cat		будет считать время выполнения команд
 factor			разбивает число на простые множители.
 
 программы:
-nyx				мониторинг работы tor
+nvtop			консольный монитор Nvidia GPUs
 tmux			
 screen			оконный менеджер с эмуляцией терминала VT100/ANSI
 sl				означает Steam Locomotive — паровоз.

@@ -51,17 +51,16 @@ sudo pkexec env DISPLAY=$DISPLAY XAUTHORITY=$XAUTHORITY KDE_SESSION_VERSION=5 KD
 Проследите чтобы переменная среды TERM (указывающая тип терминала) имела значение «xterm-256color».
 
 Проверить можно командой:
-$> env | grep TERM=
+env | grep TERM=
 
 Чтобы назначить TERM на постоянной основе обычно добавляют такую строчку в файл .profile в домашнем каталоге пользователя:
 export TERM=xterm-256color
 
-Либо можно указать TERM лишь одному приложению при запуске.
-Вот так:
-$> TERM=xterm-256color mc
+Либо можно указать TERM лишь одному приложению при запуске:
+TERM=xterm-256color mc
 
 Или так:
-$> env TERM=xterm-256color mc
+env TERM=xterm-256color mc
 
 ==========================
 
@@ -71,10 +70,9 @@ sudo dd if=/dev/zero of=/dev/sdb status=progress
 
 Запись образа на флешку, например:
 dd:
-sudo dd if=/home/dedandrey/Загрузки/Sabayon_Linux_19.03_amd64_KDE.iso of=/dev/sdb status=progress
-" sudo dd if=/home/dedandrey/Загрузки/Sabayon_Linux_19.03_amd64_KDE.iso of=/dev/sdb status=progress bs=4M
+sudo dd if=/home/dedandrey/Загрузки/torrents/cldc-20.6-x86_64.iso of=/dev/sdb status=progress bs=4M
 dcfldd:
-sudo dcfldd if=/home/dedandrey/Загрузки/torrents/garuda-dr460nized-linux-tkg-bmq-210107.iso of=/dev/sdb
+sudo dcfldd if=/home/dedandrey/Загрузки/torrents/cldc-20.6-x86_64.iso of=/dev/sdb
 
 Монтирование ISO Образа в Linux:
 
