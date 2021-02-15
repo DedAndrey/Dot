@@ -1,6 +1,24 @@
+## Система
+pacui				псевдографический менеджер пакетов
+
+wget https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh
+sh install.sh
+
+fzf					искалка файлов
+	git
+	yay
+	fd
+	the_silver_searcher
+neofetch			информация о системе
+plasma-runners-translator!
+Volantes Cursors
+-----------------
+
 ## Интернет
 nyx					мониторинг работы tor
+rtorrent			торренты
 w3m					браузер и просмотрщик
+links               браузер
 newsboat			читалка RSS лент
 	urlscan			расширенный парсер ссылок
 qutebrowser			браузер
@@ -34,9 +52,12 @@ catimg			просмотр картинок
 
 ## Текст
 nano			текстовый редактор
+nano-syntax-highlighting 
 vim				текстовый редактор
-xkb-switch		для переключения раскладок
-git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+	bat			для подсветки в поиске FZF
+	xkb-switch	для переключения раскладок!
+	Менеджер плагинов:
+	git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 
 ## Файлы
 ranger			файловый менеджер
@@ -45,11 +66,13 @@ pdftk			работа с pdf-файлами
 highlight		подсветка синтаксиса в превью
 sxiv			картинки
 -----------------
+ventoy			создание загрузочной мультибут флешки!
 dcfldd			запись образов USB, альтернатива dd
 vifm			файловый менеджер
-fbless			читалка электронных книг
+nerd-fonts-hack
+fbless			читалка электронных книг! stripping.
 -----------------
-pdftotext			превью .pdf
+pdftotext			превью .pdf!
 zathura				PDF и электронные книги
 antiword			превью .doc
 docx2txt			превью .docx
@@ -61,8 +84,8 @@ ffmpegthumbnailer	превью видео
 
 ## Медиа
 mpv				медиапроигрыватель
-mocp			аудио, радио
-clyrics			текст песни в консоли
+moc				аудио, радио
+clyrics			текст песни в консоли!
 mpd				аудио, радио
 	mpc
 	ncmpcpp
@@ -76,8 +99,8 @@ angband*		исследовать подземелья
 bsdgames*		Air Traffic Controller (запуск - atc. Нужно ознакомиться с правилами man atc)
 				Backgammon (Нарды. Запуск - backgammon)
 
-nudoku			консольная Soduku для Linux (На русском!!!)
-2048-cli		консольная реализация 2048
+nudoku			консольная Soduku для Linux (На русском!!!)!
+2048-cli		консольная реализация 2048!
 nsnake			Змейка (В игре есть целый набор разных уровней. Чтобы они стали доступны в игре, их нужно скопировать в свою домашнюю директорию в папку .local/share/nsnake/levels/. Для этого можно выполнить команду (и перезапустить игру): cp /usr/share/games/nsnake/levels/* ~/.local/share/nsnake/levels/)
 moon-buggy		игрок управляет автомобилем над кратерами на поверхности Луны
 greed			В выбранном вами направлении находится цифра, которая означает, на сколько шагов вы переместитесь. После чего нужно снова выбрать направление. Пересекать уже пройденные участки нельзя. Игра закончится когда вы не сможете больше сделать ход

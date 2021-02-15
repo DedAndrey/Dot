@@ -1,5 +1,8 @@
 #!/usr/bin/bash
 
+# Справка
+alias help="$HOME/Загрузки/show_keys"
+
 # zsh
 alias sz="source $HOME/.zshrc"
 alias ez="$EDITOR $HOME/.zshrc"
@@ -78,13 +81,16 @@ alias gsc="github-search-repos -i"
 alias tmk="tmux kill-server"
 
 # Разное
+
 # vifm
 alias fm="vifm"
 alias sfm="sudo vifm"
+
 # dolphin root
 alias sdof="sudo pkexec env DISPLAY=$DISPLAY XAUTHORITY=$XAUTHORITY KDE_SESSION_VERSION=5 KDE_FULL_SESSION=true dbus-launch dolphin"
 alias h="htop"
 alias porn='mpv http://www.pornhub.com/random'
+
 # RSS-читалка
 alias rss='newsboat'
 #alias update='newsboat -r && sudo pacman -Syu'
@@ -94,60 +100,60 @@ alias rss='newsboat'
 # alias wtr="curl 'wttr.in/Москва?M&lang=ru' | sed -n '1,17p'"
 # alias wtr="curl 'wttr.in/?M1npQ&lang=ru'"
 wtr () {
-   curl "wttr.in/?M$1npQ&lang=ru"
+   curl "wttr.in/Нижний+Новгород?M$1npQ&lang=ru"
 }
-wts () {
-  curl "wttr.in/$1?M&lang=ru"
-}
+# wts () {
+#   curl "wttr.in/$1?M&lang=ru"
+# }
 # alias wts='curl ru.wttr.in/'
 alias moon='curl ru.wttr.in/Moon'
 
 # Музыка
 # MPD
 #alias m='ncmpcpp -S visualizer'
-alias m='ncmpcpp'
-alias mp='mpc pause'
-alias ms='mpc stop'
+# alias m='ncmpcpp'
+# alias mp='mpc pause'
+# alias ms='mpc stop'
 # Mocp lyrics
-alias mocpl='clyrics -m -k -s 1 -P ~/.config/clyrics'
+# alias mocpl='clyrics -m -k -s 1 -P ~/.config/clyrics'
 
 # pacman
-# alias pkglist="pacman -Qneq > ~/.pkglist.txt"
-# alias aurlist="pacman -Qmeq > ~/.aurlist.txt"
-# 
-# alias packey="sudo pacman-key --init && sudo pacman-key --populate archlinux && sudo pacman-key --refresh-keys && sudo pacman -Syy"
-# alias sp="sudo pacman -S"
-# alias spo="sudo pacman -S --overwrite='*'"
-# alias spU="sudo pacman -U"
-# alias spoU="sudo pacman -U --overwrite='*'"
-# alias sps="sudo pacman -Ss"
-# alias spc="sudo pacman -Sc"
-# alias spcc="sudo pacman -Scc"
-# alias spy="sudo pacman -Syy"
-# alias spu="sudo pacman -Syu"
-# alias spr="sudo pacman -R"
-# 
-# alias y="yay -S"
-# alias yn="yay -S --noconfirm"
-# alias yl="yay -S --noconfirm - < .aurlist.txt"
-# alias ys="yay"
-# alias ysn="yay --noconfirm"
-# alias yc="yay -Sc"
-# alias ycc="yay -Scc"
-# alias yy="yay -Syy"
-# alias yu="yay -Syu"
-# alias yun="yay -Syu --noconfirm"
-# alias yr="yay -R"
-# alias yrsn="yay -Rsn $(pacman -Qdtq)"
-# alias yrn="yay -R --noconfirm"
-# alias yskip="yay --mflags '--nocheck --skippgpcheck --noconfirm'"
-# alias ynskip="yay --mflags --skipinteg --noconfirm"
+alias pkglist="pacman -Qneq > ~/.pkglist.txt"
+alias aurlist="pacman -Qmeq > ~/.aurlist.txt"
+
+alias packey="sudo pacman-key --init && sudo pacman-key --populate archlinux && sudo pacman-key --refresh-keys && sudo pacman -Syy"
+alias sp="sudo pacman -S"
+alias spo="sudo pacman -S --overwrite='*'"
+alias spU="sudo pacman -U"
+alias spoU="sudo pacman -U --overwrite='*'"
+alias sps="sudo pacman -Ss"
+alias spc="sudo pacman -Sc"
+alias spcc="sudo pacman -Scc"
+alias spy="sudo pacman -Syy"
+alias spu="sudo pacman -Syu"
+alias spr="sudo pacman -R"
+
+alias y="yay -S"
+alias yn="yay -S --noconfirm"
+alias yl="yay -S --noconfirm - < .aurlist.txt"
+alias ys="yay"
+alias ysn="yay --noconfirm"
+alias yc="yay -Sc"
+alias ycc="yay -Scc"
+alias yy="yay -Syy"
+alias yu="yay -Syu"
+alias yun="yay -Syu --noconfirm"
+alias yr="yay -R"
+alias yrsn="yay -Rsn $(pacman -Qdtq)"
+alias yrn="yay -R --noconfirm"
+alias yskip="yay --mflags '--nocheck --skippgpcheck --noconfirm'"
+alias ynskip="yay --mflags --skipinteg --noconfirm"
 
 # systemd
-# alias sse="sudo systemctl enable"
-# alias ssd="sudo systemctl disable"
-# alias ssen="sudo systemctl enable --now"
-# alias ssdn="sudo systemctl disable --now"
-# alias ssr="sudo systemctl restart"
-# alias ssk="sudo systemctl stop"
-# alias sss="sudo systemctl status"
+alias sse="sudo systemctl enable"
+alias ssd="sudo systemctl disable"
+alias ssen="sudo systemctl enable --now"
+alias ssdn="sudo systemctl disable --now"
+alias ssr="sudo systemctl restart"
+alias ssk="sudo systemctl stop"
+alias sss="sudo systemctl status"

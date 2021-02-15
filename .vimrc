@@ -188,14 +188,26 @@ Plugin 'lervag/vimtex'
 	set conceallevel=1
 	let g:tex_conceal='abdmg'
 
-Plugin 'ludovicchabant/vim-gutentags'
-Plugin 'skywind3000/gutentags_plus'
-	let g:gutentags_modules = ['ctags', 'gtags_cscope']		" enable gtags module
-	let g:gutentags_project_root = ['.root']				" config project root markers.
-	let g:gutentags_cache_dir = expand('~/.cache/tags')		" generate datebases in my cache directory, prevent gtags files polluting my project
-	let g:gutentags_plus_switch = 1							" change focus to quickfix window after search (optional)
+Plugin 'junegunn/fzf'
+	let g:fzf_preview_window = ['up:40%', 'ctrl-/']
 
-"Plugin 'junegunn/fzf'
+	" This is the default extra key bindings
+	let g:fzf_action = {
+	\ 'Enter': 'tab split',
+	\ 'ctrl-x': 'split',
+	\ 'ctrl-v': 'vsplit' }
+
+	" Default fzf layout
+	" - down / up / left / right
+	let g:fzf_layout = { 'down': '40%' }
+	" - Popup window
+"	let g:fzf_layout = { 'window': { 'width': 0.9, 'height': 0.5 } }
+
+	" Enable per-command history
+	" - History files will be stored in the specified directory
+	" - When set, CTRL-N and CTRL-P will be bound to 'next-history' and
+	"   'previous-history' instead of 'down' and 'up'.
+	let g:fzf_history_dir = '~/.local/share/fzf-history'
 
 Plugin 'SirVer/ultisnips'
 Plugin 'honza/vim-snippets'
@@ -236,11 +248,6 @@ Plugin 'preservim/nerdcommenter'
 	let g:NERDToggleCheckAllLines = 1
 	nnoremap <silent> <leader>c} V}:call NERDComment('x', 'toggle')<CR>
 	nnoremap <silent> <leader>c{ V{:call NERDComment('x', 'toggle')<CR>
-
-Plugin 'kien/ctrlp.vim'
-	let g:ctrlp_map = '<c-p>'
-	let g:ctrlp_cmd = 'CtrlP'
-	let g:ctrlp_working_path_mode = 'ra'
 
 Plugin 'ervandew/supertab'
 	let g:SuperTabDefaultCompletionType = "<c-p>"
