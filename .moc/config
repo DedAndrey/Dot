@@ -27,7 +27,7 @@ ShowFormat			= yes
 ShowTime			= IfAvailable
 # Внимание! темы оформления в относительных именах располагаются в 
 # /usr/share/moc/themes/ или ~/.moc/themes/
-Theme				= /home/dedandrey/.moc/themes//green_theme
+Theme				= /home/dedandrey/.moc/themes/my_theme
 UseMmap				= no
 ResampleMethod		= SincMediumQuality
 TagsCacheSize		= 256
