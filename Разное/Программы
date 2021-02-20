@@ -8,7 +8,7 @@ fzf					искалка файлов
 	git
 	yay
 	fd
-	the_silver_searcher
+	the_silver_searcher!
 neofetch			информация о системе
 plasma-runners-translator!
 Volantes Cursors
@@ -18,7 +18,7 @@ Volantes Cursors
 nyx					мониторинг работы tor
 rtorrent			торренты
 w3m					браузер и просмотрщик
-links               браузер
+links				браузер
 newsboat			читалка RSS лент
 	urlscan			расширенный парсер ссылок
 qutebrowser			браузер
@@ -30,25 +30,7 @@ aerc			почта
 	aerc [-v] или [mailto:...]
 	man aerc-tutorial
 dante			для просмотра писем
-
 catimg			просмотр картинок
------------------
-	mutt		почта
-		echo "Текст сообщения" | mutt -s "Тема" [дополнительные опции] -- <кому отправить>
-		echo "Test mail" | mutt -s "Тема Mutt" -- dedikovav@dgmail.com
-		
-		Отправка сообщения с текстом:
-		mutt -s "subject" recipient@server.com < ~/message.txt
-		Отправка сообщения с текстом и файлом:
-		mutt -s "subject" recipient@server.com -a file.zip < ~/message.txt
-
-	khal					для работы с календарем ?
-	khard					для адресов ?
-	urlscan					грабит ссылки для обработки отдельно
-	notmuch, notmuch-mutt	индексация сообщений
-	ispell					проверка орфографии
-	abook					адресная книга
-	mbsync					синхронизация почтовых ящиков (хренотень)
 -----------------
 
 ## Текст

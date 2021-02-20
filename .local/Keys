@@ -155,23 +155,77 @@ yay -Y --gendb
 
 ## Latex ##
 
-# Узнаем установленную версию Latex
-latex -v
+# Статус текущей установки TeXLive
+tllocalmgr status
 
-# Запуск конфигуратора Latex
-tlmgr -gui
+# Установить пакет из CTAN
+tllocalmgr install <package_name>
 
-# Обновление конфигуратора Latex
-tlmgr update --self
+# Обновить базу данных
+sudo texhash
 
-# Установить TeX-пакет Latex
-tlgmr install <package name>
+## Git ##
 
-# Обновить пакет Latex
-tlgmr update <package name>
+# Создание репозитория в существующей директории
+git init
 
-# Обновить все пакеты Latex
-tlmgr update -all
+# Клонирование существующего репозитория
+git clone [url]
 
-# Обновить все пакеты Latex и tlmgr
-tlmgr update --self --all
+# Определение состояния файлов
+git status
+
+# Сокращенный вывод состояния
+git status -s (git status --short)
+
+# Что конкретно поменялось?
+git diff
+
+# Добавить под версионный контроль существующие файлы
+git add --all
+
+# Эта команда сравнивает ваши индексированные изменения с последним коммитом
+git diff --staged
+
+# Удаление файлов из-под версионного контроля
+git rm
+
+# Зафиксировать изменения
+git commit
+
+# Просмотр истории коммитов
+git log
+
+# Просмотр удаленных репозиториев
+git remote
+
+# Отправить в удаленный репозиторий
+git push
+
+# Отправить в удаленный репозиторий (с метками)
+git push --tags
+
+# Получение изменений из удаленного репозитория
+git fetch [remote-name]
+
+# Получение изменений и слияние с локальным
+git pull
+
+# Просмотр удаленного репозитория
+git remote show [remote-name]
+
+# Создание аннотированной метки
+git tag -a v1.4 -m 'my version 1.4'
+
+# Создание метки позже
+git tag -a v1.2 9fceb02
+
+# Просмотр метки вместе с коммитом
+git show v1.4
+
+# Создание легковесной метки (без -a, -s, -m)
+git tag v1.4-lw
+
+# Просмотр меток
+git tag
+
