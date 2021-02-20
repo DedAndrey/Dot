@@ -29,6 +29,7 @@ qutebrowser			браузер
 aerc			почта
 	aerc [-v] или [mailto:...]
 	man aerc-tutorial
+dante			для просмотра писем
 
 catimg			просмотр картинок
 -----------------
@@ -94,8 +95,8 @@ mpd				аудио, радио
 	ncmpcpp
 
 ## Игры
-pacman4console	ПэкМен ?
-
+pacman4console	ПэкМен!
+bastet			Тетрис!
 nethack			исследовать подземелья
 Zangband*		игра в стиле dungeon
 angband*		исследовать подземелья

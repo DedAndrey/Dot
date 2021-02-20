@@ -39,3 +39,4 @@ Layout1				= playlist(0,0,100%,10):directory(0,10,100%,FILL)
 FollowPlayedFile	= yes
 CanStartInPlaylist	= yes
 QueueNextSongReturn	= yes
+Keymap				= keymap

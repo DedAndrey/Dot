@@ -191,6 +191,9 @@ Plugin 'lervag/vimtex'
 Plugin 'junegunn/fzf'
 	let g:fzf_preview_window = ['up:40%', 'ctrl-/']
 
+	nnoremap <silent> <leader>f :FZF<CR>
+	nnoremap <silent> <leader>F :FZF ~<CR>
+
 	" This is the default extra key bindings
 	let g:fzf_action = {
 	\ 'Enter': 'tab split',
