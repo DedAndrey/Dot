@@ -21,8 +21,6 @@ w3m					браузер и просмотрщик
 links				браузер
 newsboat			читалка RSS лент
 	urlscan			расширенный парсер ссылок
-qutebrowser			браузер
-	beautifulsoup	импорт закладок
 -----------------
 
 ## Почта
@@ -30,7 +28,6 @@ aerc			почта
 	aerc [-v] или [mailto:...]
 	man aerc-tutorial
 dante			для просмотра писем
-catimg			просмотр картинок
 -----------------
 
 ## Текст
@@ -55,8 +52,8 @@ sxiv			картинки
 ventoy			создание загрузочной мультибут флешки!
 dcfldd			запись образов USB, альтернатива dd
 vifm			файловый менеджер
-nerd-fonts-hack
-fbless			читалка электронных книг! stripping.
+nerd-fonts-hack	шрифт с картинками
+fbless			читалка электронных книг!
 -----------------
 pdftotext			превью .pdf!
 zathura				PDF и электронные книги
@@ -65,6 +62,7 @@ docx2txt			превью .docx
 odt2txt				превью .odt
 exiftool			превью информации о медиа
 mediainfo			превью информации о медиа
+catimg				просмотр картинок
 ffmpegthumbnailer	превью видео
 -----------------
 

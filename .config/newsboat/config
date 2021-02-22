@@ -1,4 +1,4 @@
-confirm-exit yes
+confirm-exit no
 auto-reload yes
 cleanup-on-quit yes
 refresh-on-startup yes
@@ -8,7 +8,8 @@ keep-articles-days 30
 display-article-progress yes
 download-full-page yes
 
-browser "qutebrowser %u"
+#browser "w3m %u"
+browser "links %u"
 external-url-viewer "urlscan"
 html-renderer "w3m -dump -T text/html"
 
@@ -26,3 +27,5 @@ itemview-title-format "Статья '%T'"
 
 datetime-format "%d/%m/%y %H:%M"
 include /usr/share/doc/newsboat/contrib/colorschemes/plain
+
+macro i set browser qview; open-in-browser; set browser links
