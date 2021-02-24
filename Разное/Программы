@@ -1,5 +1,6 @@
 ## Система
 pacui				псевдографический менеджер пакетов
+bpytop-git			системный монитор
 
 wget https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh
 sh install.sh
@@ -77,6 +78,9 @@ mpd				аудио, радио
 ## Игры
 pacman4console	ПэкМен!
 bastet			Тетрис!
+ski				Лыжник
+cgames			csokoban, cmines, and cblocks
+nInvaders		Расстрел пришельцев
 nethack			исследовать подземелья
 Zangband*		игра в стиле dungeon
 angband*		исследовать подземелья

@@ -481,10 +481,18 @@ Ctrl+r,=,<expr> - вставить выражение, например 5*2 - 3 
 Ctrl+G - номер текущей строки, общее число строк в файле и его имя
 
 == Latex ==
-:LLPStartPreview
-:LLPStartPreview <root-filename>
+\ll - начать (остановить) компиляцию документа
+\lv - открыть просмотрщик и/или осуществить прямой поиск
+\lk - остановить процесс компиляции
+\le - проверить log-файл на наличие ошибок и предупреждений
+\lc - очистить вспомогательные файлы
 
-The mappings generally start with <localleader>l   
+
+
+
+
+
+The mappings generally start with <localleader>l
 
 Document navigation through
   table of content

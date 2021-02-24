@@ -178,9 +178,6 @@ Plugin 'tiagofumo/vim-nerdtree-syntax-highlight'
 	let g:NERDTreeHighlightFolders = 1 " enables folder icon highlighting using exact match
 	let g:NERDTreeHighlightFoldersFullName = 1 " highlights the folder name
 
-Plugin 'xuhdev/vim-latex-live-preview'
-	let g:livepreview_previewer = 'zathura'
-
 Plugin 'lervag/vimtex'
 	let g:tex_flavor='latex'
 	let g:vimtex_view_method='zathura'

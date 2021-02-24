@@ -81,6 +81,8 @@ alias gsc="github-search-repos -i"
 alias tmk="tmux kill-server"
 
 # Разное
+alias b="bpytop"
+# alias h="htop"
 
 # vifm
 alias fm="vifm"
@@ -88,8 +90,6 @@ alias sfm="sudo vifm"
 
 # dolphin root
 alias sdof="sudo pkexec env DISPLAY=$DISPLAY XAUTHORITY=$XAUTHORITY KDE_SESSION_VERSION=5 KDE_FULL_SESSION=true dbus-launch dolphin"
-alias h="htop"
-alias porn='mpv http://www.pornhub.com/random'
 
 # RSS-читалка
 alias rss='newsboat'
@@ -108,14 +108,17 @@ wtr () {
 # alias wts='curl ru.wttr.in/'
 alias moon='curl ru.wttr.in/Moon'
 
+alias porn='mpv http://www.pornhub.com/random'
+
 # Музыка
+# Mocp lyrics
+alias mocpl='clyrics -m -k -s 5 -P ~/.config/clyrics'
+alias m='mocp'
 # MPD
 #alias m='ncmpcpp -S visualizer'
 # alias m='ncmpcpp'
 # alias mp='mpc pause'
 # alias ms='mpc stop'
-# Mocp lyrics
-# alias mocpl='clyrics -m -k -s 1 -P ~/.config/clyrics'
 
 # pacman
 alias pkglist="pacman -Qneq > ~/.pkglist.txt"

@@ -50,7 +50,7 @@ pagerline 10000
 use_history 1
 history 100
 save_hist 1
-confirm_qq 1
+confirm_qq 0
 close_tab_back 0
 mark 0
 emacs_like_lineedit 0

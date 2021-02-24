@@ -104,7 +104,7 @@ pacman -Rn имя_пакета
 
 ## Работа с кэшем ##
 
-# Очистка кэша неустановленных пакетов
+# Очистка кэша
 pacman -Sc
 
 # Полная очистка кэша пакетов (осторожно!)
@@ -142,6 +142,9 @@ yay -Pu (список для обновления)
 # Включить пакеты разработки
 yay -Syu --devel --timeupdate
 
+# Очистка кэша
+yay -Sc
+
 # Удалить пакеты "сироты"
 yay -Yc
 
@@ -155,14 +158,23 @@ yay -Y --gendb
 
 ## Latex ##
 
-# Статус текущей установки TeXLive
-tllocalmgr status
+# Установленная версия Latex
+latex -v
 
-# Установить пакет из CTAN
-tllocalmgr install <package_name>
+# Запуск конфигуратора Latex
+tlmgr -gui
 
-# Обновить базу данных
-sudo texhash
+# Установить TeX-пакет Latex
+tlgmr install <package name>
+
+# Обновить пакет Latex
+tlgmr update <package name>
+
+# Обновить все пакеты Latex
+tlmgr update -all
+
+# Обновить конфигуратор Latex
+tlmgr update --self
 
 ## Git ##
 

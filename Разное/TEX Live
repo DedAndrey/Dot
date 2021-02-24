@@ -1,4 +1,5 @@
 texlive-installer	Установщик Texlive в Arch
+потом /opt/texlive-installer/install-tl
 
 Установка TEX Live из Интернета
 
@@ -26,14 +27,11 @@ export INFOPATH=/usr/local/texlive/2020/texmf-dist/doc/info:$INFOPATH
 
 ===========================
 
-# Узнаем установленную версию Latex
+# Установленная версия Latex
 latex -v
 
 # Запуск конфигуратора Latex
 tlmgr -gui
-
-# Обновление конфигуратора Latex
-tlmgr update --self
 
 # Установить TeX-пакет Latex
 tlgmr install <package name>
@@ -44,5 +42,5 @@ tlgmr update <package name>
 # Обновить все пакеты Latex
 tlmgr update -all
 
-# Обновить все пакеты Latex и tlmgr
-tlmgr update --self --all
+# Обновить конфигуратор Latex
+tlmgr update --self

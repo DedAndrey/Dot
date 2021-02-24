@@ -88,11 +88,10 @@ source $ZSH/oh-my-zsh.sh
 
 # fzf & fd
 [[ -e "/usr/share/fzf/fzf-extras.zsh" ]] && source /usr/share/fzf/fzf-extras.zsh
-export FZF_DEFAULT_COMMAND="fd --type file --color=always --follow --hidden --exclude .git"
-# export FZF_DEFAULT_COMMAND='ag --nocolor --follow --hidden -g ""'
+# export FZF_DEFAULT_COMMAND="fd --type file --color=always --follow --hidden --exclude .git"
+export FZF_DEFAULT_COMMAND='ag --nocolor --follow --hidden -g ""'
 export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
 export FZF_DEFAULT_OPTS="--ansi --height 50% --layout=reverse --border --preview 'file {}' --preview-window down:1"
-# export FZF_DEFAULT_OPTS="--height 50% --layout=reverse --border --preview 'file {}' --preview-window down:1"
 export FZF_COMPLETION_TRIGGER="~~"
 
 
@@ -102,9 +101,9 @@ export FZF_COMPLETION_TRIGGER="~~"
 # User configuration
 
 # Path to Latex installation.
-# export PATH=/usr/local/texlive/2020/bin/x86_64-linux:$PATH
-# export MANPATH=/usr/local/texlive/2020/texmf-dist/doc/man:$MANPATH
-# export INFOPATH=/usr/local/texlive/2020/texmf-dist/doc/info:$INFOPATH
+export PATH=/usr/local/texlive/2020/bin/x86_64-linux:$PATH
+export MANPATH=/usr/local/texlive/2020/texmf-dist/doc/man:$MANPATH
+export INFOPATH=/usr/local/texlive/2020/texmf-dist/doc/info:$INFOPATH
 
 # export MANPATH="/usr/local/man:$MANPATH"
 
