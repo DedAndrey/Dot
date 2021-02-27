@@ -69,6 +69,8 @@ ffmpegthumbnailer	превью видео
 
 ## Медиа
 mpv				медиапроигрыватель
+	youtube-dl		онлайн-видео
+	atomicparsley	metadata in MPEG-4
 moc				аудио, радио
 clyrics			текст песни в консоли!
 mpd				аудио, радио

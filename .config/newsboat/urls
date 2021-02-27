@@ -1,7 +1,1 @@
-https://www.ctan.org/ctan-ann/rss.xml
-http://www.opennet.ru/opennews/opennews_all_noadv.rss
-https://habr.com/ru/rss/flows/admin/all/?fl=ru
-https://www.linux.org.ru/section-rss.jsp?section=1
-https://archlinux.org.ru/news/feed/
-https://pingvinus.ru/rss.xml
-https://losst.ru/feed
+/home/dedandrey/.config/newsboat/urls

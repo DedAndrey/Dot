@@ -1,3 +1,1 @@
-
-Forwarded message from {{(index .OriginalFrom 0).Name}} on {{dateFormat .OriginalDate "Mon Jan 2, 2006 at 3:04 PM"}}:
-{{wrapText .OriginalText 72}}
+/home/dedandrey/.config/aerc/templates/forward_as_body

@@ -1,3 +1,1 @@
-#! /bin/bash
-
-cat /home/dedandrey/.local/Keys | awk '/^[a-z]/ && last {print $0,"\t",last} {last=""} /^#/{last=$0}' | column -t -s $'\t' | fzf
+/home/dedandrey/.local/show_keys

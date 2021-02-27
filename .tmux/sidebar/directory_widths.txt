@@ -1,2 +1,1 @@
-/home/dedandrey	40
-/home/dedandrey	71
+/home/dedandrey/.tmux/sidebar/directory_widths.txt
