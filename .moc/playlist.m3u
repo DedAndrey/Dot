@@ -1,4 +1,4 @@
 #EXTM3U
 #MOCSERIAL: 4352
-#EXTINF:0,http://air.radiorecord.ru:8102/rock_320
+#EXTINF:0,RecordRock
 http://air.radiorecord.ru:8102/rock_320

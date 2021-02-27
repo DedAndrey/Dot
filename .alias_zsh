@@ -76,6 +76,7 @@ alias ghab="$BROWSER https://github.com/DedAndrey/Dot &"
 alias gsc="github-search-repos -i"
 
 # tmux
+alias t="tmux"
 # alias tm="tmux attach || tmux new -s work"
 # alias tmd="tmux detach"
 alias tks="tmux kill-server"
