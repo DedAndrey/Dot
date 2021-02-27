@@ -1,1 +1,2 @@
-/home/dedandrey/.gitignore
+# игнорировать файлы .directory
+*.directory

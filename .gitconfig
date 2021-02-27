@@ -1,1 +1,13 @@
-/home/dedandrey/.gitconfig
+[user]
+	name = DedAndrey
+	email = dedikovav@gmail.com
+[core]
+	editor = vim
+[alias]
+	last = log -1 HEAD
+[sendemail]
+	smtpPass = PASS
+	smtpserver = smtp.gmail.com
+	smtpuser = dedikovav@gmail.com
+	smtpencryption = tls
+	smtpserverport = 587
