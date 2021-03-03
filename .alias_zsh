@@ -99,19 +99,14 @@ alias sdof="sudo pkexec env DISPLAY=$DISPLAY XAUTHORITY=$XAUTHORITY KDE_SESSION_
 alias rss='newsboat'
 #alias update='newsboat -r && sudo pacman -Syu'
 
-# Погода, не только по городу, но и по месту. Нет привязки к регистру и языку.
-# alias wtr="curl 'wttr.in/Москва?M&lang=ru'"
-# alias wtr="curl 'wttr.in/Москва?M&lang=ru' | sed -n '1,17p'"
+# Погода
+alias wtr="curl 'wttr.in/Нижний+Новгород?M&lang=ru'"
+# alias wtr="curl 'wttr.in/Нижний+Новгород?M&lang=ru' | sed -n '1,17p'"
 # alias wtr="curl 'wttr.in/?M1npQ&lang=ru'"
-wtr () {
-   curl "wttr.in/Нижний+Новгород?M$1npQ&lang=ru"
-}
-# wts () {
-#   curl "wttr.in/$1?M&lang=ru"
-# }
 alias wts='curl ru.wttr.in/Нижний+Новгород'
 alias moon='curl ru.wttr.in/Moon'
 
+# Видео
 alias porn='mpv http://www.pornhub.com/random'
 
 # Музыка
@@ -125,8 +120,8 @@ alias m='mocp'
 # alias ms='mpc stop'
 
 # pacman
-alias pkglist="pacman -Qneq > ~/.pkglist.txt"
-alias aurlist="pacman -Qmeq > ~/.aurlist.txt"
+alias pkglist="pacman -Qneq > ~/pkglist.txt"
+alias aurlist="pacman -Qmeq > ~/aurlist.txt"
 
 alias packey="sudo pacman-key --init && sudo pacman-key --populate archlinux && sudo pacman-key --refresh-keys && sudo pacman -Syy"
 alias sp="sudo pacman -S"

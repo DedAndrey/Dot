@@ -2,8 +2,11 @@
 pacui				псевдографический менеджер пакетов
 bpytop-git			системный монитор
 
-wget https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh
+zsh					wget https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh
 sh install.sh
+fish				chsh -s /usr/bin/fish
+	dash
+	pkgfile
 
 fzf					искалка файлов
 	git
