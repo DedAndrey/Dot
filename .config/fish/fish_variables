@@ -1,7 +1,6 @@
 # This file contains fish universal variable definitions.
 # VERSION: 3.0
 SETUVAR __fish_initialized:3100
-SETUVAR _fish_abbr_b:bpytop
 SETUVAR _fish_abbr_fm:vifm
 SETUVAR _fish_abbr_ga:git\x20add\x20\x2d\x2dall
 SETUVAR _fish_abbr_gc:git\x20commit
@@ -17,7 +16,6 @@ SETUVAR _fish_abbr_gr:git\x20remote
 SETUVAR _fish_abbr_gs:git\x20status
 SETUVAR _fish_abbr_gsc:github\x2dsearch\x2drepos\x20\x2di
 SETUVAR _fish_abbr_lup:sudo\x20tlmgr\x20update\x20\x2d\x2dself\x20\x2d\x2dall
-SETUVAR _fish_abbr_m:mocp
 SETUVAR _fish_abbr_ml:clyrics\x20\x2dm\x20\x2dk\x20\x2ds\x2010\x20\x2dP\x20\x7e/\x2econfig/clyrics
 SETUVAR _fish_abbr_moon:curl\x20ru\x2ewttr\x2ein/Moon
 SETUVAR _fish_abbr_porn:mpv\x20http\x3a//www\x2epornhub\x2ecom/random
@@ -25,10 +23,10 @@ SETUVAR _fish_abbr_q:exit
 SETUVAR _fish_abbr_rss:newsboat
 SETUVAR _fish_abbr_sdof:sudo\x20pkexec\x20env\x20DISPLAY\x3d\x24DISPLAY\x20XAUTHORITY\x3d\x24XAUTHORITY\x20KDE_SESSION_VERSION\x3d5\x20KDE_FULL_SESSION\x3dtrue\x20dbus\x2dlaunch\x20dolphin
 SETUVAR _fish_abbr_sfm:sudo\x20vifm
-SETUVAR _fish_abbr_t:tmux
+SETUVAR _fish_abbr_sup:yay\x20\x2dSyyu
 SETUVAR _fish_abbr_tks:tmux\x20kill\x2dserver
+SETUVAR _fish_abbr_up:yay\x20\x2dSyyu\x20\x26\x26\x20sudo\x20tlmgr\x20update\x20\x2d\x2dself\x20\x2d\x2dall
 SETUVAR _fish_abbr_wtr:curl\x20ru\x2ewttr\x2ein/\u041d\u0438\u0436\u043d\u0438\u0439\x2b\u041d\u043e\u0432\u0433\u043e\u0440\u043e\u0434
-SETUVAR _fish_abbr_wts:curl\x20ru\x2ewttr\x2ein/\u041d\u0438\u0436\u043d\u0438\u0439\x2b\u041d\u043e\u0432\u0433\u043e\u0440\u043e\u0434
 SETUVAR fish_color_autosuggestion:585858
 SETUVAR fish_color_cancel:\x2dr
 SETUVAR fish_color_command:a1b56c
@@ -52,7 +50,7 @@ SETUVAR fish_color_selection:white\x1e\x2d\x2dbold\x1e\x2d\x2dbackground\x3dbrbl
 SETUVAR fish_color_status:red
 SETUVAR fish_color_user:brgreen
 SETUVAR fish_color_valid_path:\x2d\x2dunderline
-SETUVAR fish_greeting:Welcome\x20to\x20fish\x2c\x20the\x20friendly\x20interactive\x20shell\x0aType\x20\x60help\x60\x20for\x20instructions\x20on\x20how\x20to\x20use\x20fish
+SETUVAR fish_greeting:\x1d
 SETUVAR fish_key_bindings:fish_default_key_bindings
 SETUVAR fish_pager_color_completion:normal
 SETUVAR fish_pager_color_description:B3A06D\x1eyellow

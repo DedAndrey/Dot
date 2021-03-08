@@ -239,6 +239,7 @@ filextype {*.bmp,*.jpg,*.jpeg,*.png,*.gif,*.xpm},<image/*>
         \ {Смотреть с помощью qview}
         \ qview %f,
 fileviewer {*.bmp,*.jpg,*.jpeg,*.png,*.gif,*.xpm},<image/*>
+"		\ shellpic %f
 		\ exiftool %f
 "		\ catimg %f
 "		\ identify %f
@@ -279,8 +280,10 @@ filetype {*.asc},<application/pgp-signature>
        \ !!gpg --verify %c,
 
 " Torrent
-filetype {*.torrent},<application/x-bittorrent> ktorrent %f &
+" filetype {*.torrent},<application/x-bittorrent> ktorrent %f &
+filetype {*.torrent},<application/x-bittorrent> aria2c %f &
 fileviewer {*.torrent},<application/x-bittorrent> dumptorrent -v %c
+
 
 " FuseZipMount
 filetype {*.zip,*.jar,*.war,*.ear,*.oxt,*.apkg},

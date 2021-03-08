@@ -1,6 +1,7 @@
 ## Система
 pacui				псевдографический менеджер пакетов
 bpytop-git			системный монитор
+glances				системный монитор
 
 zsh					wget https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh
 sh install.sh
@@ -21,8 +22,10 @@ Volantes Cursors
 ## Интернет
 nyx					мониторинг работы tor
 rtorrent			торренты
+aria2				торренты
 w3m					браузер и просмотрщик
 links				браузер
+ddgr				искалка в DuckDuckGo
 newsboat			читалка RSS лент
 	urlscan			расширенный парсер ссылок
 -----------------
@@ -47,6 +50,11 @@ tllocalmgr			!
 texlive-installer	Установщик Texlive в Arch!
 
 ## Файлы
+vifm			файловый менеджер
+nnn				файловый менеджер
+	autojump sed dragon-drag-and-drop epr-git rclone lsix (sxiv imv viu) trash-cli ddgr
+	curl -Ls https://raw.githubusercontent.com/jarun/nnn/master/plugins/getplugs | sh
+
 ranger			файловый менеджер
 ueberzug		просмотрщик
 pdftk			работа с pdf-файлами
@@ -55,7 +63,6 @@ sxiv			картинки
 -----------------
 ventoy			создание загрузочной мультибут флешки!
 dcfldd			запись образов USB, альтернатива dd
-vifm			файловый менеджер
 nerd-fonts-hack	шрифт с картинками
 fbless			читалка электронных книг!
 -----------------
