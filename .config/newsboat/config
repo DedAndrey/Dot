@@ -3,27 +3,37 @@ auto-reload yes
 cleanup-on-quit yes
 refresh-on-startup yes
 reload-time 20
+bind-key ^R reload-all
 reload-threads 50
 keep-articles-days 30
 display-article-progress yes
+always-display-description yes
 download-full-page yes
+download-retries 4
+download-timeout 60
 
 browser "w3m %u"
-#browser "links %u"
 external-url-viewer "urlscan"
 html-renderer "w3m -dump -T text/html"
 
-feedlist-format " %4i %11u %> %t"
+feedlist-format " %n %4i %11u %> %t"
+feed-sort-order lastupdated
+# 	currently available are: firsttag, title, articlecount, unreadarticlecount, lastupdated and none
+
 feedlist-title-format "Ваши ленты новостей (в %u из них есть новые статьи)"
 #feedlist-title-format "Новостные ленты (%u с новыми статьями, %t всего)"
 
-articlelist-format "%4i %f %D %?T?|%-17T| ?%t"
+articlelist-format "%4i %f %D %6L %?T?|%-17T| ?%t"
+article-sort-order date-asc
+# 	currently available are: date, title, flags, author, link, guid and random
+
 articlelist-title-format "Статей в ленте '%T' (%u новых, %t всего)"
 
 itemview-title-format "Статья '%T'"
 
 #notify-program notify-send
 #notify-format "%d новых статей (%n непрочитанных статей, %f непрочитанных лент)"
+notify-xterm yes
 
 datetime-format "%d/%m/%y %H:%M"
 include /usr/share/doc/newsboat/contrib/colorschemes/plain
