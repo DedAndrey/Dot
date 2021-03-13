@@ -236,8 +236,10 @@ fileviewer {*.[1-8]},<text/troff> man ./%c | col -b
 
 " Images
 filextype {*.bmp,*.jpg,*.jpeg,*.png,*.gif,*.xpm},<image/*>
-        \ {Смотреть с помощью qview}
-        \ qview %f,
+        \ {Смотреть с помощью vimiv}
+        \ vimiv %f,
+"        \ {Смотреть с помощью qview}
+"        \ qview %f,
 fileviewer {*.bmp,*.jpg,*.jpeg,*.png,*.gif,*.xpm},<image/*>
 "		\ shellpic %f
 		\ exiftool %f

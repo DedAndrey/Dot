@@ -1,0 +1,75 @@
+MenuBar=Disabled
+State=AAAA/wAAAAD9AAAAAwAAAAAAAADTAAAD5fwCAAAAAvsAAAAWAGYAbwBsAGQAZQByAHMARABvAGMAawAAAAAA/////wAAAAoBAAAD+wAAABQAcABsAGEAYwBlAHMARABvAGMAawEAAAAwAAAD5QAAAF0BAAADAAAAAQAAAOoAAAPl/AIAAAAB+wAAABAAaQBuAGYAbwBEAG8AYwBrAQAAADAAAAPlAAABDwEAAAMAAAADAAAHgAAAAdT8AQAAAAH7AAAAGAB0AGUAcgBtAGkAbgBhAGwARABvAGMAawAAAAAAAAAHgAAAAAoBAAADAAAFwQAAA+UAAAAEAAAABAAAAAgAAAAI/AAAAAEAAAACAAAAAQAAABYAbQBhAGkAbgBUAG8AbwBsAEIAYQByAQAAAAD/////AAAAAAAAAAA=
+eDP-1 Window-Maximized 1920x1080=true
+eDP-1 XPosition=0
+eDP-1 XPosition 1920x1080=0
+eDP-1 YPosition=35
+eDP-1 YPosition 1920x1080=35
+eDP1 Height 1080=1016
+eDP1 Width 1920=1376
+eDP1 Window-Maximized 1920x1080=true
+eDP1 XPosition=0
+eDP1 YPosition=35
+
+[CompactMode]
+FontWeight=50
+
+[Desktop Entry]
+DefaultProfile=Breath2.profile
+
+[DetailsMode]
+FontWeight=50
+
+[General]
+CloseActiveSplitView=false
+GlobalViewProps=false
+Version=200
+ViewPropsTimestamp=2021,2,14,16,2,36
+
+[IconsMode]
+FontWeight=50
+
+[KPropertiesDialog]
+eDP-1 Height 1080=544
+eDP-1 Height 1920x1080=544
+eDP-1 Width 1920=606
+eDP-1 Width 1920x1080=606
+eDP1 Height 1080=544
+eDP1 Width 1920=606
+
+[MainWindow]
+MenuBar=Disabled
+State=AAAA/wAAAAD9AAAAAwAAAAAAAADsAAADyvwCAAAAAvsAAAAWAGYAbwBsAGQAZQByAHMARABvAGMAawAAAAAA/////wAAAAoBAAAD+wAAABQAcABsAGEAYwBlAHMARABvAGMAawEAAAAuAAADygAAAF0BAAADAAAAAQAAARkAAAPK/AIAAAAB+wAAABAAaQBuAGYAbwBEAG8AYwBrAQAAAC4AAAPKAAABDwEAAAMAAAADAAADwAAAAdT8AQAAAAH7AAAAGAB0AGUAcgBtAGkAbgBhAGwARABvAGMAawAAAAAAAAADwAAAAJEBAAADAAABuQAAA8oAAAAEAAAABAAAAAgAAAAI/AAAAAEAAAACAAAAAQAAABYAbQBhAGkAbgBUAG8AbwBsAEIAYQByAQAAAAD/////AAAAAAAAAAA=
+ToolBarsMovable=Disabled
+eDP-1 Height 1080=1016
+eDP-1 Height 1920x1080=1016
+eDP-1 Width 1920=960
+eDP-1 Width 1920x1080=960
+eDP-1 XPosition=0
+eDP-1 XPosition 1920x1080=960
+eDP-1 YPosition=64
+eDP-1 YPosition 1920x1080=64
+eDP1 Height 1080=667
+eDP1 Width 1920=1280
+eDP1 Window-Maximized 1080x1920=true
+eDP1 XPosition=0
+eDP1 YPosition=64
+
+[Open-with settings]
+CompletionMode=1
+History=
+
+[PreviewSettings]
+Plugins=appimagethumbnail,audiothumbnail,ffmpegthumbs,opendocumentthumbnail,kraorathumbnail,imagethumbnail,exrthumbnail,jpegthumbnail,windowsimagethumbnail,svgthumbnail,windowsexethumbnail,comicbookthumbnail,directorythumbnail,textthumbnail,blenderthumbnail,djvuthumbnail,gsthumbnail,cursorthumbnail,fontthumbnail,rawthumbnail,ebookthumbnail
+
+[Search]
+What=Content
+
+[SettingsDialog]
+eDP-1 Height 1920x1080=1016
+eDP-1 Width 1920x1080=835
+eDP1 Height 1080=1016
+eDP1 Width 1920=835
+
+[VersionControl]
+enabledPlugins=Git

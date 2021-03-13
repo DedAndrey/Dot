@@ -1,0 +1,28 @@
+[Favorite Profiles]
+Favorites=Breath2.profile
+
+[KonsoleWindow]
+ShowWindowTitleOnTitleBar=true
+UseSingleInstance=true
+
+[MainWindow]
+eDP-1 Height 1080=1016
+eDP-1 Height 1920x1080=1016
+eDP-1 Width 1920=960
+eDP-1 Width 1920x1080=960
+eDP-1 XPosition=960
+eDP-1 XPosition 1920x1080=0
+eDP-1 YPosition=64
+eDP-1 YPosition 1920x1080=64
+eDP1 Height 1080=667
+eDP1 Width 1920=960
+eDP1 XPosition=960
+eDP1 YPosition=413
+
+[SplitView]
+SplitViewVisibility=AlwaysHideSplitHeader
+
+[TabBar]
+CloseTabOnMiddleMouseButton=true
+ExpandTabWidth=true
+NewTabBehavior=PutNewTabAfterCurrentTab

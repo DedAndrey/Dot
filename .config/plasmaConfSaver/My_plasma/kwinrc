@@ -1,0 +1,50 @@
+[$Version]
+update_info=kwin.upd:replace-scalein-with-scale,kwin.upd:port-minimizeanimation-effect-to-js,kwin.upd:port-scale-effect-to-js,kwin.upd:port-dimscreen-effect-to-js,kwin.upd:auto-bordersize,kwin.upd:animation-speed,kwin.upd:desktop-grid-click-behavior,kwin.upd:no-swap-encourage
+
+[Compositing]
+OpenGLIsUnsafe=false
+
+[Desktops]
+Id_1=aadb6f49-2637-42ed-b2a1-dc425ead1e69
+Id_2=47dc476e-7883-41d3-b4f3-5e0b26195d72
+Id_3=9b69f3ac-c99b-42a2-a03d-bcedaf8744e5
+Id_4=05159738-bc6b-49f5-b727-e207502f7d53
+Number=4
+Rows=2
+
+[ElectricBorders]
+TopLeft=None
+
+[MouseBindings]
+CommandTitlebarWheel=Change Opacity
+
+[NightColor]
+Active=true
+LatitudeAuto=56.3342
+LongitudeAuto=43.9973
+NightTemperature=3000
+
+[Plugins]
+flipswitchEnabled=true
+magnifierEnabled=true
+mousemarkEnabled=true
+wobblywindowsEnabled=true
+zoomEnabled=false
+
+[SubSession: 69954b2d-28a2-4e96-994b-413005075295]
+active=-1
+count=0
+
+[TabBox]
+BorderActivate=9
+TouchBorderActivate=9
+
+[Windows]
+BorderlessMaximizedWindows=true
+MaximizeButtonMiddleClickCommand=Maximize (horizontal only)
+MaximizeButtonRightClickCommand=Maximize (vertical only)
+
+[org.kde.kdecoration2]
+ButtonsOnLeft=MFB
+ButtonsOnRight=IAX
+ShowToolTips=false

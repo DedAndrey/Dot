@@ -1,0 +1,9 @@
+[$Version]
+update_info=ksmserver_update_loginMode_value.upd:ksmserver_update_loginMode_value_default_enum
+
+[General]
+confirmLogout=false
+loginMode=emptySession
+
+[SubSession: 69954b2d-28a2-4e96-994b-413005075295]
+count=0

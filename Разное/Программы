@@ -1,3 +1,13 @@
+sudo pacman -S yay
+
+yay -Rndd manjaro-zsh-config zsh-autosuggestions zsh-completions zsh-history-substring-search zsh-syntax-highlighting zsh-theme-powerlevel10k konversation yakuake htop pamac-cli pamac-common pamac-gtk pamac-tray-icon-plasma
+
+yay -S fish fzf git fd the_silver_searcher neofetch aria2 rtorrent w3m ddgr newsboat urlscan urlview aerc dante nano nano-syntax-highlighting vim bat xkb-switch texlive-installer vifm highlight vimiv ventoy nerd-fonts-hack fbless pdftotext zathura antiword docx2txt odt2txt exiftool mediainfo catimg ffmpegthumbnailer youtube-dl atomicparsley moc clyrics tmux plasma-vault volantes-cursors plasma-runners-translator kdeconnect skanlite cups cups-filters
+
+bastet ski cgames nudoku 2048-cli nsnake moon-buggy greed
+
+cmatrix figlet
+
 ## Система
 pacui				псевдографический менеджер пакетов
 bpytop-git			системный монитор
@@ -13,10 +23,11 @@ fzf					искалка файлов
 	git
 	yay
 	fd
-	the_silver_searcher!
+	the_silver_searcher
 neofetch			информация о системе
-plasma-runners-translator!
-Volantes Cursors
+plasma-runners-translator
+Volantes Cursors	Крутые курсоры
+Vault				Зашифрованные папки
 -----------------
 
 ## Интернет
@@ -28,6 +39,7 @@ links				браузер
 ddgr				искалка в DuckDuckGo
 newsboat			читалка RSS лент
 	urlscan			расширенный парсер ссылок
+	urlview			расширенный парсер ссылок
 -----------------
 
 ## Почта
@@ -39,15 +51,15 @@ dante			для просмотра писем
 
 ## Текст
 nano			текстовый редактор
-nano-syntax-highlighting 
+nano-syntax-highlighting
 vim				текстовый редактор
 	bat			для подсветки в поиске FZF
-	xkb-switch	для переключения раскладок!
+	xkb-switch	для переключения раскладок
 	Менеджер плагинов:
 	git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 
-tllocalmgr			!
-texlive-installer	Установщик Texlive в Arch!
+tllocalmgr			
+texlive-installer	Установщик Texlive в Arch
 
 ## Файлы
 vifm			файловый менеджер
@@ -59,14 +71,15 @@ ranger			файловый менеджер
 ueberzug		просмотрщик
 pdftk			работа с pdf-файлами
 highlight		подсветка синтаксиса в превью
+vimiv			картинки
 sxiv			картинки
 -----------------
-ventoy			создание загрузочной мультибут флешки!
+ventoy			создание загрузочной мультибут флешки
 dcfldd			запись образов USB, альтернатива dd
 nerd-fonts-hack	шрифт с картинками
-fbless			читалка электронных книг!
+fbless			читалка электронных книг
 -----------------
-pdftotext			превью .pdf!
+pdftotext			превью .pdf
 zathura				PDF и электронные книги
 antiword			превью .doc
 docx2txt			превью .docx
@@ -82,14 +95,14 @@ mpv				медиапроигрыватель
 	youtube-dl		онлайн-видео
 	atomicparsley	metadata in MPEG-4
 moc				аудио, радио
-clyrics			текст песни в консоли!
+clyrics			текст песни в консоли
 mpd				аудио, радио
 	mpc
 	ncmpcpp
 
 ## Игры
-pacman4console	ПэкМен!
-bastet			Тетрис!
+pacman4console	ПэкМен
+bastet			Тетрис
 ski				Лыжник
 cgames			csokoban, cmines, and cblocks
 nInvaders		Расстрел пришельцев
@@ -99,15 +112,15 @@ angband*		исследовать подземелья
 bsdgames*		Air Traffic Controller (запуск - atc. Нужно ознакомиться с правилами man atc)
 				Backgammon (Нарды. Запуск - backgammon)
 
-nudoku			консольная Soduku для Linux (На русском!!!)!
-2048-cli		консольная реализация 2048!
+nudoku			консольная Soduku для Linux (На русском)
+2048-cli		консольная реализация 2048
 nsnake			Змейка (В игре есть целый набор разных уровней. Чтобы они стали доступны в игре, их нужно скопировать в свою домашнюю директорию в папку .local/share/nsnake/levels/. Для этого можно выполнить команду (и перезапустить игру): cp /usr/share/games/nsnake/levels/* ~/.local/share/nsnake/levels/)
 moon-buggy		игрок управляет автомобилем над кратерами на поверхности Луны
 greed			В выбранном вами направлении находится цифра, которая означает, на сколько шагов вы переместитесь. После чего нужно снова выбрать направление. Пересекать уже пройденные участки нельзя. Игра закончится когда вы не сможете больше сделать ход
 Tron			ssh sshtron.zachlatta.com
 				Ваш цвет указывается вверху и на границе.
 				Для перемещения в игре используются клавиши WASD или сочетания клавиш из vim.
-				Не используйте клавиши со стрелками! Это разорвет соединение.
+				Не используйте клавиши со стрелками Это разорвет соединение.
 				При простое более минуты, Ваше SSH соединение будет разорвано.
 
 ## Разное

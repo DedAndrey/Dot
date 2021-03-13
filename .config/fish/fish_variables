@@ -1,6 +1,7 @@
 # This file contains fish universal variable definitions.
 # VERSION: 3.0
 SETUVAR __fish_initialized:3100
+SETUVAR _fish_abbr_f:ddgr\x20\x2dx
 SETUVAR _fish_abbr_fm:vifm
 SETUVAR _fish_abbr_ga:git\x20add\x20\x2d\x2dall
 SETUVAR _fish_abbr_gc:git\x20commit
