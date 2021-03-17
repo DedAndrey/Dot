@@ -1,6 +1,7 @@
 # This file contains fish universal variable definitions.
 # VERSION: 3.0
 SETUVAR __fish_initialized:3100
+SETUVAR _fish_abbr_aurlist:pacman\x20\x2dQmeq\x20\x3e\x20\x7e/aurlist\x2etxt
 SETUVAR _fish_abbr_f:ddgr\x20\x2dx
 SETUVAR _fish_abbr_fm:vifm
 SETUVAR _fish_abbr_ga:git\x20add\x20\x2d\x2dall
@@ -19,6 +20,7 @@ SETUVAR _fish_abbr_gsc:github\x2dsearch\x2drepos\x20\x2di
 SETUVAR _fish_abbr_lup:sudo\x20tlmgr\x20update\x20\x2d\x2dself\x20\x2d\x2dall
 SETUVAR _fish_abbr_ml:clyrics\x20\x2dm\x20\x2dk\x20\x2ds\x2010\x20\x2dP\x20\x7e/\x2econfig/clyrics
 SETUVAR _fish_abbr_moon:curl\x20ru\x2ewttr\x2ein/Moon
+SETUVAR _fish_abbr_pkglist:pacman\x20\x2dQneq\x20\x3e\x20\x7e/pkglist\x2etxt
 SETUVAR _fish_abbr_porn:mpv\x20http\x3a//www\x2epornhub\x2ecom/random
 SETUVAR _fish_abbr_q:exit
 SETUVAR _fish_abbr_rss:newsboat

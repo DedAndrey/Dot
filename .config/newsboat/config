@@ -1,4 +1,4 @@
-confirm-exit no
+confirm-exit yes
 auto-reload yes
 cleanup-on-quit yes
 refresh-on-startup yes
@@ -12,20 +12,20 @@ download-full-page yes
 download-retries 4
 download-timeout 60
 
-browser "w3m %u"
+browser "links %u"
 external-url-viewer "urlscan"
-html-renderer "w3m -dump -T text/html"
+# browser "w3m %u"
+# html-renderer "w3m -dump -T text/html"
 
 feedlist-format " %n %4i %11u %> %t"
 feed-sort-order lastupdated
-# 	currently available are: firsttag, title, articlecount, unreadarticlecount, lastupdated and none
+# currently available are: firsttag, title, articlecount, unreadarticlecount, lastupdated and none
 
 feedlist-title-format "Ваши ленты новостей (в %u из них есть новые статьи)"
-#feedlist-title-format "Новостные ленты (%u с новыми статьями, %t всего)"
 
 articlelist-format "%4i %f %D %6L %?T?|%-17T| ?%t"
 article-sort-order date-asc
-# 	currently available are: date, title, flags, author, link, guid and random
+# currently available are: date, title, flags, author, link, guid and random
 
 articlelist-title-format "Статей в ленте '%T' (%u новых, %t всего)"
 
@@ -38,4 +38,10 @@ notify-xterm yes
 datetime-format "%d/%m/%y %H:%M"
 include /usr/share/doc/newsboat/contrib/colorschemes/plain
 
-macro i set browser qview; open-in-browser; set browser w3m
+# macro prefix "," by default
+# bind-key + macro-prefix
+# unbind-key , # if you don’t unbind the default "," you’re left with two macro prefixes
+
+# macro v set browser "mpv --player-operation-mode=pseudo-gui -- %u &"; one; set browser w3m
+# macro l set browser mpv; one; set browser w3m
+macro l set browser mpv; one; set browser links
