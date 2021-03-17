@@ -1,2 +1,3 @@
 # игнорировать файлы .directory
 *.directory
+accounts.*
