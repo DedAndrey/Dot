@@ -1,5 +1,5 @@
 texlive-installer	Установщик Texlive в Arch
-потом /opt/texlive-installer/install-tl
+sudo /opt/texlive-installer/install-tl
 
 Установка TEX Live из Интернета
 

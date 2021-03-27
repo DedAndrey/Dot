@@ -2,6 +2,7 @@
 # VERSION: 3.0
 SETUVAR __fish_initialized:3100
 SETUVAR _fish_abbr_aurlist:pacman\x20\x2dQmeq\x20\x3e\x20\x7e/aurlist\x2etxt
+SETUVAR _fish_abbr_clyrics:clyrics\x20\x2dm\x20\x2dk\x20\x2ds\x2010\x20\x2dP\x20\x7e/\x2econfig/clyrics
 SETUVAR _fish_abbr_f:ddgr\x20\x2dx
 SETUVAR _fish_abbr_fm:vifm
 SETUVAR _fish_abbr_ga:git\x20add\x20\x2d\x2dall

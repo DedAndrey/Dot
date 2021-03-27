@@ -1,4 +1,0 @@
-let g:calendar_google_api_key = 'AIzaSyDWSsj6ubaXmYPE7RX0oQH7YMQhRMsBtVE'
-let g:calendar_google_client_id = '873257310156-3deq0pmgiveoakj0ed02mv3rcihk36pc.apps.googleusercontent.com'
-let g:calendar_google_client_secret = 'ddAe6NuDDFZYo2ug_kOdvBUG'
-4/1AY0e-g54sbeNRDcb5iTdAFLgddkZmfGKFk_XyD3tXqk1qPrx2uIuLcpI03s

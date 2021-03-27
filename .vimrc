@@ -100,9 +100,9 @@ set t_Co=256
 
 set autoread
 
-:set wildmenu      " При автодополнении в командной строке над ней выводятся возможные варианты
+:set wildmenu	" При автодополнении в командной строке над ней выводятся возможные варианты
 
-:set list          " Отображать табуляцию и переводы строк
+:set list		" Отображать табуляцию и переводы строк
 
 source ~/.cache/calendar.vim/credentials.vim
 
@@ -125,46 +125,9 @@ Plugin 'lyokha/vim-xkbswitch'
 	let b:XkbSwitchILayout = 'us'
 	autocmd BufEnter * let b:XkbSwitchILayout = 'us'
 	let g:XkbSwitchLoadOnBufRead = 0
-	let g:XkbSwitchSkipFt = ['nerdtree']
+"	let g:XkbSwitchSkipFt = ['nerdtree']
 "	let g:XkbSwitchIMappingsSkipFt = ['tex']
 	set ttimeoutlen=50
-
-"Plugin 'scrooloose/nerdtree'
-""	map <C-o> :NERDTreeToggle<CR>
-"	nnoremap <leader>n :NERDTreeFocus<CR>
-"	nnoremap <C-n> :NERDTree<CR>
-"	nnoremap <C-t> :NERDTreeToggle<CR>
-"	nnoremap <C-f> :NERDTreeFind<CR>
-"	" Open the existing NERDTree on each new tab.
-"	autocmd BufWinEnter * silent NERDTreeMirror
-"	" Start NERDTree when Vim is started without file arguments.
-"	autocmd StdinReadPre * let s:std_in=1
-"	autocmd VimEnter * if argc() == 0 && !exists('s:std_in') | NERDTree | endif
-"	" Exit Vim if NERDTree is the only window left.
-"	autocmd BufEnter * if tabpagenr('$') == 1 && winnr('$') == 1 && exists('b:NERDTree') && b:NERDTree.isTabTree() |
-"		\ quit | endif
-"	let NERDTreeShowHidden=1
-
-"Plugin 'ryanoasis/vim-devicons'
-
-"Plugin 'Xuyuanp/nerdtree-git-plugin'
-"	let g:NERDTreeGitStatusUseNerdFonts = 1 " you should install nerdfonts by yourself. default: 0
-"	let g:NERDTreeGitStatusShowIgnored = 1 " a heavy feature may cost much more time. default: 0
-"	let g:NERDTreeGitStatusShowClean = 1 " default: 0
-"	let g:NERDTreeGitStatusConcealBrackets = 1 " default: 0
-"	let g:NERDTreeGitStatusUntrackedFilesMode = 'all' " a heave feature too. default: normal
-"	let g:NERDTreeGitStatusIndicatorMapCustom = {
-"		\ "Modified"  : "✹",
-"		\ "Staged"    : "✚",
-"		\ "Untracked" : "✭",
-"		\ "Renamed"   : "➜",
-"		\ "Unmerged"  : "═",
-"		\ "Deleted"   : "✖",
-"		\ "Dirty"     : "✗",
-"		\ "Clean"     : "✔︎",
-"		\ 'Ignored'   : '☒',
-"		\ "Unknown"   : "?"
-"		\ }
 
 Plugin 'tpope/vim-fugitive'
 
@@ -211,18 +174,18 @@ Plugin 'junegunn/fzf'
 	let g:fzf_history_dir = '~/.local/share/fzf-history'
 
 Plugin 'dylanaraps/fff.vim'
-" Command:
-" Open fff on press of 'f'
-nnoremap f :F<CR>
-" Customization:
-" Split Size:
-let g:fff#split = "20new"
-" Vertical split (NERDtree style).
-"let g:fff#split = "30vnew"
-" Split Direction:
-" Default: let g:fff#split_direction = "splitbelow splitright"
-" " Open split on the left side (NERDtree style).
-"let g:fff#split_direction = "nosplitbelow nosplitright"
+	" Command:
+	" Open fff on press of 'f'
+	nnoremap f :F<CR>
+	" Customization:
+	" Split Size:
+	"let g:fff#split = "20new"
+	" Vertical split (NERDtree style).
+	let g:fff#split = "40vnew"
+	" Split Direction:
+	" Default: let g:fff#split_direction = "splitbelow splitright"
+	" " Open split on the left side (NERDtree style).
+	let g:fff#split_direction = "nosplitbelow nosplitright"
 
 Plugin 'SirVer/ultisnips'
 Plugin 'honza/vim-snippets'
@@ -283,16 +246,59 @@ Plugin 'vim-airline/vim-airline-themes'
 
 Plugin 'jeetsukumaran/vim-buffergator'
 
-Plugin 'voldikss/vim-floaterm'
-" Configuration
-let g:floaterm_keymap_new    = '<F7>'
-let g:floaterm_keymap_prev   = '<F8>'
-let g:floaterm_keymap_next   = '<F9>'
-let g:floaterm_keymap_toggle = '<F12>'
+Plugin 'mg979/vim-visual-multi'
+let g:VM_mouse_mappings = 1
 
-Plugin 'itchyny/calendar.vim'
-let g:calendar_google_calendar = 1
-let g:calendar_google_task = 1
+	" Plugin 'wellle/targets.vim'
+
+	" Plugin 'voldikss/vim-floaterm'
+		" " Configuration
+		" let g:floaterm_keymap_new    = '<F7>'
+		" let g:floaterm_keymap_prev   = '<F8>'
+		" let g:floaterm_keymap_next   = '<F9>'
+		" let g:floaterm_keymap_toggle = '<F12>'
+
+	" Plugin 'itchyny/calendar.vim'
+		" let g:calendar_frame = 'default'
+		" let g:calendar_google_calendar = 1
+		" let g:calendar_google_task = 1
+
+	" Plugin 'scrooloose/nerdtree'
+	" "	map <C-o> :NERDTreeToggle<CR>
+	"	nnoremap <leader>n :NERDTreeFocus<CR>
+	"	nnoremap <C-n> :NERDTree<CR>
+	"	nnoremap <C-t> :NERDTreeToggle<CR>
+	"	nnoremap <C-f> :NERDTreeFind<CR>
+	"	" Open the existing NERDTree on each new tab.
+	"	autocmd BufWinEnter * silent NERDTreeMirror
+	"	" Start NERDTree when Vim is started without file arguments.
+	"	autocmd StdinReadPre * let s:std_in=1
+	"	autocmd VimEnter * if argc() == 0 && !exists('s:std_in') | NERDTree | endif
+	"	" Exit Vim if NERDTree is the only window left.
+	"	autocmd BufEnter * if tabpagenr('$') == 1 && winnr('$') == 1 && exists('b:NERDTree') && b:NERDTree.isTabTree() |
+	"		\ quit | endif
+	"	let NERDTreeShowHidden=1
+
+	" Plugin 'ryanoasis/vim-devicons'
+
+	" Plugin 'Xuyuanp/nerdtree-git-plugin'
+	"	let g:NERDTreeGitStatusUseNerdFonts = 1 " you should install nerdfonts by yourself. default: 0
+	"	let g:NERDTreeGitStatusShowIgnored = 1 " a heavy feature may cost much more time. default: 0
+	"	let g:NERDTreeGitStatusShowClean = 1 " default: 0
+	"	let g:NERDTreeGitStatusConcealBrackets = 1 " default: 0
+	"	let g:NERDTreeGitStatusUntrackedFilesMode = 'all' " a heave feature too. default: normal
+	"	let g:NERDTreeGitStatusIndicatorMapCustom = {
+	"		\ "Modified"  : "✹",
+	"		\ "Staged"    : "✚",
+	"		\ "Untracked" : "✭",
+	"		\ "Renamed"   : "➜",
+	"		\ "Unmerged"  : "═",
+	"		\ "Deleted"   : "✖",
+	"		\ "Dirty"     : "✗",
+	"		\ "Clean"     : "✔︎",
+	"		\ 'Ignored'   : '☒',
+	"		\ "Unknown"   : "?"
+	"		\ }
 
 call vundle#end()
 filetype plugin indent on
