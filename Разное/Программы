@@ -2,11 +2,12 @@ sudo pacman -S yay
 
 yay -Rndd manjaro-zsh-config zsh-autosuggestions zsh-completions zsh-history-substring-search zsh-syntax-highlighting zsh-theme-powerlevel10k konversation yakuake htop pamac-cli pamac-common pamac-gtk pamac-tray-icon-plasma
 
-yay -S fish fzf git fd the_silver_searcher neofetch aria2 rtorrent w3m ddgr newsboat urlscan urlview aerc dante nano nano-syntax-highlighting vim bat xkb-switch texlive-installer vifm highlight vimiv ventoy nerd-fonts-hack fbless pdftotext zathura antiword docx2txt odt2txt exiftool mediainfo catimg ffmpegthumbnailer youtube-dl atomicparsley moc clyrics tmux plasma-vault volantes-cursors plasma-runners-translator kdeconnect skanlite cups cups-filters python-pip bluez-tools hddtemp fff xdotool
+yay -S fzf git fd the_silver_searcher rtorrent w3m ddgr newsboat urlscan urlview aerc dante nano nano-syntax-highlighting vim bat xkb-switch texlive-installer highlight ventoy nerd-fonts-hack fbless python-pdftotext zathura antiword docx2txt odt2txt mediainfo catimg ffmpegthumbnailer youtube-dl moc clyrics tmux plasma-vault volantes-cursors plasma-runners-translator kdeconnect skanlite cups cups-filters bluez-tools fff xdotool kcron
+* vifm vimiv fish neofetch aria2 atomicparsley python-pip hddtemp python-pyexiftool
 
-bastet ski cgames nudoku 2048-cli nsnake moon-buggy greed
+yay -S nudoku 2048-cli nsnake greed bastet ski moon-buggy cgames
 
-cmatrix figlet
+* cmatrix figlet
 
 ## Система
 pacui				псевдографический менеджер пакетов
