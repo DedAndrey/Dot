@@ -110,8 +110,8 @@ alias porn='mpv http://www.pornhub.com/random'
 
 # Музыка
 # Mocp
-alias ml='clyrics -m -k -s 10 -P ~/.config/clyrics'
-alias m='mocp'
+    # alias ml='clyrics -m -k -s 10 -P ~/.config/clyrics'
+alias m='tmuxinator start Music'
 # MPD
 #alias m='ncmpcpp -S visualizer'
 # alias m='ncmpcpp'

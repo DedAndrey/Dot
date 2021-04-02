@@ -84,11 +84,15 @@ export ZSH="/home/dedandrey/.oh-my-zsh"
 
 MAGIC_ENTER_GIT_COMMAND='git status -u .'
 MAGIC_ENTER_OTHER_COMMAND='ls -lh .'
-plugins=(git git-prompt zsh-autosuggestions autojump vundle fzf tmux sudo web-search catimg colorize command-not-found magic-enter vi-mode alias-finder copybuffer fancy-ctrl-z)
+plugins=(git git-prompt
+zsh-autosuggestions
+zsh-interactive-cd jump autojump fzf wd magic-enter history history-substring-search per-directory-history globalias vundle fancy-ctrl-z tmux tmuxinator sudo web-search catimg colorize colored-man-pages man command-not-found copybuffer extract universalarchive zbell)
+# Отключенные плуги
+#  vi-mode scd
 ZSH_COLORIZE_TOOL=pygmentize
 ZSH_COLORIZE_STYLE="colorful"
-VI_MODE_RESET_PROMPT_ON_MODE_CHANGE=true
-VI_MODE_SET_CURSOR=true
+# VI_MODE_RESET_PROMPT_ON_MODE_CHANGE=true
+# VI_MODE_SET_CURSOR=true
 # MODE_INDICATOR="%F{yellow}+%f"
 ZSH_ALIAS_FINDER_AUTOMATIC=true
 
@@ -101,7 +105,6 @@ export FZF_DEFAULT_COMMAND='ag --nocolor --follow --hidden -g ""'
 export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
 export FZF_DEFAULT_OPTS="--ansi --height 50% --layout=reverse --border --preview 'file {}' --preview-window down:1"
 export FZF_COMPLETION_TRIGGER="~~"
-
 
 # User configuration
 
