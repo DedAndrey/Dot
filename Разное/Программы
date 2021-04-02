@@ -1,3 +1,18 @@
+Обновление ключей
+    Если возникли проблемы с обновлением, или установкой пакетов выполните данные рекомендации.
+sudo pacman-key --init && sudo pacman-key --populate && sudo pacman-key --refresh-keys && sudo pacman -Syy
+
+    Если ошибка с содержанием hkps.pool.sks-keyservers.net, не может достучаться до сервера ключей выполните команды ниже. Указываем другой сервер ключей.
+sudo pacman-key --init && sudo pacman-key --populate
+sudo pacman-key --refresh-keys --keyserver keys.gnupg.net && sudo pacman -Syy
+
+    Если ошибка с содержанием /var/lib/pacman/sync, выполните команду ниже и повторите пункт с обновлением ключей.
+sudo rm -rf /var/lib/pacman/sync/*
+
+    Если ошибка с содержанием /var/lib/pacman/db.lck, выполните команду.
+sudo rm /var/lib/pacman/db.lck
+-----------------
+
 sudo pacman -S yay
 
 yay -Rndd manjaro-zsh-config zsh-autosuggestions zsh-completions zsh-history-substring-search zsh-syntax-highlighting zsh-theme-powerlevel10k konversation yakuake htop pamac-cli pamac-common pamac-gtk pamac-tray-icon-plasma
@@ -16,6 +31,7 @@ glances				системный монитор
 
 zsh					wget https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh
 sh install.sh
+
 fish				chsh -s /usr/bin/fish
 	dash
 	pkgfile
@@ -72,6 +88,7 @@ ranger			файловый менеджер
 ueberzug		просмотрщик
 pdftk			работа с pdf-файлами
 highlight		подсветка синтаксиса в превью
+fim             картинки
 vimiv			картинки
 sxiv			картинки
 -----------------

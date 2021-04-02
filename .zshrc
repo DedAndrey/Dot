@@ -1,15 +1,12 @@
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
-# Path to your oh-my-zsh installation.
-export ZSH="/home/dedandrey/.oh-my-zsh"
-
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-# ZSH_THEME="robbyrussell"
-ZSH_THEME="af-magic"
+# ZSH_THEME="fino-time"
+ZSH_THEME="my"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -30,43 +27,42 @@ setopt PROMPT_SUBST
 
 setopt EXTENDED_GLOB
 
-# Uncomment the following line to use case-sensitive completion.
+autoload -U compinit && compinit
+
+# чуствительность к регистру. Как я указал в начале статьи, он сам может исправлять регистр если видит что в текущем ничего не найдено. Если это мешает, установив данный параметр в true, поведение будет привычное bash.
 # CASE_SENSITIVE="true"
 
-# Uncomment the following line to use hyphen-insensitive completion.
-# Case-sensitive completion must be off. _ and - will be interchangeable.
+# включает автоматическую замену между "_" и "-". Аналогично параметру выше, но касается только дефиса и подчеркивания.
 # HYPHEN_INSENSITIVE="true"
 
-# Uncomment the following line to disable bi-weekly auto-update checks.
+# позволяет отключить автоматическое обновления Oh My Zsh.
 # DISABLE_AUTO_UPDATE="true"
 
 # Uncomment the following line to automatically update without prompting.
 # DISABLE_UPDATE_PROMPT="true"
 
-# Uncomment the following line to change how often to auto-update (in days).
+# задает переодичность проверки обновлений.
 # export UPDATE_ZSH_DAYS=13
 
 # Uncomment the following line if pasting URLs and other text is messed up.
 # DISABLE_MAGIC_FUNCTIONS="true"
 
-# Uncomment the following line to disable colors in ls.
+# позволяте отключить цветовую палитру при выводе команды ls.
 # DISABLE_LS_COLORS="true"
 
-# Uncomment the following line to disable auto-setting terminal title.
+# отключение автоматического заголовка терминала.
 # DISABLE_AUTO_TITLE="true"
 
-# Uncomment the following line to enable command auto-correction.
-# ENABLE_CORRECTION="true"
+# включает корректировку команд. Например, вводя compozer он выдаст запрос: correct 'compozer' to 'composer'?.
+ENABLE_CORRECTION="true"
 
-# Uncomment the following line to display red dots whilst waiting for completion.
+# включает точки ожидания ввода аргументов. Например введя composer и нажав Tab, он будет перебирать доступные команды (из-за одноименного плагина), а если ввести java и нажать таб, у него нет вариантов автодополнения (они будут появляться по мере их успешнного ввода в терминале и кэшироваться) он будет отображать красные точки для обязательного ввода которые можно отменить только Ctrl + C.
 COMPLETION_WAITING_DOTS="true"
 
-# Uncomment the following line if you want to disable marking untracked files
-# under VCS as dirty. This makes repository status check for large repositories
-# much, much faster.
+# отключает пометку неиспользуемых файлов в пределе Git репозитория как "грязных", что увеличивает скорость скана для git.
 # DISABLE_UNTRACKED_FILES_DIRTY="true"
 
-# Uncomment the following line if you want to change the command execution time
+# позволяет менять формат даты для команды history.
 # stamp shown in the history command output.
 # You can set one of the optional three formats:
 # "mm/dd/yyyy"|"dd.mm.yyyy"|"yyyy-mm-dd"
@@ -74,15 +70,27 @@ COMPLETION_WAITING_DOTS="true"
 # see 'man strftime' for details.
 # HIST_STAMPS="mm/dd/yyyy"
 
-# Would you like to use another custom folder than $ZSH/custom?
+# позволяет добавить дополнительный путь до папки где будут храниться кастомные плагины и темы. По дефолту ~/.oh-my-zsh/custom, она также будет функционаривать, т.е. параметр не перезатерающийся.
 # ZSH_CUSTOM=/path/to/new-custom-folder
+
+# Path to your oh-my-zsh installation.
+export ZSH="/home/dedandrey/.oh-my-zsh"
 
 # Which plugins would you like to load?
 # Standard plugins can be found in $ZSH/plugins/
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git z vundle dirhistory fzf tmux zsh-interactive-cd)
+
+MAGIC_ENTER_GIT_COMMAND='git status -u .'
+MAGIC_ENTER_OTHER_COMMAND='ls -lh .'
+plugins=(git git-prompt zsh-autosuggestions autojump vundle fzf tmux sudo web-search catimg colorize command-not-found magic-enter vi-mode alias-finder copybuffer fancy-ctrl-z)
+ZSH_COLORIZE_TOOL=pygmentize
+ZSH_COLORIZE_STYLE="colorful"
+VI_MODE_RESET_PROMPT_ON_MODE_CHANGE=true
+VI_MODE_SET_CURSOR=true
+# MODE_INDICATOR="%F{yellow}+%f"
+ZSH_ALIAS_FINDER_AUTOMATIC=true
 
 source $ZSH/oh-my-zsh.sh
 
@@ -93,9 +101,6 @@ export FZF_DEFAULT_COMMAND='ag --nocolor --follow --hidden -g ""'
 export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
 export FZF_DEFAULT_OPTS="--ansi --height 50% --layout=reverse --border --preview 'file {}' --preview-window down:1"
 export FZF_COMPLETION_TRIGGER="~~"
-
-
-
 
 
 # User configuration
@@ -130,3 +135,81 @@ export INFOPATH=/usr/local/texlive/2020/texmf-dist/doc/info:$INFOPATH
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 [[ -f ~/.alias_zsh ]] && . ~/.alias_zsh
+
+# Add this to your .bashrc, .zshrc or equivalent.
+# Run 'fff' with 'f' or whatever you decide to name the function.
+f() {
+    fff "$@"
+    cd "$(cat "${XDG_CACHE_HOME:=${HOME}/.cache}/fff/.fff_d")"
+}
+
+# Show/Hide hidden files on open.
+# (Off by default)
+export FFF_HIDDEN=1
+
+# Use LS_COLORS to color fff.
+# (On by default if available)
+# (Ignores FFF_COL1)
+export FFF_LS_COLORS=1
+
+# Directory color [0-9]
+export FFF_COL1=2
+
+# Status background color [0-9]
+export FFF_COL2=6
+
+# Selection color [0-9] (copied/moved files)
+export FFF_COL3=6
+
+# Cursor color [0-9]
+export FFF_COL4=1
+
+# Status foreground color [0-9]
+export FFF_COL5=0
+
+# Text Editor
+export EDITOR="vim"
+
+# File Opener
+export FFF_OPENER="xdg-open"
+
+# File Attributes Command
+export FFF_STAT_CMD="stat"
+
+# Enable or disable CD on exit.
+# (On by default)
+export FFF_CD_ON_EXIT=0
+
+# CD on exit helper file
+# Default: '${XDG_CACHE_HOME}/fff/fff.d'
+#          If not using XDG, '${HOME}/.cache/fff/fff.d' is used.
+export FFF_CD_FILE=~/.fff_d
+
+# w3m-img offsets.
+export FFF_W3M_XOFFSET=0
+export FFF_W3M_YOFFSET=0
+
+# File format.
+# Customize the item string.
+# Format ('%f' is the current file): "str%fstr"
+# Example (Add a tab before files): FFF_FILE_FORMAT="\t%f"
+export FFF_FILE_FORMAT="%f"
+
+# Mark format.
+# Customize the marked item string.
+# Format ('%f' is the current file): "str%fstr"
+# Example (Add a ' >' before files): FFF_MARK_FORMAT="> %f"
+export FFF_MARK_FORMAT=" %f*"
+
+# Trash Command
+# Default: 'mv'
+#          Define a custom program to use to trash files.
+#          The program will be passed the list of selected files
+#          and directories.
+export FFF_TRASH_CMD="mv"
+
+#--------------------
+
+# ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=8"
+ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=8,bg=bold,underline"
+

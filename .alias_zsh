@@ -79,18 +79,17 @@ alias gsc="github-search-repos -i"
 alias t="tmux"
 # alias tm="tmux attach || tmux new -s work"
 # alias tmd="tmux detach"
-alias tks="tmux kill-server"
+# alias tks="tmux kill-server"
 
 # Разное
-alias b="bpytop"
+# alias b="bpytop"
 # alias h="htop"
 
-# Latex
-alias lup="sudo tlmgr update --self --all"
+alias up="yay -Syyu && sudo tlmgr update --self --all"
 
 # vifm
-alias fm="vifm"
-alias sfm="sudo vifm"
+# alias fm="vifm"
+# alias sfm="sudo vifm"
 
 # dolphin root
 alias sdof="sudo pkexec env DISPLAY=$DISPLAY XAUTHORITY=$XAUTHORITY KDE_SESSION_VERSION=5 KDE_FULL_SESSION=true dbus-launch dolphin"
@@ -111,7 +110,7 @@ alias porn='mpv http://www.pornhub.com/random'
 
 # Музыка
 # Mocp
-alias mocpl='clyrics -m -k -s 10 -P ~/.config/clyrics'
+alias ml='clyrics -m -k -s 10 -P ~/.config/clyrics'
 alias m='mocp'
 # MPD
 #alias m='ncmpcpp -S visualizer'
