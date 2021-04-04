@@ -1,0 +1,11 @@
+session_name: Музыка
+windows:
+  - window_name: mocp+clyrics
+    focus: true
+    layout: main-vertical
+    panes:
+    - shell_command:
+      - mocp
+      focus: true
+    - shell_command:
+      - clyrics -m -k -s 10 -P ~/.config/clyrics

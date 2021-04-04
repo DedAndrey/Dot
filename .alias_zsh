@@ -85,7 +85,7 @@ alias t="tmux"
 # alias b="bpytop"
 # alias h="htop"
 
-alias up="yay -Syyu && sudo tlmgr update --self --all"
+alias up="yay -Syyu && vundle && sudo tlmgr update --self --all"
 
 # vifm
 # alias fm="vifm"
@@ -111,7 +111,7 @@ alias porn='mpv http://www.pornhub.com/random'
 # Музыка
 # Mocp
     # alias ml='clyrics -m -k -s 10 -P ~/.config/clyrics'
-alias m='tmuxinator start Music'
+alias m='tmux new-session \; send-keys "clyrics -m -k -s 10 -P ~/.config/clyrics" C-m \; split-window -h -p 70 \; send-keys 'mocp' C-m \;'
 # MPD
 #alias m='ncmpcpp -S visualizer'
 # alias m='ncmpcpp'

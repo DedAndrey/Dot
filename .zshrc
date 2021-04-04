@@ -51,7 +51,7 @@ autoload -U compinit && compinit
 # DISABLE_LS_COLORS="true"
 
 # отключение автоматического заголовка терминала.
-# DISABLE_AUTO_TITLE="true"
+export DISABLE_AUTO_TITLE="true"
 
 # включает корректировку команд. Например, вводя compozer он выдаст запрос: correct 'compozer' to 'composer'?.
 ENABLE_CORRECTION="true"
@@ -84,11 +84,9 @@ export ZSH="/home/dedandrey/.oh-my-zsh"
 
 MAGIC_ENTER_GIT_COMMAND='git status -u .'
 MAGIC_ENTER_OTHER_COMMAND='ls -lh .'
-plugins=(git git-prompt
-zsh-autosuggestions
-zsh-interactive-cd jump autojump fzf wd magic-enter history history-substring-search per-directory-history globalias vundle fancy-ctrl-z tmux tmuxinator sudo web-search catimg colorize colored-man-pages man command-not-found copybuffer extract universalarchive zbell)
+plugins=(git git-prompt zsh-autosuggestions zsh-interactive-cd history history-substring-search fzf wd magic-enter globalias vundle fancy-ctrl-z tmux tmuxinator sudo web-search catimg colorize colored-man-pages man command-not-found copybuffer extract universalarchive)
 # Отключенные плуги
-#  vi-mode scd
+# vi-mode jump autojump scd per-directory-history zbell
 ZSH_COLORIZE_TOOL=pygmentize
 ZSH_COLORIZE_STYLE="colorful"
 # VI_MODE_RESET_PROMPT_ON_MODE_CHANGE=true
@@ -109,9 +107,9 @@ export FZF_COMPLETION_TRIGGER="~~"
 # User configuration
 
 # Path to Latex installation.
-export PATH=/usr/local/texlive/2020/bin/x86_64-linux:$PATH
-export MANPATH=/usr/local/texlive/2020/texmf-dist/doc/man:$MANPATH
-export INFOPATH=/usr/local/texlive/2020/texmf-dist/doc/info:$INFOPATH
+export PATH=/usr/local/texlive/2021/bin/x86_64-linux:$PATH
+export MANPATH=/usr/local/texlive/2021/texmf-dist/doc/man:$MANPATH
+export INFOPATH=/usr/local/texlive/2021/texmf-dist/doc/info:$INFOPATH
 
 # export MANPATH="/usr/local/man:$MANPATH"
 
@@ -165,7 +163,7 @@ export FFF_COL2=6
 export FFF_COL3=6
 
 # Cursor color [0-9]
-export FFF_COL4=1
+export FFF_COL4=6
 
 # Status foreground color [0-9]
 export FFF_COL5=0
