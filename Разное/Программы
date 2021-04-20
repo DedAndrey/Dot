@@ -15,10 +15,14 @@ sudo rm /var/lib/pacman/db.lck
 
 sudo pacman -S yay
 
-yay -Rndd manjaro-zsh-config zsh-autosuggestions zsh-completions zsh-history-substring-search zsh-syntax-highlighting zsh-theme-powerlevel10k konversation yakuake htop pamac-cli pamac-common pamac-gtk pamac-tray-icon-plasma
+yay -Rndd konversation yakuake htop pamac-cli pamac-common pamac-gtk pamac-tray-icon-plasma
 
-yay -S fzf git fd the_silver_searcher rtorrent w3m newsboat urlscan urlview aerc dante nano nano-syntax-highlighting vim bat xkb-switch texlive-installer highlight ventoy nerd-fonts-hack fbless python-pdftotext zathura antiword docx2txt odt2txt mediainfo catimg ffmpegthumbnailer youtube-dl moc clyrics tmux plasma-vault volantes-cursors plasma-runners-translator kdeconnect skanlite cups cups-filters bluez-tools fff xdotool kcron
-* vifm vimiv fish neofetch aria2 atomicparsley python-pip hddtemp python-pyexiftool
+manjaro-zsh-config zsh-autosuggestions zsh-completions zsh-history-substring-search zsh-syntax-highlighting zsh-theme-powerlevel10k
+
+yay -S fzf git fd the_silver_searcher ripgrep ripgrep-all nnn rtorrent w3m newsboat urlscan urlview aerc dante nano nano-syntax-highlighting vim bat xkb-switch highlight ventoy nerd-fonts-hack fbless python-pdftotext zathura antiword docx2txt odt2txt mediainfo catimg ffmpegthumbnailer youtube-dl moc clyrics tmux plasma-vault volantes-cursors plasma-runners-translator kdeconnect skanlite cups cups-filters bluez-tools xdotool kcron print-manager
+
+
+* vifm vimiv fish neofetch aria2 atomicparsley python-pip hddtemp python-pyexiftool texlive-installer fff trash-cli
 
 yay -S nudoku 2048-cli nsnake greed bastet ski moon-buggy cgames
 

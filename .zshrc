@@ -84,7 +84,7 @@ export ZSH="/home/dedandrey/.oh-my-zsh"
 
 MAGIC_ENTER_GIT_COMMAND='git status -u .'
 MAGIC_ENTER_OTHER_COMMAND='ls -lh .'
-plugins=(git git-prompt zsh-autosuggestions zsh-interactive-cd history history-substring-search fzf wd magic-enter globalias vundle fancy-ctrl-z tmux tmuxinator sudo web-search catimg colorize colored-man-pages man command-not-found copybuffer extract universalarchive)
+plugins=(git git-prompt zsh-autosuggestions zsh-interactive-cd history history-substring-search fzf wd magic-enter globalias fancy-ctrl-z tmux tmuxinator sudo web-search catimg colorize colored-man-pages man command-not-found copybuffer extract universalarchive)
 # Отключенные плуги
 # vi-mode jump autojump scd per-directory-history zbell
 ZSH_COLORIZE_TOOL=pygmentize
@@ -137,78 +137,12 @@ export INFOPATH=/usr/local/texlive/2021/texmf-dist/doc/info:$INFOPATH
 
 [[ -f ~/.alias_zsh ]] && . ~/.alias_zsh
 
-# Add this to your .bashrc, .zshrc or equivalent.
-# Run 'fff' with 'f' or whatever you decide to name the function.
-f() {
-    fff "$@"
-    cd "$(cat "${XDG_CACHE_HOME:=${HOME}/.cache}/fff/.fff_d")"
-}
+### NNN ###
 
-# Show/Hide hidden files on open.
-# (Off by default)
-export FFF_HIDDEN=1
-
-# Use LS_COLORS to color fff.
-# (On by default if available)
-# (Ignores FFF_COL1)
-export FFF_LS_COLORS=1
-
-# Directory color [0-9]
-export FFF_COL1=2
-
-# Status background color [0-9]
-export FFF_COL2=6
-
-# Selection color [0-9] (copied/moved files)
-export FFF_COL3=6
-
-# Cursor color [0-9]
-export FFF_COL4=6
-
-# Status foreground color [0-9]
-export FFF_COL5=0
-
-# Text Editor
-export EDITOR="vim"
-
-# File Opener
-export FFF_OPENER="xdg-open"
-
-# File Attributes Command
-export FFF_STAT_CMD="stat"
-
-# Enable or disable CD on exit.
-# (On by default)
-export FFF_CD_ON_EXIT=0
-
-# CD on exit helper file
-# Default: '${XDG_CACHE_HOME}/fff/fff.d'
-#          If not using XDG, '${HOME}/.cache/fff/fff.d' is used.
-export FFF_CD_FILE=~/.fff_d
-
-# w3m-img offsets.
-export FFF_W3M_XOFFSET=0
-export FFF_W3M_YOFFSET=0
-
-# File format.
-# Customize the item string.
-# Format ('%f' is the current file): "str%fstr"
-# Example (Add a tab before files): FFF_FILE_FORMAT="\t%f"
-export FFF_FILE_FORMAT="%f"
-
-# Mark format.
-# Customize the marked item string.
-# Format ('%f' is the current file): "str%fstr"
-# Example (Add a ' >' before files): FFF_MARK_FORMAT="> %f"
-export FFF_MARK_FORMAT=" %f*"
-
-# Trash Command
-# Default: 'mv'
-#          Define a custom program to use to trash files.
-#          The program will be passed the list of selected files
-#          and directories.
-export FFF_TRASH_CMD="mv"
-
+export NNN_FIFO=/tmp/nnn.fifo
+export NNN_BMS='d:~/Документы;D:~/Загрузки/'
+export NNN_PLUG='a:autojump;b:bookmarks;c:cdpath;g:getplugs;i:imgview;k:kdeconnect;m:mediainf;o:fzcd;p:pdfview;t:preview-tui-ext'
+#imgthumb vidthumb
 #--------------------
 
 # ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=8"

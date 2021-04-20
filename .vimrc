@@ -104,7 +104,7 @@ set autoread
 
 :set list		" Отображать табуляцию и переводы строк
 
-source ~/.cache/calendar.vim/credentials.vim
+" source ~/.cache/calendar.vim/credentials.vim
 
 """ Плагины """
 
@@ -173,19 +173,33 @@ Plugin 'junegunn/fzf'
 	"   'previous-history' instead of 'down' and 'up'.
 	let g:fzf_history_dir = '~/.local/share/fzf-history'
 
-Plugin 'dylanaraps/fff.vim'
-	" Command:
-	" Open fff on press of 'f'
-	nnoremap f :F<CR>
-	" Customization:
-	" Split Size:
-	"let g:fff#split = "20new"
-	" Vertical split (NERDtree style).
-	let g:fff#split = "40vnew"
-	" Split Direction:
-	" Default: let g:fff#split_direction = "splitbelow splitright"
-	" " Open split on the left side (NERDtree style).
-	let g:fff#split_direction = "nosplitbelow nosplitright"
+"Plugin 'dylanaraps/fff.vim'
+"	" Command:
+"	" Open fff on press of 'f'
+"	nnoremap f :F<CR>
+"	" Customization:
+"	" Split Size:
+"	"let g:fff#split = "20new"
+"	" Vertical split (NERDtree style).
+"	let g:fff#split = "40vnew"
+"	" Split Direction:
+"	" Default: let g:fff#split_direction = "splitbelow splitright"
+"	" " Open split on the left side (NERDtree style).
+"	let g:fff#split_direction = "nosplitbelow nosplitright"
+
+Plugin 'mcchrish/nnn.vim'
+" Disable default mappings
+let g:nnn#set_default_mappings = 0
+" Start nnn in the current file's directory
+nnoremap <leader>n :NnnPicker %:p:h<CR>
+
+" Opens the n³ window in a split
+let g:nnn#layout = { 'left': '~30%' } " or right, up, down
+
+let g:nnn#action = {
+	\ '<c-t>': 'tab split',
+	\ '<c-x>': 'split',
+	\ '<c-v>': 'vsplit' }
 
 Plugin 'SirVer/ultisnips'
 Plugin 'honza/vim-snippets'
