@@ -141,7 +141,33 @@ export INFOPATH=/usr/local/texlive/2021/texmf-dist/doc/info:$INFOPATH
 
 export NNN_FIFO=/tmp/nnn.fifo
 export NNN_BMS='d:~/Документы;D:~/Загрузки/'
-export NNN_PLUG='a:autojump;b:bookmarks;c:cdpath;g:getplugs;i:imgview;k:kdeconnect;m:mediainf;o:fzcd;p:pdfview;t:preview-tui-ext'
+export NNN_SSHFS="sshfs -o follow_symlinks"   # заставляет sshfs следовать по символьным ссылкам
+export NNN_COLORS="2136"                      # разные цвета для разных контекстов
+# 0-black, 1-red, 2-green, 3-yellow, 4-blue (default), 5-magenta, 6-cyan, 7-white
+export NNN_FCOLORS='c1e2272e006033f7c6d6abc4' # цвета разных типов файлов
+# ------------------------- + --- + -------------
+#           Order           | Hex |    Color
+# ------------------------- + --- + -------------
+# Block device              | c1  | DarkSeaGreen1
+# Char device               | e2  | Yellow1
+# Directory                 | 27  | DeepSkyBlue1
+# Executable                | 2e  | Green1
+# Regular                   | 00  | Normal
+# Hard link                 | 60  | Plum4
+# Symbolic link             | 33  | Cyan1
+# Missing OR file details   | f7  | Grey62
+# Orphaned symbolic link    | c6  | DeepPink1
+# FIFO                      | d6  | Orange1
+# Socket                    | ab  | MediumOrchid1
+# Unknown OR 0B regular/exe | c4  | Red1
+# ------------------------- + --- + -------------
+export NNN_ARCHIVE="\\.(7z|bz2|gz|tar|tgz|zip)$"
+export NNN_TRASH=1                            # перемещение в корзину вместо удаления файлов (требуется trash-cli)
+# n=1: trash-cli, n=2: gio trash
+export NNN_LOCKER='bmon -p wlp1s0'
+export NNN_LOCKER='cmatrix'
+[ -n "$NNNLVL" ] && PS1="N$NNNLVL $PS1"       # индикатор вложенности оболчки
+export NNN_PLUG='a:autojump;b:bookmarks;c:cdpath;g:getplugs;k:kdeconnect;n:nmount;o:fzcd;p:pdfview;t:preview-tui-ext'
 #imgthumb vidthumb
 #--------------------
 

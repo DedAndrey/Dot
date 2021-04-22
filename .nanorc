@@ -80,7 +80,7 @@ set linenumbers
 set magic
 
 # After a search, set the mark at the end of the found match (if any).
-set markmatch
+# set markmatch
 
 ## The opening and closing brackets that can be found by bracket
 ## searches.  They cannot contain blank characters.  The former set must
