@@ -1,7 +1,7 @@
 #!/usr/bin/bash
 
 # Справка
-alias help="$HOME/Загрузки/show_keys"
+alias help="$HOME/.local/show_keys"
 
 # zsh
 alias sz="source $HOME/.zshrc"
@@ -43,13 +43,13 @@ mkj () {
   cd "$1"
 }
 
+alias q="exit && tksv"
 alias /="cd /"
 alias ~="cd ~"
 alias ..="cd .."
 alias ...="cd ../.."
-# alias ....="cd ../../.."
-# alias .....="cd ../../../.."
-alias q="exit && tksv"
+alias ....="cd ../../.."
+alias .....="cd ../../../.."
 
 # git
 alias gi="git init"
@@ -66,14 +66,6 @@ alias gr="git remote"
 alias gf="git fetch"
 alias gpl="git pull"
 alias gp="git push"
-alias gpm="git push origin master"
-alias ghab="$BROWSER https://github.com/DedAndrey/Dot &"
-
-# git.io custom url
-# curl -i https://git.io -F "url=https://github.com/creio" -F "code=YOUR_CUSTOM_NAME"
-
-# yarn global add github-search-repos-cli
-alias gsc="github-search-repos -i"
 
 # tmux
 alias t="tmux"
@@ -85,7 +77,10 @@ alias t="tmux"
 # alias b="bpytop"
 # alias h="htop"
 
-alias up="yay -Syyu && sudo tlmgr update --self --all"
+alias upsys="yay -Syyu && sudo tlmgr update --self --all"
+alias s="ddgr"
+alias sy="web_search yandex"
+alias sg="web_search google"
 
 # vifm
 # alias fm="vifm"
@@ -96,7 +91,7 @@ alias sdof="sudo pkexec env DISPLAY=$DISPLAY XAUTHORITY=$XAUTHORITY KDE_SESSION_
 
 # RSS-читалка
 alias rss='newsboat'
-#alias update='newsboat -r && sudo pacman -Syu'
+# alias update='newsboat -r && sudo pacman -Syu'
 
 # Погода
 alias wtr="curl 'wttr.in/Нижний+Новгород?M&lang=ru'"
