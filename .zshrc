@@ -84,7 +84,7 @@ export ZSH="/home/dedandrey/.oh-my-zsh"
 
 MAGIC_ENTER_GIT_COMMAND='git status -u .'
 MAGIC_ENTER_OTHER_COMMAND='ls -lh .'
-plugins=(git git-prompt zsh-autosuggestions zsh-interactive-cd history history-substring-search fzf wd magic-enter globalias fancy-ctrl-z tmux tmuxinator sudo web-search catimg colorize colored-man-pages man command-not-found copybuffer extract universalarchive)
+plugins=(git git-prompt zsh-autosuggestions zsh-interactive-cd vundle autojump history history-substring-search fzf wd magic-enter globalias alias-finder fancy-ctrl-z tmux tmuxinator sudo web-search catimg colorize colored-man-pages man command-not-found copybuffer extract universalarchive)
 # Отключенные плуги
 # vi-mode jump autojump scd per-directory-history zbell
 ZSH_COLORIZE_TOOL=pygmentize
@@ -167,7 +167,7 @@ export NNN_TRASH=1                            # перемещение в кор
 export NNN_LOCKER='bmon -p wlp1s0'
 export NNN_LOCKER='cmatrix'
 [ -n "$NNNLVL" ] && PS1="N$NNNLVL $PS1"       # индикатор вложенности оболчки
-export NNN_PLUG='a:autojump;b:bookmarks;c:cdpath;g:getplugs;k:kdeconnect;n:nmount;o:fzcd;p:pdfview;t:preview-tui-ext'
+export NNN_PLUG='a:autojump;b:bookmarks;c:cdpath;g:getplugs;k:kdeconnect;m:mtpmount;n:nmount;o:fzcd;p:pdfview;t:preview-tui-ext'
 #imgthumb vidthumb
 #--------------------
 
