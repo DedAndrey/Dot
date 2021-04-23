@@ -5,13 +5,10 @@
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-# ZSH_THEME="fino-time"
+# ZSH_THEME="jonathan"
 ZSH_THEME="my"
 
-# Set list of themes to pick from when loading at random
-# Setting this variable when ZSH_THEME=random will cause zsh to load
-# a theme from this variable instead of looking in $ZSH/themes/
-# If set to an empty array, this variable will have no effect.
+# ZSH_THEME=random
 # ZSH_THEME_RANDOM_CANDIDATES=( "robbyrussell" "agnoster" )
 
 # традиционный стиль перенаправлений fd
@@ -51,7 +48,7 @@ autoload -U compinit && compinit
 # DISABLE_LS_COLORS="true"
 
 # отключение автоматического заголовка терминала.
-export DISABLE_AUTO_TITLE="true"
+# export DISABLE_AUTO_TITLE="true"
 
 # включает корректировку команд. Например, вводя compozer он выдаст запрос: correct 'compozer' to 'composer'?.
 ENABLE_CORRECTION="true"
@@ -76,23 +73,16 @@ COMPLETION_WAITING_DOTS="true"
 # Path to your oh-my-zsh installation.
 export ZSH="/home/dedandrey/.oh-my-zsh"
 
-# Which plugins would you like to load?
-# Standard plugins can be found in $ZSH/plugins/
-# Custom plugins may be added to $ZSH_CUSTOM/plugins/
-# Example format: plugins=(rails git textmate ruby lighthouse)
-# Add wisely, as too many plugins slow down shell startup.
-
-MAGIC_ENTER_GIT_COMMAND='git status -u .'
-MAGIC_ENTER_OTHER_COMMAND='ls -lh .'
-plugins=(git git-prompt zsh-autosuggestions zsh-interactive-cd vundle autojump history history-substring-search fzf wd magic-enter globalias alias-finder fancy-ctrl-z tmux tmuxinator sudo web-search catimg colorize colored-man-pages man command-not-found copybuffer extract universalarchive)
-# Отключенные плуги
-# vi-mode jump autojump scd per-directory-history zbell
+plugins=(vi-mode git git-prompt zsh-autosuggestions zsh-interactive-cd vundle autojump history history-substring-search fzf wd magic-enter globalias alias-finder fancy-ctrl-z tmux tmuxinator sudo web-search catimg colorize colored-man-pages command-not-found copybuffer extract universalarchive)
+# jump scd per-directory-history zbell man
 ZSH_COLORIZE_TOOL=pygmentize
 ZSH_COLORIZE_STYLE="colorful"
-# VI_MODE_RESET_PROMPT_ON_MODE_CHANGE=true
-# VI_MODE_SET_CURSOR=true
-# MODE_INDICATOR="%F{yellow}+%f"
+VI_MODE_SET_CURSOR=true
 ZSH_ALIAS_FINDER_AUTOMATIC=true
+MAGIC_ENTER_GIT_COMMAND='git status'
+MAGIC_ENTER_OTHER_COMMAND='ls -lh'
+# MAGIC_ENTER_GIT_COMMAND='git status -u .'
+# MAGIC_ENTER_OTHER_COMMAND='ls -lh .'
 
 source $ZSH/oh-my-zsh.sh
 
@@ -117,11 +107,11 @@ export INFOPATH=/usr/local/texlive/2021/texmf-dist/doc/info:$INFOPATH
 # export LANG=en_US.UTF-8
 
 # Preferred editor for local and remote sessions
-# if [[ -n $SSH_CONNECTION ]]; then
-#   export EDITOR='vim'
-# else
-#   export EDITOR='mvim'
-# fi
+if [[ -n $SSH_CONNECTION ]]; then
+  export EDITOR='vim'
+else
+  export EDITOR='vim'
+fi
 
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
@@ -169,8 +159,6 @@ export NNN_LOCKER='cmatrix'
 [ -n "$NNNLVL" ] && PS1="N$NNNLVL $PS1"       # индикатор вложенности оболчки
 export NNN_PLUG='a:autojump;b:bookmarks;c:cdpath;g:getplugs;k:kdeconnect;m:mtpmount;n:nmount;o:fzcd;p:pdfview;t:preview-tui-ext'
 #imgthumb vidthumb
-#--------------------
 
-# ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=8"
 ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=8,bg=bold,underline"
 

@@ -77,7 +77,7 @@ alias t="tmux"
 # alias b="bpytop"
 # alias h="htop"
 
-alias upsys="yay -Syyu && vundle-clean && vundle-update && sudo tlmgr update --self --all"
+alias upsys="yay -Syyu && vundle-update && sudo tlmgr update --self --all"
 alias s="ddgr"
 alias sy="web_search yandex"
 alias sg="web_search google"
