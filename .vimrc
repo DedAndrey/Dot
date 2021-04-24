@@ -135,13 +135,6 @@ Plugin 'tpope/vim-surround'
 
 Plugin 'tpope/vim-repeat'
 
-Plugin 'tiagofumo/vim-nerdtree-syntax-highlight'
-	let g:NERDTreeFileExtensionHighlightFullName = 1
-	let g:NERDTreeExactMatchHighlightFullName = 1
-	let g:NERDTreePatternMatchHighlightFullName = 1
-	let g:NERDTreeHighlightFolders = 1 " enables folder icon highlighting using exact match
-	let g:NERDTreeHighlightFoldersFullName = 1 " highlights the folder name
-
 Plugin 'lervag/vimtex'
 	let g:tex_flavor='latex'
 	let g:vimtex_view_method='zathura'

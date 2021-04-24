@@ -5,8 +5,8 @@
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-# ZSH_THEME="jonathan"
-ZSH_THEME="minimal"
+# ZSH_THEME="avit"
+ZSH_THEME="my"
 
 # ZSH_THEME=random
 # ZSH_THEME_RANDOM_CANDIDATES=( "robbyrussell" "agnoster" )
@@ -73,10 +73,11 @@ COMPLETION_WAITING_DOTS="true"
 # Path to your oh-my-zsh installation.
 export ZSH="/home/dedandrey/.oh-my-zsh"
 
-plugins=(vi-mode git git-prompt zsh-autosuggestions zsh-interactive-cd vundle autojump history history-substring-search fzf wd magic-enter globalias alias-finder fancy-ctrl-z tmux tmuxinator sudo web-search catimg colorize colored-man-pages command-not-found copybuffer extract universalarchive)
-# jump scd per-directory-history zbell man
+plugins=(vi-mode git git-prompt zsh-autosuggestions zsh-interactive-cd vundle autojump history history-substring-search fzf wd magic-enter globalias fancy-ctrl-z tmux tmuxinator sudo web-search catimg colorize colored-man-pages command-not-found copybuffer extract universalarchive)
+# jump scd per-directory-history zbell man alias-finder
 ZSH_COLORIZE_TOOL=pygmentize
 ZSH_COLORIZE_STYLE="colorful"
+VI_MODE_RESET_PROMPT_ON_MODE_CHANGE=true
 VI_MODE_SET_CURSOR=true
 ZSH_ALIAS_FINDER_AUTOMATIC=true
 MAGIC_ENTER_GIT_COMMAND='git status'
