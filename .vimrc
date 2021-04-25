@@ -249,7 +249,10 @@ Plugin 'vim-airline/vim-airline'
 	let g:airline#extensions#tabline#formatter = 'unique_tail'
 
 Plugin 'vim-airline/vim-airline-themes'
-	let g:airline_theme='minimalist'
+	let g:airline_theme='raven'
+"	let g:airline_theme='monochrome'
+"	let g:airline_theme='jellybeans'
+"	let g:airline_theme='minimalist'
 
 Plugin 'jeetsukumaran/vim-buffergator'
 

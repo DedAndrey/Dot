@@ -107,12 +107,17 @@ alias porn='mpv http://www.pornhub.com/random'
 # Музыка
 # Mocp
 # alias ml='clyrics -m -k -s 10 -P ~/.config/clyrics'
-alias m='tmux new-session \; send-keys "clyrics -m -k -s 10 -P ~/.config/clyrics" C-m \; split-window -h -p 70 \; send-keys 'mocp' C-m \;'
+alias m='tmux new-session -d \; send-keys "clyrics -m -k -s 10 -P ~/.config/clyrics" C-m \; split-window -h -p 80 \; send-keys 'mocp' C-m \;'
 # MPD
 #alias m='ncmpcpp -S visualizer'
 # alias m='ncmpcpp'
 # alias mp='mpc pause'
 # alias ms='mpc stop'
+
+# NNN
+alias ncp="cat ${NNN_SEL:-${XDG_CONFIG_HOME:-$HOME/.config}/nnn/.selection} | tr '\0' '\n'"
+alias n='tmux new-session nnn -deHP t $@'
+# alias n='tmux new-session -d \; send-keys "nnn -deHP t" C-m \;'
 
 # pacman
 alias pkglist="pacman -Qneq > ~/pkglist.txt"
@@ -155,7 +160,3 @@ alias ssdn="sudo systemctl disable --now"
 alias ssr="sudo systemctl restart"
 alias ssk="sudo systemctl stop"
 alias sss="sudo systemctl status"
-
-# NNN
-alias ncp="cat ${NNN_SEL:-${XDG_CONFIG_HOME:-$HOME/.config}/nnn/.selection} | tr '\0' '\n'"
-alias n='tmux new-session \; send-keys "nnn -deHP t" C-m \;'

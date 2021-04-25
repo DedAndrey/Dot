@@ -133,7 +133,7 @@ fi
 export NNN_FIFO=/tmp/nnn.fifo
 export NNN_BMS='d:~/Документы;D:~/Загрузки/'
 export NNN_SSHFS="sshfs -o follow_symlinks"   # заставляет sshfs следовать по символьным ссылкам
-export NNN_COLORS="2136"                      # разные цвета для разных контекстов
+export NNN_COLORS="6231"                      # разные цвета для разных контекстов
 # 0-black, 1-red, 2-green, 3-yellow, 4-blue (default), 5-magenta, 6-cyan, 7-white
 export NNN_FCOLORS='c1e2272e006033f7c6d6abc4' # цвета разных типов файлов
 # ------------------------- + --- + -------------
@@ -157,7 +157,7 @@ export NNN_TRASH=1                            # перемещение в кор
 # n=1: trash-cli, n=2: gio trash
 export NNN_LOCKER='bmon -p wlp1s0'
 export NNN_LOCKER='cmatrix'
-[ -n "$NNNLVL" ] && PS1="N$NNNLVL $PS1"       # индикатор вложенности оболчки
+[ -n "$NNNLVL" ] && PS1="N$NNNLVL $PS1"       # индикатор вложенности оболочки
 export NNN_PLUG='a:autojump;b:bookmarks;c:cdpath;g:getplugs;k:kdeconnect;m:mtpmount;n:nmount;o:fzcd;p:pdfview;t:preview-tui-ext'
 #imgthumb vidthumb
 
