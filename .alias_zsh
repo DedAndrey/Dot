@@ -76,10 +76,10 @@ alias t="tmux"
 # Разное
 # alias b="bpytop"
 # alias h="htop"
-alias 0="cmatrix"
 
 alias upsys="yay -Syyu && vundle-update && sudo tlmgr update --self --all"
-alias s="ddgr"
+alias s="BROWSER=w3m ddgr"
+# alias s="BROWSER=links ddgr"
 alias sy="web_search yandex"
 alias sg="web_search google"
 
@@ -106,8 +106,8 @@ alias porn='mpv http://www.pornhub.com/random'
 
 # Музыка
 # Mocp
-# alias ml='clyrics -m -k -s 10 -P ~/.config/clyrics'
-alias m='tmux new-session -d \; send-keys "clyrics -m -k -s 10 -P ~/.config/clyrics" C-m \; split-window -h -p 80 \; send-keys 'mocp' C-m \;'
+alias mcl='clyrics -m -k -s 10 -P ~/.config/clyrics'
+alias m='tmux new-session \; send-keys "clyrics -m -k -s 10 -P ~/.config/clyrics" C-m \; split-window -h -p 80 \; send-keys "mocp" C-m \;'
 # MPD
 #alias m='ncmpcpp -S visualizer'
 # alias m='ncmpcpp'

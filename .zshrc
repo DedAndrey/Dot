@@ -158,7 +158,7 @@ export NNN_TRASH=1                            # перемещение в кор
 export NNN_LOCKER='bmon -p wlp1s0'
 export NNN_LOCKER='cmatrix'
 [ -n "$NNNLVL" ] && PS1="N$NNNLVL $PS1"       # индикатор вложенности оболочки
-export NNN_PLUG='a:autojump;b:bookmarks;c:cdpath;g:getplugs;k:kdeconnect;m:mtpmount;n:nmount;o:fzcd;p:pdfview;t:preview-tui-ext'
+export NNN_PLUG='a:autojump;b:bookmarks;c:cdpath;d:mocplay;g:getplugs;k:kdeconnect;m:mtpmount;n:nmount;o:fzcd;p:pdfview;t:preview-tui-ext'
 #imgthumb vidthumb
 
 ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=8,bg=bold,underline"

@@ -1,0 +1,5 @@
+#EXTM3U
+#EXTINF:0,RecordRock
+http://air.radiorecord.ru:8102/rock_320
+#EXTINF:0,Радио 7 на семи холмах
+http://radio7server.streamr.ru:8040/radio7256.mp3

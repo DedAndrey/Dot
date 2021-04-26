@@ -1,4 +1,4 @@
-confirm-exit yes
+confirm-exit no
 auto-reload yes
 cleanup-on-quit yes
 refresh-on-startup yes
@@ -12,9 +12,9 @@ download-full-page yes
 download-retries 4
 download-timeout 60
 
-browser "links %u"
+# browser "links %u"
 external-url-viewer "urlscan"
-# browser "w3m %u"
+browser "w3m %u"
 # html-renderer "w3m -dump -T text/html"
 
 feedlist-format " %n %4i %11u %> %t"
@@ -36,12 +36,13 @@ itemview-title-format "Статья '%T'"
 notify-xterm yes
 
 datetime-format "%d/%m/%y %H:%M"
-include /usr/share/doc/newsboat/contrib/colorschemes/plain
+include /usr/share/doc/newsboat/contrib/colorschemes/inkpot
+# include /usr/share/doc/newsboat/contrib/colorschemes/plain
 
 # macro prefix "," by default
 # bind-key + macro-prefix
 # unbind-key , # if you don’t unbind the default "," you’re left with two macro prefixes
 
 # macro v set browser "mpv --player-operation-mode=pseudo-gui -- %u &"; one; set browser w3m
-# macro l set browser mpv; one; set browser w3m
-macro l set browser mpv; one; set browser links
+macro l set browser mpv; one; set browser w3m
+# macro l set browser mpv; one; set browser links
