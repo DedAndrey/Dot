@@ -17,13 +17,15 @@ external-url-viewer "urlscan"
 browser "w3m %u"
 # html-renderer "w3m -dump -T text/html"
 
-feedlist-format " %n %4i %11u %> %t"
+# feedlist-format " %n %4i %11u %> %t"
+feedlist-format "%4i %11u %> %t"
 feed-sort-order lastupdated
 # currently available are: firsttag, title, articlecount, unreadarticlecount, lastupdated and none
 
 feedlist-title-format "Ваши ленты новостей (в %u из них есть новые статьи)"
 
-articlelist-format "%4i %f %D %6L %?T?|%-17T| ?%t"
+# articlelist-format "%4i %f %D %6L %?T?|%-17T| ?%t"
+articlelist-format "%4i %D %6L %?T?|%-17T| ?%t"
 article-sort-order date-asc
 # currently available are: date, title, flags, author, link, guid and random
 
@@ -36,8 +38,8 @@ itemview-title-format "Статья '%T'"
 notify-xterm yes
 
 datetime-format "%d/%m/%y %H:%M"
-include /usr/share/doc/newsboat/contrib/colorschemes/inkpot
-# include /usr/share/doc/newsboat/contrib/colorschemes/plain
+include /home/dedandrey/.config/newsboat/colors
+# include /usr/share/doc/newsboat/contrib/colorschemes/my
 
 # macro prefix "," by default
 # bind-key + macro-prefix
