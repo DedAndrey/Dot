@@ -1,4 +1,4 @@
-PROMPT='%* %{$fg_bold[magenta]%}$(_git_time_since_commit)%{$fg_bold[green]%}%c %{$fg_bold[cyan]%}$(git_prompt_info)%{$fg_bold[blue]%}% $(vi_mode_prompt_info)%{$reset_color%}'
+PROMPT='%{$fg_bold[blue]%}%* %{$fg_bold[magenta]%}$(_git_time_since_commit)%{$fg_bold[green]%}%c %{$fg_bold[cyan]%}$(git_prompt_info)%{$fg_bold[blue]%}% $(vi_mode_prompt_info)%{$reset_color%}'
 
 # Determine the time since last commit. If branch is clean,
 # use a neutral color, otherwise colors will vary according to time.

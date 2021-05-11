@@ -11,6 +11,8 @@ sudo rm -rf /var/lib/pacman/sync/*
 
     Если ошибка с содержанием /var/lib/pacman/db.lck, выполните команду.
 sudo rm /var/lib/pacman/db.lck
+
+	Если не работает виджет погоды, то нужно установить qt5-xmlpatterns
 -----------------
 
 sudo pacman -S yay
