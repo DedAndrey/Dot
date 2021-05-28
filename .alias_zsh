@@ -102,6 +102,8 @@ alias wts='curl ru.wttr.in/Нижний+Новгород'
 alias moon='curl ru.wttr.in/Moon'
 
 # Видео
+alias fy='ytfzf -t '
+alias ydH='ytfzf -dH'
 alias porn='mpv http://www.pornhub.com/random'
 
 # Музыка
