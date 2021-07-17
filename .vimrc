@@ -135,6 +135,9 @@ Plugin 'tpope/vim-surround'
 
 Plugin 'tpope/vim-repeat'
 
+Plugin 'tpope/vim-commentary'
+	autocmd FileType apache setlocal commentstring=#\ %s
+
 Plugin 'lervag/vimtex'
 	let g:tex_flavor='latex'
 	let g:vimtex_view_method='zathura'
@@ -223,19 +226,19 @@ Plugin 'voldikss/vim-floaterm'
 	let g:floaterm_keymap_kill   = '<F10>'
 	let g:floaterm_keymap_toggle = '<F12>'
 
-Plugin 'preservim/nerdcommenter'
-	filetype plugin on
-	let g:NERDCreateDefaultMappings = 1
-	let g:NERDSpaceDelims = 1
-	let g:NERDCompactSexyComs = 1
-	let g:NERDDefaultAlign = 'left'
-	let g:NERDAltDelims_java = 1
-	let g:NERDCustomDelimiters = { 'c': { 'left': '/**','right': '*/' } }
-	let g:NERDCommentEmptyLines = 1
-	let g:NERDTrimTrailingWhitespace = 1
-	let g:NERDToggleCheckAllLines = 1
-	nnoremap <silent> <leader>c} V}:call NERDComment('x', 'toggle')<CR>
-	nnoremap <silent> <leader>c{ V{:call NERDComment('x', 'toggle')<CR>
+"Plugin 'preservim/nerdcommenter'
+"	filetype plugin on
+"	let g:NERDCreateDefaultMappings = 1
+"	let g:NERDSpaceDelims = 1
+"	let g:NERDCompactSexyComs = 1
+"	let g:NERDDefaultAlign = 'left'
+"	let g:NERDAltDelims_java = 1
+"	let g:NERDCustomDelimiters = { 'c': { 'left': '/**','right': '*/' } }
+"	let g:NERDCommentEmptyLines = 1
+"	let g:NERDTrimTrailingWhitespace = 1
+"	let g:NERDToggleCheckAllLines = 1
+"	nnoremap <silent> <leader>c} V}:call NERDComment('x', 'toggle')<CR>
+"	nnoremap <silent> <leader>c{ V{:call NERDComment('x', 'toggle')<CR>
 
 Plugin 'ervandew/supertab'
 	let g:SuperTabDefaultCompletionType = "<c-p>"
