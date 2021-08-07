@@ -73,7 +73,7 @@ COMPLETION_WAITING_DOTS="true"
 # Path to your oh-my-zsh installation.
 export ZSH="/home/dedandrey/.oh-my-zsh"
 
-plugins=(vi-mode git git-prompt zsh-autosuggestions zsh-interactive-cd vundle autojump history history-substring-search fzf wd magic-enter globalias fancy-ctrl-z tmux tmuxinator sudo web-search catimg colorize colored-man-pages command-not-found copybuffer extract universalarchive alias-finder)
+plugins=(vi-mode git git-prompt zsh-autosuggestions zsh-interactive-cd vundle autojump dircycle history history-substring-search fzf wd magic-enter globalias fancy-ctrl-z tmux tmuxinator sudo web-search catimg colorize colored-man-pages command-not-found copybuffer extract universalarchive alias-finder systemd)
 # jump scd per-directory-history zbell man
 ZSH_COLORIZE_TOOL=pygmentize
 ZSH_COLORIZE_STYLE="colorful"

@@ -95,10 +95,8 @@ alias rss='newsboat'
 # alias update='newsboat -r && sudo pacman -Syu'
 
 # Погода
-alias wtr="curl 'wttr.in/Нижний+Новгород?M&lang=ru'"
-# alias wtr="curl 'wttr.in/Нижний+Новгород?M&lang=ru' | sed -n '1,17p'"
-# alias wtr="curl 'wttr.in/?M1npQ&lang=ru'"
-alias wts='curl ru.wttr.in/Нижний+Новгород'
+alias wtr="curl 'wttr.in/Санкт+Петербург?M&lang=ru'" # ветер в м/с
+alias wts='curl ru.wttr.in/Санкт+Петербург' # ветер в км/ч
 alias moon='curl ru.wttr.in/Moon'
 
 # Видео
