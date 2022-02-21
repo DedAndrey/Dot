@@ -7,33 +7,20 @@ completeShowAbbrev=true
 [Desktop Entry]
 DefaultProfile=Breath2.profile
 
-[Document-Settings,URL=file://:@/home/dedandrey/Документы/Резюме/Latex/Резюме.tex]
-Bookmarks=
-Highlighting=LaTeX
-Highlighting Set By User=false
-Indentation Mode=normal
-Mode=LaTeX
-Mode Set By User=false
-bibliographyBackendAutoDetected=
-bibliographyBackendUserOverride=
-kile_livePreviewEnabled=true
-kile_livePreviewStatusUserSpecified=false
-kile_livePreviewTool=LivePreview-PDFLaTeX
-
-[Document-Settings,URL=file://:@/home/dedandrey/Документы/Светофор/Светофор.tex]
-Bookmarks=
-Highlighting=LaTeX
-Highlighting Set By User=false
-Indentation Mode=normal
-Mode=LaTeX
-Mode Set By User=false
-bibliographyBackendAutoDetected=
-bibliographyBackendUserOverride=
-kile_livePreviewEnabled=true
-kile_livePreviewStatusUserSpecified=false
-kile_livePreviewTool=LivePreview-PDFLaTeX
-
 [Document-Settings,URL=file://:@/home/dedandrey/Документы/Светофор/Светофор_1.tex]
+Bookmarks=
+Highlighting=LaTeX
+Highlighting Set By User=false
+Indentation Mode=normal
+Mode=LaTeX
+Mode Set By User=false
+bibliographyBackendAutoDetected=
+bibliographyBackendUserOverride=
+kile_livePreviewEnabled=true
+kile_livePreviewStatusUserSpecified=false
+kile_livePreviewTool=LivePreview-PDFLaTeX
+
+[Document-Settings,URL=file://:@/home/dedandrey/Шаблоны/Latex/Обложка.tex]
 Bookmarks=
 Highlighting=LaTeX
 Highlighting Set By User=false
@@ -57,30 +44,30 @@ bibliographyBackendAutoDetected=
 bibliographyBackendUserOverride=
 kile_livePreviewEnabled=true
 kile_livePreviewStatusUserSpecified=false
-kile_livePreviewTool=LivePreview-PDFLaTeX/PSTricks
+kile_livePreviewTool=LivePreview-PDFLaTeX
 
-[Document-Settings,URL=file://:@/tmp/kile-LwtUwC/test.tex]
+[Document-Settings,URL=file://:@/tmp/kile-HeRIKc/test.tex]
 bibliographyBackendAutoDetected=
 bibliographyBackendUserOverride=
 kile_livePreviewEnabled=false
 kile_livePreviewStatusUserSpecified=false
 kile_livePreviewTool=LivePreview-PDFLaTeX
 
-[Document-Settings,URL=file://:@/tmp/kile-LwtUwC/test_bib.tex]
+[Document-Settings,URL=file://:@/tmp/kile-HeRIKc/test_bib.tex]
 bibliographyBackendAutoDetected=
 bibliographyBackendUserOverride=
 kile_livePreviewEnabled=false
 kile_livePreviewStatusUserSpecified=false
 kile_livePreviewTool=LivePreview-PDFLaTeX
 
-[Document-Settings,URL=file://:@/tmp/kile-LwtUwC/test_index.tex]
+[Document-Settings,URL=file://:@/tmp/kile-HeRIKc/test_index.tex]
 bibliographyBackendAutoDetected=
 bibliographyBackendUserOverride=
 kile_livePreviewEnabled=false
 kile_livePreviewStatusUserSpecified=false
 kile_livePreviewTool=LivePreview-PDFLaTeX
 
-[Document-Settings,URL=file://:@/tmp/kile-LwtUwC/test_plain.tex]
+[Document-Settings,URL=file://:@/tmp/kile-HeRIKc/test_plain.tex]
 bibliographyBackendAutoDetected=
 bibliographyBackendUserOverride=
 kile_livePreviewEnabled=false
@@ -91,9 +78,6 @@ kile_livePreviewTool=LivePreview-PDFLaTeX
 DoubleQuotes=8
 InsertSpecialCharacters=true
 
-[Favorite Profiles]
-Favorites=
-
 [FileBrowserWidget]
 Allow Expansion=false
 Decoration position=2
@@ -103,36 +87,36 @@ Sort by=Name
 Sort directories first=true
 Sort reversed=false
 View Style=Tree
-treeViewIconSize=0
+treeViewIconSize=16
 
 [Files]
 CleanUpAfterClose=true
-LastDocument[$e]=$HOME/Документы/Светофор/Светофор.tex
+LastDocument[$e]=$HOME/Шаблоны/Latex/Шаблон.tex
 lastDir[$e]=$HOME/
 
 [FilesOpenOnStart]
-DocsOpenOnStart0[$e]=$HOME/Документы/Светофор/Светофор.tex
+DocsOpenOnStart0[$e]=$HOME/Шаблоны/Latex/Шаблон.tex
 EncodingsOfDocsOpenOnStart0[$e]=UTF-8
 NoDOOS=1
 NoPOOS=0
 
 [Geometries]
-MainwindowHeight=1046
+MainwindowHeight=1035
 MainwindowWidth=1920
 horizontalSplitterLeft=30
-horizontalSplitterRight=1092
-verticalSplitterBottom=0
-verticalSplitterTop=1022
+horizontalSplitterRight=958
+verticalSplitterBottom=310
+verticalSplitterTop=701
 
 [IncludeGraphics]
 imagemagick=true
 
 [KFileDialog Settings]
-Recent Files[$e]=Загрузки/Abbr.cwl,file:$HOME/Документы/Светофор/Светофор_1.tex,file:$HOME/Загрузки/Abbr.cwl
-Recent URLs[$e]=file:$HOME/,file:$HOME/Документы/Светофор/
-detailViewIconSize=0
-eDP1 Height 1080=540
-eDP1 Width 1920=960
+Recent Files[$e]=Светофор_1.tex,file:$HOME/Документы/Светофор/Светофор_1.tex
+Recent URLs[$e]=file:$HOME/Документы/Светофор/
+detailViewIconSize=16
+eDP-1 Height 1920x1080=540
+eDP-1 Width 1920x1080=960
 
 [KTextEditor Document]
 Allow End of Line Detection=true
@@ -141,6 +125,7 @@ Backup Local=false
 Backup Prefix=
 Backup Remote=false
 Backup Suffix=~
+Camel Cursor=true
 Encoding=UTF-8
 End of Line=0
 Indent On Backspace=true
@@ -151,10 +136,10 @@ Indentation Width=4
 Keep Extra Spaces=false
 Line Length Limit=10000
 Newline at End of File=true
-On-The-Fly Spellcheck=true
+On-The-Fly Spellcheck=false
 Overwrite Mode=false
 PageUp/PageDown Moves Cursor=false
-Remove Spaces=0
+Remove Spaces=1
 ReplaceTabsDyn=false
 Show Spaces=2
 Show Tabs=true
@@ -173,13 +158,12 @@ Encoding Prober Type=1
 Fallback Encoding=ISO 8859-15
 
 [KTextEditor Renderer]
-Animate Bracket Matching=true
-Auto Color Theme Selection=false
-Color Theme=ayu Mirage
-Font=Source Code Pro,11,-1,5,50,0,0,0,0,0
-Schema=Breeze Dark
+Animate Bracket Matching=false
+Auto Color Theme Selection=true
+Color Theme=Breeze Light
+Font=Noto Mono,10,-1,5,50,0,0,0,0,0
 Show Indentation Lines=true
-Show Whole Bracket Expression=true
+Show Whole Bracket Expression=false
 Word Wrap Marker=false
 
 [KTextEditor View]
@@ -187,9 +171,10 @@ Allow Mark Menu=true
 Auto Brackets=false
 Auto Center Lines=0
 Auto Completion=true
+Auto Completion Preselect First Entry=true
 Backspace Remove Composed Characters=false
 Bookmark Menu Sorting=0
-Bracket Match Preview=true
+Bracket Match Preview=false
 Chars To Enclose Selection=
 Default Mark Type=1
 Dynamic Word Wrap=true
@@ -197,7 +182,7 @@ Dynamic Word Wrap Align Indent=80
 Dynamic Word Wrap At Static Marker=false
 Dynamic Word Wrap Indicators=1
 Dynamic Wrap not at word boundaries=false
-Fold First Line=true
+Fold First Line=false
 Folding Bar=true
 Folding Preview=true
 Icon Bar=true
@@ -206,7 +191,7 @@ Keyword Completion=true
 Line Modification=true
 Line Numbers=true
 Maximum Search History Size=100
-Mouse Paste At Cursor Position=true
+Mouse Paste At Cursor Position=false
 Persistent Selection=false
 Scroll Bar Marks=true
 Scroll Bar Mini Map=true
@@ -214,7 +199,7 @@ Scroll Bar Mini Map All=true
 Scroll Bar Mini Map Width=60
 Scroll Bar MiniMap=true
 Scroll Bar Preview=true
-Scroll Past End=true
+Scroll Past End=false
 Search/Replace Flags=140
 Show Line Count=true
 Show Scrollbars=0
@@ -228,32 +213,19 @@ Word Completion=true
 Word Completion Minimal Word Length=3
 Word Completion Remove Tail=true
 
-[KTextEditor::Search]
-Replace History=
-Search History=Казалось,огро,бус
-
 [KileConfigDialog]
-eDP1 Height 1080=815
-eDP1 Width 1920=1404
+eDP-1 Height 1920x1080=817
+eDP-1 Width 1920x1080=1087
 
 [KileMainWindow]
 MenuBar=Disabled
-State=AAAA/wAAAAD9AAAAAAAAB4AAAAP/AAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAUAAAAWAG0AYQBpAG4AVABvAG8AbABCAGEAcgAAAAAA/////wAAAAAAAAAAAAAAGAB0AG8AbwBsAHMAVABvAG8AbABCAGEAcgAAAAAA/////wAAAAAAAAAAAAAAFgBlAGQAaQB0AFQAbwBvAGwAQgBhAHIAAAAAAP////8AAAAAAAAAAAAAABYAbQBhAHQAaABUAG8AbwBsAEIAYQByAAAAAAD/////AAAAAAAAAAAAAAAmAE8AawB1AGwAYQByAFYAaQBlAHcAZQByAFQAbwBvAGwAQgBhAHIAAAAAAP////8AAAAAAAAAAA==
+State=AAAA/wAAAAD9AAAAAAAAB4AAAAP0AAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAUAAAAWAG0AYQBpAG4AVABvAG8AbABCAGEAcgAAAAAA/////wAAAAAAAAAAAAAAGAB0AG8AbwBsAHMAVABvAG8AbABCAGEAcgAAAAAA/////wAAAAAAAAAAAAAAFgBlAGQAaQB0AFQAbwBvAGwAQgBhAHIAAAAAAP////8AAAAAAAAAAAAAABYAbQBhAHQAaABUAG8AbwBsAEIAYQByAAAAAAD/////AAAAAAAAAAAAAAAmAE8AawB1AGwAYQByAFYAaQBlAHcAZQByAFQAbwBvAGwAQgBhAHIAAAAAAP////8AAAAAAAAAAA==
 ToolBarsMovable=Disabled
-eDP1 Height 1080=668
-eDP1 Width 1920=1280
-eDP1 Window-Maximized 1080x1920=true
-eDP1 XPosition=0
-eDP1 YPosition=34
-
-[KileMainWindow][Toolbar OkularViewerToolBar]
-ToolButtonStyle=IconOnly
-
-[KileMainWindow][Toolbar mainToolBar]
-ToolButtonStyle=IconOnly
-
-[KileMainWindow][Toolbar toolsToolBar]
-ToolButtonStyle=IconOnly
+eDP-1 Height 1920x1080=1035
+eDP-1 Width 1920x1080=1920
+eDP-1 Window-Maximized 1920x1080=true
+eDP-1 XPosition 1920x1080=0
+eDP-1 YPosition 1920x1080=74
 
 [MainWindow]
 RestorePositionForNextInstance=false
@@ -262,44 +234,34 @@ RestorePositionForNextInstance=false
 counts=
 paths=
 
-[MostUsedSymbols]
-symbolViewUTF8=true
-
 [QuickPreview]
 convert=true
 dvipng=true
 envPreviewInWidget=true
+envPreviewTool=1
 mathgroupPreviewInWidget=true
-previewTask=PDFLaTeX ---> PDF (Okular)
+mathgroupPreviewTool=1
+previewTask=PDFLaTeX ---> PDF (Document Viewer)
 selPreviewInWidget=true
+selPreviewTool=1
 
 [Recent Files]
-File1[$e]=$HOME/Шаблоны/Latex/Шаблон.tex
-File2[$e]=$HOME/Документы/Светофор/Светофор_1.tex
-File3[$e]=$HOME/Документы/Светофор/Светофор.tex
-Name1[$e]=Шаблон.tex
-Name2[$e]=Светофор_1.tex
-Name3[$e]=Светофор.tex
+File1[$e]=$HOME/Шаблоны/Latex/Обложка.tex
+File2[$e]=$HOME/Шаблоны/Latex/Шаблон.tex
+Name1[$e]=Обложка.tex
+Name2[$e]=Шаблон.tex
 
 [Scripting]
 ScriptNameColumnWidth=100
 
 [Session Settings]
-Documents=file://:@/home/dedandrey/Документы/Светофор/Светофор.tex
-Saved Documents=file://:@/home/dedandrey/Документы/Светофор/Светофор.tex,file://:@/home/dedandrey/Документы/Светофор/Светофор.tex,file://:@/home/dedandrey/Документы/Светофор/Светофор.tex,file://:@/home/dedandrey/Документы/Светофор/Светофор.tex,file://:@/home/dedandrey/Документы/Светофор/Светофор_1.tex,file://:@/home/dedandrey/Документы/Светофор/Светофор.tex,file://:@/home/dedandrey/Документы/Светофор/Светофор.tex,file://:@/home/dedandrey/Документы/Светофор/Светофор.tex,file://:@/home/dedandrey/Документы/Светофор/Светофор.tex,file://:@/home/dedandrey/Шаблоны/Latex/Шаблон.tex,file://:@/home/dedandrey/Шаблоны/Latex/Шаблон.tex,file://:@/home/dedandrey/Шаблоны/Latex/Шаблон.tex,file://:@/home/dedandrey/Шаблоны/Latex/Шаблон.tex,file://:@/home/dedandrey/Шаблоны/Latex/Шаблон.tex,file://:@/home/dedandrey/Шаблоны/Latex/Шаблон.tex,file://:@/home/dedandrey/Документы/Резюме/Latex/Резюме.tex,file://:@/home/dedandrey/Шаблоны/Latex/Шаблон.tex,file://:@/home/dedandrey/Шаблоны/Latex/Шаблон.tex,file://:@/home/dedandrey/Шаблоны/Latex/Шаблон.tex,file://:@/home/dedandrey/Документы/Светофор/Светофор.tex,file://:@/home/dedandrey/Документы/Светофор/Светофор_1.tex,file://:@/tmp/kile-LwtUwC/test_index.tex,file://:@/tmp/kile-LwtUwC/test_index.tex,file://:@/tmp/kile-LwtUwC/test_bib.tex,file://:@/tmp/kile-LwtUwC/test_bib.tex,file://:@/tmp/kile-LwtUwC/test.tex,file://:@/tmp/kile-LwtUwC/test.tex,file://:@/tmp/kile-LwtUwC/test.tex,file://:@/tmp/kile-LwtUwC/test.tex,file://:@/tmp/kile-LwtUwC/test.tex,file://:@/tmp/kile-LwtUwC/test_plain.tex,file://:@/tmp/kile-LwtUwC/test_plain.tex
+Documents=file://:@/home/dedandrey/Шаблоны/Latex/Шаблон.tex
+Saved Documents=file://:@/home/dedandrey/Шаблоны/Latex/Шаблон.tex,file://:@/home/dedandrey/Шаблоны/Latex/Обложка.tex,file://:@/home/dedandrey/Документы/Светофор/Светофор_1.tex,file://:@/tmp/kile-HeRIKc/test_index.tex,file://:@/tmp/kile-HeRIKc/test_index.tex,file://:@/tmp/kile-HeRIKc/test_bib.tex,file://:@/tmp/kile-HeRIKc/test_bib.tex,file://:@/tmp/kile-HeRIKc/test.tex,file://:@/tmp/kile-HeRIKc/test.tex,file://:@/tmp/kile-HeRIKc/test.tex,file://:@/tmp/kile-HeRIKc/test.tex,file://:@/tmp/kile-HeRIKc/test.tex,file://:@/tmp/kile-HeRIKc/test_plain.tex,file://:@/tmp/kile-HeRIKc/test_plain.tex
 
 [Show]
-BottomBarSize=0
+BottomBarSize=270
 ShowSplashScreen=false
-SideBarSize=332
 SystemCheckLastVersionRunForAtStartUp=2.9.93
-
-[Structure]
-SvOpenBibitems=true
-SvOpenLabels=true
-SvOpenReferences=true
-SvOpenTodo=true
-SvShowReferences=true
 
 [Tool/Archive/Tar]
 class=Archive
@@ -1214,7 +1176,7 @@ to=xdvi
 type=Process
 
 [ToolSelectAction]
-Compile=11
+Compile=-1
 Convert=-1
 Quick=0
 View=-1
@@ -1241,13 +1203,12 @@ LivePreview-XeLaTeX=Default
 LuaLaTeX=PDF
 MakeIndex=Default
 MetaPost=Default
-PDFLaTeX=Modern
+PDFLaTeX=Default
 PDFTeX=Default
 PStoPDF=Default
 PreviewLaTeX=Default
 PreviewLuaLaTeX=Default
 PreviewPDFLaTeX=Default
-PreviewTeXPaths=/home/dedandrey/Документы/Светофор
 PreviewXeLaTeX=Default
 QuickBuild=PDFLaTeX+ViewPDF
 TeX=Default
@@ -1296,48 +1257,26 @@ ViewPDF=View,okular
 ViewPS=View,okular
 XeLaTeX=Compile,latex
 
-[User]
-Author=Дедиков Андрей
-
-[UserMenu]
-userMenuLocation=0
-
 [VersionInfo]
 RCVersion=8
 
-[View-Settings,View=0,URL=file://:@/home/dedandrey/Документы/Резюме/Latex/Резюме.tex]
-CursorColumn=119
-CursorLine=179
-Dynamic Word Wrap=true
-JumpList=
-TextFolding=[]
-ViMarks=.,179,92,[,179,92,],179,118
-
-[View-Settings,View=0,URL=file://:@/home/dedandrey/Документы/Светофор/Светофор.tex]
-CursorColumn=9
-CursorLine=250
-Dynamic Word Wrap=true
-JumpList=
-TextFolding=[]
-ViMarks=.,250,9,[,250,9,],250,9
-
 [View-Settings,View=0,URL=file://:@/home/dedandrey/Документы/Светофор/Светофор_1.tex]
-CursorColumn=1014
-CursorLine=92
+CursorColumn=0
+CursorLine=0
 Dynamic Word Wrap=true
 JumpList=
 TextFolding=[]
-ViMarks=.,92,0,[,92,0,],92,1157
+ViMarks=
+
+[View-Settings,View=0,URL=file://:@/home/dedandrey/Шаблоны/Latex/Обложка.tex]
+CursorColumn=0
+CursorLine=0
+Dynamic Word Wrap=true
+JumpList=
+TextFolding=[]
+ViMarks=
 
 [View-Settings,View=0,URL=file://:@/home/dedandrey/Шаблоны/Latex/Шаблон.tex]
-CursorColumn=460
-CursorLine=135
-Dynamic Word Wrap=true
-JumpList=
-TextFolding=[]
-ViMarks=.,135,460,[,135,460,],135,460
-
-[View-Settings,View=0,URL=file://:@/tmp/kile-LwtUwC/test.tex]
 CursorColumn=0
 CursorLine=0
 Dynamic Word Wrap=true
@@ -1345,7 +1284,7 @@ JumpList=
 TextFolding=[]
 ViMarks=
 
-[View-Settings,View=0,URL=file://:@/tmp/kile-LwtUwC/test_bib.tex]
+[View-Settings,View=0,URL=file://:@/tmp/kile-HeRIKc/test.tex]
 CursorColumn=0
 CursorLine=0
 Dynamic Word Wrap=true
@@ -1353,7 +1292,7 @@ JumpList=
 TextFolding=[]
 ViMarks=
 
-[View-Settings,View=0,URL=file://:@/tmp/kile-LwtUwC/test_index.tex]
+[View-Settings,View=0,URL=file://:@/tmp/kile-HeRIKc/test_bib.tex]
 CursorColumn=0
 CursorLine=0
 Dynamic Word Wrap=true
@@ -1361,7 +1300,15 @@ JumpList=
 TextFolding=[]
 ViMarks=
 
-[View-Settings,View=0,URL=file://:@/tmp/kile-LwtUwC/test_plain.tex]
+[View-Settings,View=0,URL=file://:@/tmp/kile-HeRIKc/test_index.tex]
+CursorColumn=0
+CursorLine=0
+Dynamic Word Wrap=true
+JumpList=
+TextFolding=[]
+ViMarks=
+
+[View-Settings,View=0,URL=file://:@/tmp/kile-HeRIKc/test_plain.tex]
 CursorColumn=0
 CursorLine=0
 Dynamic Word Wrap=true

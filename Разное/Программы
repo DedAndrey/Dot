@@ -13,17 +13,52 @@ sudo rm -rf /var/lib/pacman/sync/*
 sudo rm /var/lib/pacman/db.lck
 
 	Если не работает виджет погоды, то нужно установить qt5-xmlpatterns
+	Если не работает
 -----------------
 
-sudo pacman -S yay
+sudo pacman -S binutils make gcc pkg-config fakeroot yay
+
+*sudo pacman -S yay
 
 yay -Rndd konversation yakuake htop pamac-cli pamac-common pamac-gtk pamac-tray-icon-plasma
 
 manjaro-zsh-config zsh-autosuggestions zsh-completions zsh-history-substring-search zsh-syntax-highlighting zsh-theme-powerlevel10k
 
-yay -S fzf git fd the_silver_searcher ripgrep ripgrep-all ddgr ytfzf nnn trash-cli exiftool atool lowdown ueberzug rtorrent ncdu w3m newsboat urlscan urlview aerc dante nano nano-syntax-highlighting vim bat xkb-switch highlight ventoy nerd-fonts-hack fbless python-pdftotext zathura mediainfo catimg ffmpegthumbnailer youtube-dl moc clyrics tmux plasma-vault volantes-cursors plasma-runners-translator kdeconnect skanlite cups cups-filters bluez-tools xdotool kcron print-manager Parachute fastfetch
+yay -S fzf git fd the_silver_searcher ripgrep ripgrep-all
 
-* vifm vimiv fish neofetch aria2 atomicparsley python-pip hddtemp python-pyexiftool texlive-installer fff antiword docx2txt odt2txt
+ddgr ytfzf
+
+nnn trash-cli exiftool atool lowdown ueberzug mediainfo catimg ffmpegthumbnailer
+
+fff antiword docx2txt odt2txt python-pdftotext
+
+rtorrent ncdu
+
+w3m newsboat urlscan urlview
+
+aerc dante
+
+nano nano-syntax-highlighting
+
+vim bat xkb-switch highlight
+
+ventoy nerd-fonts-hack fbless
+
+zathura zathura-ps zathura-pdf-poppler zathura-djvu zathura-cb
+
+youtube-dl moc clyrics
+
+tmux
+
+skanlite cups cups-filters bluez-tools xdotool
+
+yay -S plasma-vault plasma-runners-translator plasma5-applets-virtual-desktop-bar-git volantes-cursors kcron
+
+yay -S print-manager Parachute fastfetch
+
+* vifm perl-image-exiftool
+
+* vimiv fish neofetch aria2 atomicparsley python-pip hddtemp python-pyexiftool texlive-installer kdeconnect
 
 yay -S nudoku 2048-cli nsnake greed bastet ski moon-buggy cgames
 

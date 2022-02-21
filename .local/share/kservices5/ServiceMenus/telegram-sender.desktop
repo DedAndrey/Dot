@@ -1,0 +1,18 @@
+[Desktop Entry]
+Type=Service
+ServiceTypes=KonqPopupMenu/Plugin
+MimeType=all/all;
+Icon=telegram-panel
+Actions=send-to-contact
+X-KDE-Priority=TopLevel
+X-KDE-StartupNotify=false
+X-KDE-Submenu=Send
+X-KDE-Submenu[it]=Invia
+X-KDE-Submenu[ru]=Отправить
+
+[Desktop Action send-to-contact]
+Icon=telegram-panel
+Name=to Telegram contact
+Name[it]=a contatto Telegram
+Name[ru]=Контакту в Телеграмм
+Exec=~/.script/telegram-file-sender "%F"

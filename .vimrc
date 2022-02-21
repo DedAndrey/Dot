@@ -145,6 +145,9 @@ Plugin 'lervag/vimtex'
 	set conceallevel=1
 	let g:tex_conceal='abdmg'
 
+Plugin 'xuhdev/vim-latex-live-preview'
+    let g:livepreview_previewer = 'zathura'
+
 Plugin 'junegunn/fzf'
 	let g:fzf_preview_window = ['up:40%', 'ctrl-/']
 	nnoremap <silent> <leader>F :FZF<CR>
@@ -165,17 +168,25 @@ Plugin 'junegunn/fzf'
 	"   'previous-history' instead of 'down' and 'up'.
 	let g:fzf_history_dir = '~/.local/share/fzf-history'
 
-Plugin 'mcchrish/nnn.vim'
-	" Disable default mappings
-	let g:nnn#set_default_mappings = 0
-	" Start nnn in the current file's directory
-	nnoremap <leader>n :NnnPicker %:p:h<CR>
+"Plugin 'mcchrish/nnn.vim'
+"	" Disable default mappings
+"	let g:nnn#set_default_mappings = 0
+"	" Start nnn in the current file's directory
+"	nnoremap <leader>n :NnnPicker %:p:h<CR>
 " Opens the n³ window in a split
-	let g:nnn#layout = { 'left': '~30%' } " or right, up, down
-	let g:nnn#action = {
-		\ '<c-t>': 'tab split',
-		\ '<c-x>': 'split',
-		\ '<c-v>': 'vsplit' }
+"	let g:nnn#layout = { 'left': '~30%' } " or right, up, down
+"	let g:nnn#action = {
+"		\ '<c-t>': 'tab split',
+"		\ '<c-x>': 'split',
+"		\ '<c-v>': 'vsplit' }
+
+Plugin 'dylanaraps/fff.vim'
+    " Vertical split (NERDtree style).
+    " Default: let g:fff#split = "10new"
+    let g:fff#split = "30vnew"
+    " Open split on the left side (NERDtree style).
+    " Default: let g:fff#split_direction = "splitbelow splitright"
+    let g:fff#split_direction = "nosplitbelow nosplitright"
 
 Plugin 'SirVer/ultisnips'
 Plugin 'honza/vim-snippets'
@@ -216,6 +227,7 @@ Plugin 'wincent/terminus'
 
 Plugin 'voldikss/fzf-floaterm'
 Plugin 'voldikss/vim-floaterm'
+    let g:floaterm_shell = 'zsh' " (Default: &shell)
 	let g:floaterm_wintype = 'float' " ('split' or 'vsplit')
 	let g:floaterm_position = 'bottom' " ('top', 'auto', 'left', 'right', 'topleft', 'topright', 'bottomleft', 'bottomright', 'center')
 	let g:floaterm_width = 0.8

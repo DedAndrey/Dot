@@ -73,8 +73,38 @@ COMPLETION_WAITING_DOTS="true"
 # Path to your oh-my-zsh installation.
 export ZSH="/home/dedandrey/.oh-my-zsh"
 
-plugins=(vi-mode git git-prompt zsh-autosuggestions zsh-interactive-cd vundle autojump dircycle history history-substring-search fzf wd magic-enter globalias fancy-ctrl-z tmux tmuxinator sudo web-search catimg colorize colored-man-pages command-not-found copybuffer extract universalarchive alias-finder systemd)
-# jump scd per-directory-history zbell man
+plugins=(
+git
+git-prompt
+zsh-autosuggestions
+zsh-interactive-cd
+vundle
+autojump
+dirhistory
+history
+history-substring-search
+fzf
+wd
+magic-enter
+globalias
+fancy-ctrl-z
+tmux
+tmuxinator
+sudo
+web-search
+catimg
+colorize
+colored-man-pages
+man
+command-not-found
+copybuffer
+extract
+universalarchive
+alias-finder
+systemd
+)
+# jump scd per-directory-history zbell dircycle vi-mode
+
 ZSH_COLORIZE_TOOL=pygmentize
 ZSH_COLORIZE_STYLE="colorful"
 VI_MODE_RESET_PROMPT_ON_MODE_CHANGE=true
@@ -102,8 +132,6 @@ export PATH=/usr/local/texlive/2021/bin/x86_64-linux:$PATH
 export MANPATH=/usr/local/texlive/2021/texmf-dist/doc/man:$MANPATH
 export INFOPATH=/usr/local/texlive/2021/texmf-dist/doc/info:$INFOPATH
 
-# export MANPATH="/usr/local/man:$MANPATH"
-
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
 
@@ -130,36 +158,109 @@ fi
 
 ### NNN ###
 
-export NNN_FIFO=/tmp/nnn.fifo
-export NNN_BMS='d:~/Документы;D:~/Загрузки/'
-export NNN_SSHFS="sshfs -o follow_symlinks"   # заставляет sshfs следовать по символьным ссылкам
-export NNN_COLORS="6231"                      # разные цвета для разных контекстов
-# 0-black, 1-red, 2-green, 3-yellow, 4-blue (default), 5-magenta, 6-cyan, 7-white
-export NNN_FCOLORS='c1e2272e006033f7c6d6abc4' # цвета разных типов файлов
-# ------------------------- + --- + -------------
-#           Order           | Hex |    Color
-# ------------------------- + --- + -------------
-# Block device              | c1  | DarkSeaGreen1
-# Char device               | e2  | Yellow1
-# Directory                 | 27  | DeepSkyBlue1
-# Executable                | 2e  | Green1
-# Regular                   | 00  | Normal
-# Hard link                 | 60  | Plum4
-# Symbolic link             | 33  | Cyan1
-# Missing OR file details   | f7  | Grey62
-# Orphaned symbolic link    | c6  | DeepPink1
-# FIFO                      | d6  | Orange1
-# Socket                    | ab  | MediumOrchid1
-# Unknown OR 0B regular/exe | c4  | Red1
-# ------------------------- + --- + -------------
-export NNN_ARCHIVE="\\.(7z|bz2|gz|tar|tgz|zip)$"
-export NNN_TRASH=1                            # перемещение в корзину вместо удаления файлов (требуется trash-cli)
-# n=1: trash-cli, n=2: gio trash
-export NNN_LOCKER='bmon -p wlp1s0'
-export NNN_LOCKER='cmatrix'
-[ -n "$NNNLVL" ] && PS1="N$NNNLVL $PS1"       # индикатор вложенности оболочки
-export NNN_PLUG='a:autojump;b:bookmarks;c:cdpath;f:fzopen;g:getplugs;k:kdeconnect;m:mocplay;n:nmount;o:fzcd;p:pdfview;t:preview-tui-ext;u:mtpmount'
-#imgthumb vidthumb
+#export NNN_FIFO=/tmp/nnn.fifo
+#export NNN_BMS='d:~/Документы;D:~/Загрузки/'
+#export NNN_SSHFS="sshfs -o follow_symlinks"   # заставляет sshfs следовать по символьным ссылкам
+#export NNN_COLORS="6231"                      # разные цвета для разных контекстов
+## 0-black, 1-red, 2-green, 3-yellow, 4-blue (default), 5-magenta, 6-cyan, 7-white
+#export NNN_FCOLORS='c1e2272e006033f7c6d6abc4' # цвета разных типов файлов
+## ------------------------- + --- + -------------
+##           Order           | Hex |    Color
+## ------------------------- + --- + -------------
+## Block device              | c1  | DarkSeaGreen1
+## Char device               | e2  | Yellow1
+## Directory                 | 27  | DeepSkyBlue1
+## Executable                | 2e  | Green1
+## Regular                   | 00  | Normal
+## Hard link                 | 60  | Plum4
+## Symbolic link             | 33  | Cyan1
+## Missing OR file details   | f7  | Grey62
+## Orphaned symbolic link    | c6  | DeepPink1
+## FIFO                      | d6  | Orange1
+## Socket                    | ab  | MediumOrchid1
+## Unknown OR 0B regular/exe | c4  | Red1
+## ------------------------- + --- + -------------
+#export NNN_ARCHIVE="\\.(7z|bz2|gz|tar|tgz|zip)$"
+#export NNN_TRASH=1                            # перемещение в корзину вместо удаления файлов (требуется trash-cli)
+## n=1: trash-cli, n=2: gio trash
+#export NNN_LOCKER='bmon -p wlp1s0'
+#export NNN_LOCKER='cmatrix'
+#[ -n "$NNNLVL" ] && PS1="N$NNNLVL $PS1"       # индикатор вложенности оболочки
+#export NNN_PLUG='a:autojump;b:bookmarks;c:cdpath;f:fzopen;g:getplugs;k:kdeconnect;m:mocplay;n:nmount;o:fzcd;p:pdfview;t:preview-tui-ext;u:mtpmount'
+##imgthumb vidthumb
 
 ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=8,bg=bold,underline"
 
+### FFF ###
+
+# Add this to your .bashrc, .zshrc or equivalent.
+# Run 'fff' with 'f' or whatever you decide to name the function.
+f() {
+    fff "$@"
+    cd "$(cat "${XDG_CACHE_HOME:=${HOME}/.cache}/fff/.fff_d")"
+}
+
+# Show/Hide hidden files on open.
+# (Off by default)
+export FFF_HIDDEN=1
+
+# Use LS_COLORS to color fff.
+# (On by default if available)
+# (Ignores FFF_COL1)
+export FFF_LS_COLORS=1
+
+# Directory color [0-9]
+export FFF_COL1=2
+
+# Status background color [0-9]
+export FFF_COL2=6
+
+# Selection color [0-9] (copied/moved files)
+export FFF_COL3=6
+
+# Cursor color [0-9]
+export FFF_COL4=6
+
+# Status foreground color [0-9]
+export FFF_COL5=0
+
+# Text Editor
+export EDITOR="vim"
+
+# File Opener
+export FFF_OPENER="xdg-open"
+
+# File Attributes Command
+export FFF_STAT_CMD="stat"
+
+# Enable or disable CD on exit.
+# (On by default)
+export FFF_CD_ON_EXIT=0
+
+# CD on exit helper file
+# Default: '${XDG_CACHE_HOME}/fff/fff.d'
+#          If not using XDG, '${HOME}/.cache/fff/fff.d' is used.
+export FFF_CD_FILE=~/.fff_d
+
+# w3m-img offsets.
+export FFF_W3M_XOFFSET=0
+export FFF_W3M_YOFFSET=0
+
+# File format.
+# Customize the item string.
+# Format ('%f' is the current file): "str%fstr"
+# Example (Add a tab before files): FFF_FILE_FORMAT="\t%f"
+export FFF_FILE_FORMAT="%f"
+
+# Mark format.
+# Customize the marked item string.
+# Format ('%f' is the current file): "str%fstr"
+# Example (Add a ' >' before files): FFF_MARK_FORMAT="> %f"
+export FFF_MARK_FORMAT="> %f*"
+
+# Trash Command
+# Default: 'mv'
+#          Define a custom program to use to trash files.
+#          The program will be passed the list of selected files
+#          and directories.
+export FFF_TRASH_CMD="mv"
