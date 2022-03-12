@@ -50,6 +50,10 @@ youtube-dl moc clyrics
 
 tmux
 
+vtm # Перспективный оконный менеджер
+
+cava # Консольный эквалайзер
+
 skanlite cups cups-filters bluez-tools xdotool
 
 yay -S plasma-vault plasma-runners-translator plasma5-applets-virtual-desktop-bar-git volantes-cursors kcron
