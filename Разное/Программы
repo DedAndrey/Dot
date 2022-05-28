@@ -13,7 +13,6 @@ sudo rm -rf /var/lib/pacman/sync/*
 sudo rm /var/lib/pacman/db.lck
 
 	Если не работает виджет погоды, то нужно установить qt5-xmlpatterns
-	Если не работает
 -----------------
 
 sudo pacman -S binutils make gcc pkg-config fakeroot yay

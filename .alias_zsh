@@ -108,7 +108,7 @@ alias porn='mpv http://www.pornhub.com/random'
 # Музыка
 # Mocp
 alias mcl='clyrics -m -k -s 10 -P ~/.config/clyrics'
-alias m='tmux new-session \; send-keys "clyrics -m -k -s 10 -P ~/.config/clyrics" C-m \; split-window -h -p 80 \; send-keys "mocp" C-m \;'
+alias m='tmux new-session \; send-keys "clyrics -m -k -s 10 -P ~/.config/clyrics" C-m \; split-window -h -p 70 \; send-keys "mocp" C-m \; split-window -v -p 30 \; send-keys "cava" C-m \;'
 # MPD
 # alias m='ncmpcpp -S visualizer'
 # alias m='ncmpcpp'
