@@ -10,7 +10,7 @@ setopt appendhistory                                            # Immediately ap
 setopt histignorealldups                                        # If a new command is a duplicate, remove the older one
 setopt autocd                                                   # if only directory path is entered, cd there.
 setopt inc_append_history                                       # save commands are added to the history immediately, otherwise only when shell exits.
-setopt interactive_comments                                     # поддержка комментариев в командной строке
+setopt histignorespace                                          # Don't save commands that start with space
 
 zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}'       # Case insensitive tab completion
 zstyle ':completion:*' list-colors "${(s.:.)LS_COLORS}"         # Colored completion (different colors for dirs/files/etc)
@@ -26,7 +26,6 @@ SAVEHIST=10000
 #export VISUAL=/usr/bin/nano
 WORDCHARS=${WORDCHARS//\/[&.;]}                                 # Don't consider certain characters part of the word
 
-
 ## Keybindings section
 bindkey -e
 bindkey '^[[7~' beginning-of-line                               # Home key
@@ -35,7 +34,7 @@ if [[ "${terminfo[khome]}" != "" ]]; then
   bindkey "${terminfo[khome]}" beginning-of-line                # [Home] - Go to beginning of line
 fi
 bindkey '^[[8~' end-of-line                                     # End key
-# bindkey '^[[F' end-of-line                                    # End key
+bindkey '^[[F' end-of-line                                      # End key
 if [[ "${terminfo[kend]}" != "" ]]; then
   bindkey "${terminfo[kend]}" end-of-line                       # [End] - Go to end of line
 fi
@@ -67,36 +66,55 @@ alias ..="cd .."
 alias ...="cd ../.."
 alias ....="cd ../../.."
 alias .....="cd ../../../.."
+
 # tmux
 alias t="tmux"
-# Обновление системы
-alias upsys="yay -Syyu && vundle-update && sudo tlmgr update --self --all"
-# Поиск
-alias s="BROWSER=w3m ddgr"
-#alias sd="ddgr"
-#alias sy="web_search yandex"
-#alias sg="web_search google"
-# Видео
-alias fy='ytfzf -t '
-alias ydH='ytfzf -dH'
-alias porn='mpv http://www.pornhub.com/random'
-# Музыка
-alias m='ncmpcpp -S visualizer'
-alias mp='mpc pause'
-alias ms='mpc stop'
-# vifm
-alias fm="vifm"
-alias sfm="sudo vifm"
-# dolphin root
-alias sdof="sudo pkexec env DISPLAY=$DISPLAY XAUTHORITY=$XAUTHORITY KDE_SESSION_VERSION=5 KDE_FULL_SESSION=true dbus-launch dolphin"
+
 # RSS-читалка
 alias rss='newsboat'
+
+# Почта
+alias почта='aerc'
+
+# Обновление системы
+alias upsys="yay -Syyu && vundle-update && sudo tlmgr update --self --all && rss"
+
+# Поиск
+alias s="BROWSER=w3m ddgr"
+
+# Музыка
+# Mocp
+# alias mcl='clyrics -m -k -s 10 -P ~/.config/clyrics'
+alias m='tmux new-session \; send-keys "clyrics -m -k -s 10 -P ~/.config/clyrics" C-m \; split-window -h -p 70 \; send-keys "mocp" C-m \; split-window -v -p 30 \; send-keys "cava" C-m \;'
+# MPD
+# alias m='ncmpcpp -S visualizer'
+# alias m='ncmpcpp'
+# alias mp='mpc pause'
+# alias ms='mpc stop'
+
+# Видео
+alias sy='ytfzf -t '
+alias sydH='ytfzf -dH'
+alias porn='mpv http://www.pornhub.com/random'
+
+# dolphin root
+alias dr="sudo pkexec env DISPLAY=$DISPLAY XAUTHORITY=$XAUTHORITY KDE_SESSION_VERSION=5 KDE_FULL_SESSION=true dbus-launch dolphin"
+
+# NNN
+# alias ncp="cat ${NNN_SEL:-${XDG_CONFIG_HOME:-$HOME/.config}/nnn/.selection} | tr '\0' '\n'"
+alias n='tmux new-session nnn -deHP t $@'
+# alias n='tmux new-session -d \; send-keys "nnn -deHP t" C-m \;'
+
 # Погода
 alias wtr="curl 'wttr.in/Санкт+Петербург?M&lang=ru'" # ветер в м/с
 # alias wts='curl ru.wttr.in/Санкт+Петербург' # ветер в км/ч
 alias moon='curl ru.wttr.in/Moon'
 
-# Theming section  
+# Разное
+alias аквариум='asciiquarium'
+alias матрица='cmatrix'
+
+# Theming section
 autoload -U compinit colors zcalc
 compinit -d
 colors
@@ -111,12 +129,12 @@ export LESS_TERMCAP_ue=$'\E[0m'
 export LESS_TERMCAP_us=$'\E[01;36m'
 export LESS=-R
 
-
 ## Plugins section: Enable fish style features
 # Use syntax highlighting
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 # Use history substring search
 source /usr/share/zsh/plugins/zsh-history-substring-search/zsh-history-substring-search.zsh
+
 # fish-like interactive tab completion for the cd command
 source /usr/share/zsh/plugins/zsh-interactive-cd.plugin.zsh
 # hit Ctrl-z once again to get back to Vim
@@ -132,92 +150,14 @@ source /usr/share/zsh/plugins/vundle.plugin.zsh
 zmodload zsh/terminfo
 bindkey "$terminfo[kcuu1]" history-substring-search-up
 bindkey "$terminfo[kcud1]" history-substring-search-down
-bindkey '^[[A' history-substring-search-up			
+bindkey '^[[A' history-substring-search-up
 bindkey '^[[B' history-substring-search-down
-MAGIC_ENTER_GIT_COMMAND='git status'
-MAGIC_ENTER_OTHER_COMMAND='ls -lh'
 
 # Offer to install missing package if command is not found
 if [[ -r /usr/share/zsh/functions/command-not-found.zsh ]]; then
     source /usr/share/zsh/functions/command-not-found.zsh
     export PKGFILE_PROMPT_INSTALL_MISSING=1
 fi
-
-
-### FFF ###
-
-# Add this to your .bashrc, .zshrc or equivalent.
-# Run 'fff' with 'f' or whatever you decide to name the function.
-f() {
-    fff "$@"
-    cd "$(cat "${XDG_CACHE_HOME:=${HOME}/.cache}/fff/.fff_d")"
-}
-
-# Show/Hide hidden files on open.
-# (Off by default)
-export FFF_HIDDEN=1
-
-# Use LS_COLORS to color fff.
-# (On by default if available)
-# (Ignores FFF_COL1)
-export FFF_LS_COLORS=1
-
-# Directory color [0-9]
-export FFF_COL1=2
-
-# Status background color [0-9]
-export FFF_COL2=6
-
-# Selection color [0-9] (copied/moved files)
-export FFF_COL3=6
-
-# Cursor color [0-9]
-export FFF_COL4=6
-
-# Status foreground color [0-9]
-export FFF_COL5=0
-
-# Text Editor
-export EDITOR="vim"
-
-# File Opener
-export FFF_OPENER="xdg-open"
-
-# File Attributes Command
-export FFF_STAT_CMD="stat"
-
-# Enable or disable CD on exit.
-# (On by default)
-export FFF_CD_ON_EXIT=0
-
-# CD on exit helper file
-# Default: '${XDG_CACHE_HOME}/fff/fff.d'
-#          If not using XDG, '${HOME}/.cache/fff/fff.d' is used.
-export FFF_CD_FILE=~/.fff_d
-
-# w3m-img offsets.
-export FFF_W3M_XOFFSET=0
-export FFF_W3M_YOFFSET=0
-
-# File format.
-# Customize the item string.
-# Format ('%f' is the current file): "str%fstr"
-# Example (Add a tab before files): FFF_FILE_FORMAT="\t%f"
-export FFF_FILE_FORMAT="%f"
-
-# Mark format.
-# Customize the marked item string.
-# Format ('%f' is the current file): "str%fstr"
-# Example (Add a ' >' before files): FFF_MARK_FORMAT="> %f"
-export FFF_MARK_FORMAT=" %f*"
-
-# Trash Command
-# Default: 'mv'
-#          Define a custom program to use to trash files.
-#          The program will be passed the list of selected files
-#          and directories.
-export FFF_TRASH_CMD="mv"
-
 
 # Set terminal window and tab/icon title
 #
@@ -318,3 +258,13 @@ function mzc_termsupport_preexec {
 autoload -U add-zsh-hook
 add-zsh-hook precmd mzc_termsupport_precmd
 add-zsh-hook preexec mzc_termsupport_preexec
+
+# File and Dir colors for ls and other outputs
+export LS_OPTIONS='--color=auto'
+eval "$(dircolors -b)"
+alias ls='ls $LS_OPTIONS'
+
+# Latex
+export PATH=/usr/local/texlive/2022/bin/x86_64-linux:$PATH
+export MANPATH=/usr/local/texlive/2022/texmf-dist/doc/man:$MANPATH
+export INFOPATH=/usr/local/texlive/2022/texmf-dist/doc/info:$INFOPATH

@@ -117,8 +117,12 @@ alias m='tmux new-session \; send-keys "clyrics -m -k -s 10 -P ~/.config/clyrics
 
 # NNN
 # alias ncp="cat ${NNN_SEL:-${XDG_CONFIG_HOME:-$HOME/.config}/nnn/.selection} | tr '\0' '\n'"
-# alias n='tmux new-session nnn -deHP t $@'
+alias n='tmux new-session nnn -deHP t $@'
 # alias n='tmux new-session -d \; send-keys "nnn -deHP t" C-m \;'
+
+# Разное
+alias аквариум='asciiquarium'
+alias матрица='cmatrix'
 
 # pacman
 alias pkglist="pacman -Qneq > ~/pkglist.txt"
