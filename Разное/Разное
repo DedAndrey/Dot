@@ -78,7 +78,7 @@ sudo dd if=/home/dedandrey/Загрузки/Parrot-kde-security-4.10_amd64.iso o
 dcfldd:
 sudo dcfldd if=/home/dedandrey/Загрузки/111.iso of=/dev/sdb
 
-ventoy -i /dev/sdb
+sudo ventoy -i /dev/sdb
 
 Монтирование ISO Образа в Linux:
 
