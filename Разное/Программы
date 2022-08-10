@@ -113,11 +113,13 @@ dante			для просмотра писем
 -----------------
 
 ## Текст
-nano			текстовый редактор
+kde-servicemenus-pdf	Работа с PDF-файлами
+kde-servicemenus-officeconverter
+nano					текстовый редактор
 nano-syntax-highlighting
-vim				текстовый редактор
-	bat			для подсветки в поиске FZF
-	xkb-switch	для переключения раскладок
+vim						текстовый редактор
+	bat					для подсветки в поиске FZF
+	xkb-switch			для переключения раскладок
 	Менеджер плагинов:
 	git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 

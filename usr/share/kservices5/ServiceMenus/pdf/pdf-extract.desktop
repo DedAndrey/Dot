@@ -1,0 +1,80 @@
+#
+# 	Part of kde-service-menu-pdf Version 1.0
+# 	Copyright (C) 2007-2018 Giuseppe Benigno <giuseppe.benigno(at)gmail.com>
+#
+# 	This program is free software: you can redistribute it and/or modify
+# 	it under the terms of the GNU General Public License as published by
+# 	the Free Software Foundation, either version 3 of the License, or
+# 	(at your option) any later version.
+#
+# 	This program is distributed in the hope that it will be useful,
+# 	but WITHOUT ANY WARRANTY; without even the implied warranty of
+# 	MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# 	GNU General Public License for more details.
+#
+# 	You should have received a copy of the GNU General Public License
+# 	along with this program.  If not, see <http://www.gnu.org/licenses/>.
+#
+
+[Desktop Entry]
+Type=Service
+ServiceTypes=KonqPopupMenu/Plugin
+MimeType=application/pdf;
+Actions=imgallpages;imgselectpages;_SEPARATOR_;txtallpages;txtselectpages;
+Name=PDF Extract service menu
+X-KDE-Submenu=Extract
+X-KDE-Submenu[de]=Herausziehen
+X-KDE-Submenu[es]=Extraer
+X-KDE-Submenu[fr]=Extraire
+X-KDE-Submenu[gl]=Extrair
+X-KDE-Submenu[it]=Estrai
+X-KDE-Submenu[ru]=Извлечь
+
+
+#----------------------------------------
+
+[Desktop Action imgallpages]
+Icon=image
+Name=images (from all pages)
+Name[de]=Bilder (von allen Seiten)
+Name[es]=Imágenes (todas las páginas)
+Name[fr]=Images (de toutes les pages)
+Name[gl]=Images (de todas as páginas)
+Name[it]=Immagini (da tutte le pagine)
+Name[ru]=Изображения (Из всех страниц)
+Exec=pdfimages-kdialog allpages %F
+
+[Desktop Action imgselectpages]
+Icon=image
+Name=images (from selected page range)
+Name[de]=Bilder (von bestimmten Seiten)
+Name[es]=Imágenes (del rango de páginas seleccionado)
+Name[fr]=Images (d'une sélection de pages)
+Name[gl]=Images (dum rango de páginas selecionado)
+Name[it]=Immagini (dalle pagine selezionate)
+Name[ru]=Изображения (Из диапазона выбранных страниц)
+Exec=pdfimages-kdialog selectpages %F
+
+#----------------------------------------
+
+[Desktop Action txtallpages]
+Icon=text-plain
+Name=Text (from all pages)
+Name[de]=Text (alle Seiten)
+Name[es]=Texto (todas las páginas)
+Name[fr]=Texte (toutes les pages)
+Name[gl]=Texto (todas as páginas)
+Name[it]=Testo (tutte le pagine)
+Name[ru]=Текст (все страницы)
+Exec=pdftotext-kdialog allpages %F
+
+[Desktop Action txtselectpages]
+Icon=text-plain
+Name=Text (from selected page range)
+Name[de]=Text (von bestimmten Seiten)
+Name[es]=Texto (del rango de páginas seleccionado)
+Name[fr]=Texte (d'une sélection de pages)
+Name[gl]=Texto (dum rango de páginas selecionado)
+Name[it]=Testo (dalle pagine selezionate)
+Name[ru]=Текст (Из диапазона выбранных страниц)
+Exec=pdftotext-kdialog selectpages %F

@@ -70,6 +70,10 @@ alias .....="cd ../../../.."
 # tmux
 alias t="tmux"
 
+# TeX
+#alias tex="sudo tlmgr update --self --all"
+alias tex="sudo tlmgr --gui"
+
 # RSS-читалка
 alias rss='newsboat'
 
@@ -78,6 +82,8 @@ alias почта='aerc'
 
 # Обновление системы
 alias upsys="yay -Syyu && vundle-update && sudo tlmgr update --self --all && rss"
+#alias upsys="yay -Syyu && vundle-update && sudo tlmgr update --self --all"
+#alias upsys="yay -Syyu && vundle-update"
 
 # Поиск
 alias s="BROWSER=w3m ddgr"
@@ -85,7 +91,8 @@ alias s="BROWSER=w3m ddgr"
 # Музыка
 # Mocp
 # alias mcl='clyrics -m -k -s 10 -P ~/.config/clyrics'
-alias m='tmux new-session \; send-keys "clyrics -m -k -s 10 -P ~/.config/clyrics" C-m \; split-window -h -p 70 \; send-keys "mocp" C-m \; split-window -v -p 30 \; send-keys "cava" C-m \;'
+alias m='tmux new-session \; send-keys "clyrics -m -k -s 10 -P ~/.config/clyrics" C-m \; split-window -h -p 70 \; send-keys "cava" C-m \; split-window -v -p 90 \; send-keys "mocp" C-m \;'
+# alias m='tmux new-session \; send-keys "clyrics -m -k -s 10 -P ~/.config/clyrics" C-m \; split-window -h -p 70 \; send-keys "mocp" C-m \; split-window -v -p 30 \; send-keys "cava" C-m \;'
 # MPD
 # alias m='ncmpcpp -S visualizer'
 # alias m='ncmpcpp'

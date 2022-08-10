@@ -1,12 +1,16 @@
 #EXTM3U
-#MOCSERIAL: 512
-#EXTINF:0,0N Classic Rock
-https://0n-classicrock.radionetz.de/0n-classicrock.mp3
-#EXTINF:0,123 All Classic Rock
-http://str4uice.streamakaci.com/4uclassicrock.mp3
+#MOCSERIAL: 1536
+#EXTINF:0,RockFM
+https://nashe1.hostingradio.ru:80/rock-128.mp3
 #EXTINF:0,Русский Рок
 http://rock.volna.top/RusRock
-#EXTINF:0,Radio Caprice - Russian Rock
-http://79.120.77.11:9029/
+#EXTINF:0,Classic Rock
+https://0n-classicrock.radionetz.de/0n-classicrock.mp3
+#EXTINF:0,All Classic Rock
+http://str4uice.streamakaci.com/4uclassicrock.mp3
 #EXTINF:0,Donat FM - Russian Rock
 http://c6.radioboss.fm:8097/autodj
+#EXTINF:0,Radio Caprice - Russian Rock
+http://79.120.77.11:9029/
+#EXTINF:0,Эльдорадио
+http://emgspb.hostingradio.ru/eldoradio128.mp3
