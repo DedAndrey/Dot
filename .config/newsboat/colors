@@ -3,11 +3,11 @@
 
 # colors
 color background          color229   default
-color listnormal          white       default
-color listnormal_unread   color229   default
-color listfocus           white       default underline
-color listfocus_unread    color229   default underline
-color info                green   default
+color listnormal          white    default
+color listnormal_unread   color5     default
+color listfocus           white    default underline
+color listfocus_unread    color5     default underline
+color info                green    default
 color article             color229   default
 
 # highlights
