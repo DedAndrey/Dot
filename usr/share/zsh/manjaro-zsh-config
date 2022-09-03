@@ -71,7 +71,7 @@ alias .....="cd ../../../.."
 alias t="tmux"
 
 # TeX
-#alias uptex="sudo tlmgr update --self --all"
+#alias tex="sudo tlmgr update --self --all"
 alias uptex="sudo tlmgr --gui"
 
 # RSS-читалка
@@ -81,9 +81,9 @@ alias rss='newsboat'
 alias почта='aerc'
 
 # Обновление системы
-#alias upsys="yay -Syyu && vundle-update && sudo tlmgr update --self --all && rss"
+alias upsys="yay -Syyu && vundle-update && sudo tlmgr update --self --all && rss"
 #alias upsys="yay -Syyu && vundle-update && sudo tlmgr update --self --all"
-alias upsys="yay -Syyu && vundle-update && rss"
+#alias upsys="yay -Syyu && vundle-update && rss"
 
 # Поиск
 alias s="BROWSER=w3m ddgr"
