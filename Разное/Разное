@@ -88,3 +88,16 @@ sudo mount -o loop /home/user/disk.iso /mnt/mount_point
 Размонтирование ISO Файла в Linux
 
 sudo umount /mnt/mount_point
+
+==========================
+
+Для проприетарных шрифтов Windows предлагаются свободные альтернативы, которые выглядят аналогично Windows шрифтам и отображают документы без искажений. Список альтернатив:
+
+    Carlito — Calibri
+    Caladea — Cambria
+    Gelasio — Georgia
+    Selawik — Segoe UI
+    Comic Relief — Comic Sans
+    Arimo — Arial
+    Tinos — Times New Roman
+    Cousine — Courier New

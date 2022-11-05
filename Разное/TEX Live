@@ -1,4 +1,4 @@
-texlive-installer	Установщик Texlive в Arch
+	Установщик Texlive в Arch
 sudo /opt/texlive-installer/install-tl
 
     Установка TEX Live из Интернета
@@ -9,29 +9,29 @@ sudo /opt/texlive-installer/install-tl
 
     Для Arch KDE добавить в .bash_profile
 
-    PATH=/usr/local/texlive/2021/bin/x86_64-linux:$PATH; export PATH
-    MANPATH=/usr/local/texlive/2021/texmf-dist/doc/man:$MANPATH; export MANPATH
-    INFOPATH=/usr/local/texlive/2021/texmf-dist/doc/info:$INFOPATH; export INFOPATH
+    PATH=/usr/local/texlive/2022/bin/x86_64-linux:$PATH; export PATH
+    MANPATH=/usr/local/texlive/2022/texmf-dist/doc/man:$MANPATH; export MANPATH
+    INFOPATH=/usr/local/texlive/2022/texmf-dist/doc/info:$INFOPATH; export INFOPATH
 
     Для Ubuntu, Arch Gnome и MXlinux добавил в .profile
 
-    export PATH="/usr/local/texlive/2021/bin/x86_64-linux:$PATH"
-    export MANPATH="/usr/local/texlive/2021/texmf-dist/doc/man:$MANPATH"
-    export INFOPATH="/usr/local/texlive/2021/texmf-dist/doc/info:$INFOPATH"
+    export PATH="/usr/local/texlive/2022/bin/x86_64-linux:$PATH"
+    export MANPATH="/usr/local/texlive/2022/texmf-dist/doc/man:$MANPATH"
+    export INFOPATH="/usr/local/texlive/2022/texmf-dist/doc/info:$INFOPATH"
 
     В CtlOS добавил в .zshrc
 
-    export PATH=/usr/local/texlive/2021/bin/x86_64-linux:$PATH
-    export MANPATH=/usr/local/texlive/2021/texmf-dist/doc/man:$MANPATH
-    export INFOPATH=/usr/local/texlive/2021/texmf-dist/doc/info:$INFOPATH
+    export PATH=/usr/local/texlive/2022/bin/x86_64-linux:$PATH
+    export MANPATH=/usr/local/texlive/2022/texmf-dist/doc/man:$MANPATH
+    export INFOPATH=/usr/local/texlive/2022/texmf-dist/doc/info:$INFOPATH
 
     В fish просто в терминале экспортируем.
 
 
 # Latex
-export PATH=/usr/local/texlive/2021/bin/x86_64-linux:$PATH
-export MANPATH=/usr/local/texlive/2021/texmf-dist/doc/man:$MANPATH
-export INFOPATH=/usr/local/texlive/2021/texmf-dist/doc/info:$INFOPATH
+export PATH=/usr/local/texlive/2022/bin/x86_64-linux:$PATH
+export MANPATH=/usr/local/texlive/2022/texmf-dist/doc/man:$MANPATH
+export INFOPATH=/usr/local/texlive/2022/texmf-dist/doc/info:$INFOPATH
 ===========================
 
 # Установленная версия Latex

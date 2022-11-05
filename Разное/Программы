@@ -52,6 +52,7 @@ tmux
 vtm # Перспективный оконный менеджер
 
 cava # Консольный эквалайзер
+pacman -S base-devel fftw ncurses alsa-lib iniparser pulseaudio
 
 lynis # Аудит системы
 
@@ -70,6 +71,7 @@ yay -S nudoku 2048-cli nsnake greed bastet ski moon-buggy cgames
 * cmatrix figlet
 
 ## Система
+Touchegg			расширение возможностей тачпада (https://github.com/JoseExposito/touchegg#faq)
 pacui				псевдографический менеджер пакетов
 bpytop-git			системный монитор
 glances				системный монитор
