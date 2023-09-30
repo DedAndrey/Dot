@@ -73,7 +73,7 @@ sudo dd if=/dev/zero of=/dev/sdb status=progress
 
 Запись образа на флешку
 dd:
-sudo dd if=/home/dedandrey/Загрузки/Parrot-kde-security-4.10_amd64.iso of=/dev/sdb status=progress bs=4M
+sudo dd if=/home/dedandrey/Загрузки/Win10_1909_Russian_x64.iso of=/dev/sdb status=progress bs=4M
 
 dcfldd:
 sudo dcfldd if=/home/dedandrey/Загрузки/111.iso of=/dev/sdb

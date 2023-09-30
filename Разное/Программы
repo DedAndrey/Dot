@@ -60,6 +60,8 @@ skanlite cups cups-filters bluez-tools xdotool
 
 yay -S plasma-vault plasma-runners-translator plasma5-applets-virtual-desktop-bar-git volantes-cursors kcron
 
+cd && sudo ./.local/share/plasma/plasmoids/org.kde.windowbuttons/lib-install.sh		Если не показывает кнопки окна виджет Window button
+
 yay -S print-manager Parachute fastfetch
 
 * vifm perl-image-exiftool
