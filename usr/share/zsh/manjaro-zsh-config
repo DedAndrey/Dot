@@ -61,7 +61,8 @@ alias df='df -h'                                                # Human-readable
 alias free='free -m'                                            # Show sizes in MB
 alias gitu='git add . && git commit && git push'
 
-alias q="exit && tksv"
+alias q="exit"
+#alias q="exit && tksv"
 alias /="cd /"
 alias ~="cd ~"
 alias ..="cd .."
@@ -96,10 +97,11 @@ alias s="BROWSER=w3m ddgr"
 # Музыка
 # Cmus
 # alias mm='tmux new-session \; send-keys "rss" C-m \; split-window -v -p 70 \; send-keys "cmus" C-m \; split-window -v -p 20 \; send-keys "cava" C-m \;'
-alias mm='tmux new-session \; send-keys "cava" C-m \; split-window -v -p 90 \; send-keys "cmus" C-m \; split-window -v -p 50 \; send-keys "rss" C-m \;'
+#alias mm='tmux new-session \; send-keys "cava" C-m \; split-window -v -p 90 \; send-keys "cmus" C-m \; split-window -v -p 50 \; send-keys "rss" C-m \;'
+alias mm='tmux new-session \; send-keys "clyrics -c -k -s 1" C-m \; split-window -h -p 70 \; send-keys "cava" C-m \; split-window -v -p 90\; send-keys "cmus" C-m \; split-window -v -p 30 \; send-keys "rss" C-m \;'
 # Mocp
 # alias mcl='clyrics -m -k -s 10 -P ~/.config/clyrics'
-# alias mm='tmux new-session \; send-keys "clyrics -m -k -s 10 -P ~/.config/clyrics" C-m \; split-window -h -p 70 \; send-keys "cava" C-m \; split-window -v -p 90 \; send-keys "mocp" C-m \;'
+# alias mm='tmux new-session \; send-keys "clyrics -m -s 1" C-m \; split-window -h -p 70 \; send-keys "cava" C-m \; split-window -v -p 90 \; send-keys "mocp" C-m \;'
 # alias mm='tmux new-session \; send-keys "clyrics -m -k -s 10 -P ~/.config/clyrics" C-m \; split-window -h -p 70 \; send-keys "mocp" C-m \; split-window -v -p 30 \; send-keys "cava" C-m \;'
 # MPD
 alias m='ncmpcpp -S visualizer'

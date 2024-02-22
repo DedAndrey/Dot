@@ -67,14 +67,14 @@ prefix + @
 # маркировать текущую панель
 prefix + m
 # присоединить маркированную панель к текущей сессии/окну и переключиться на нее
-prefix + t<secondary-key>
-#	secondary-keys:
+prefix + t <secondary-key>
+# secondary-keys:
 # присоединить горизонтально
-h, -, ":
+secondary-keys: h, -, ":
 # присоединить вертикально
-v, |, %:
+secondary-keys: v, |, %:
 # присоединить полным экраном
-f, @:
+secondary-keys: f, @:
 
 ## Tmux управление панелями
 ## Навигация
