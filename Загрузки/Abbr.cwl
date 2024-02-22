@@ -1,2 +1,3 @@
 nn="--*
 pp="---
+enq=\enquote{}

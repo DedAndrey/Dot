@@ -84,7 +84,7 @@ alias rss='newsraft'
 alias почта='aerc'
 
 # Обновление системы
-alias upsys="yay -Syyu && sudo tlmgr update --self --all && rss && neofetch"
+alias upsys="yay -Syyu && sudo tlmgr update --self --all && rss && fastfetch"
 #alias upsys="yay -Syyu && sudo tlmgr update --self --all && rss && glances"
 #alias upsys="yay -Syyu && vundle-update && sudo tlmgr update --self --all && rss"
 #alias upsys="yay -Syyu && vundle-update && sudo tlmgr update --self --all"
@@ -94,15 +94,18 @@ alias upsys="yay -Syyu && sudo tlmgr update --self --all && rss && neofetch"
 alias s="BROWSER=w3m ddgr"
 
 # Музыка
+# Cmus
+# alias mm='tmux new-session \; send-keys "rss" C-m \; split-window -v -p 70 \; send-keys "cmus" C-m \; split-window -v -p 20 \; send-keys "cava" C-m \;'
+alias mm='tmux new-session \; send-keys "cava" C-m \; split-window -v -p 90 \; send-keys "cmus" C-m \; split-window -v -p 50 \; send-keys "rss" C-m \;'
 # Mocp
 # alias mcl='clyrics -m -k -s 10 -P ~/.config/clyrics'
-alias m='tmux new-session \; send-keys "clyrics -m -k -s 10 -P ~/.config/clyrics" C-m \; split-window -h -p 70 \; send-keys "cava" C-m \; split-window -v -p 90 \; send-keys "mocp" C-m \;'
-# alias m='tmux new-session \; send-keys "clyrics -m -k -s 10 -P ~/.config/clyrics" C-m \; split-window -h -p 70 \; send-keys "mocp" C-m \; split-window -v -p 30 \; send-keys "cava" C-m \;'
+# alias mm='tmux new-session \; send-keys "clyrics -m -k -s 10 -P ~/.config/clyrics" C-m \; split-window -h -p 70 \; send-keys "cava" C-m \; split-window -v -p 90 \; send-keys "mocp" C-m \;'
+# alias mm='tmux new-session \; send-keys "clyrics -m -k -s 10 -P ~/.config/clyrics" C-m \; split-window -h -p 70 \; send-keys "mocp" C-m \; split-window -v -p 30 \; send-keys "cava" C-m \;'
 # MPD
-# alias m='ncmpcpp -S visualizer'
+alias m='ncmpcpp -S visualizer'
 # alias m='ncmpcpp'
-# alias mp='mpc pause'
-# alias ms='mpc stop'
+alias mp='mpc pause'
+alias ms='mpc stop'
 
 # Видео
 alias sy='ytfzf -t '
@@ -110,7 +113,7 @@ alias sydH='ytfzf -dH'
 alias porn='mpv http://www.pornhub.com/random'
 
 # dolphin root
-alias dr="sudo pkexec env DISPLAY=$DISPLAY XAUTHORITY=$XAUTHORITY KDE_SESSION_VERSION=5 KDE_FULL_SESSION=true dbus-launch dolphin"
+# alias dr="sudo pkexec env DISPLAY=$DISPLAY XAUTHORITY=$XAUTHORITY KDE_SESSION_VERSION=5 KDE_FULL_SESSION=true dbus-launch dolphin"
 
 # NNN
 # alias ncp="cat ${NNN_SEL:-${XDG_CONFIG_HOME:-$HOME/.config}/nnn/.selection} | tr '\0' '\n'"

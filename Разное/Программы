@@ -47,7 +47,7 @@ zathura zathura-ps zathura-pdf-poppler zathura-djvu zathura-cb
 
 youtube-dl moc clyrics
 
-tmux
+tmux (git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm)
 
 vtm # Перспективный оконный менеджер
 
@@ -74,6 +74,13 @@ yay -S nudoku 2048-cli nsnake greed bastet ski moon-buggy cgames
 
 ## Система
 Touchegg			расширение возможностей тачпада (https://github.com/JoseExposito/touchegg#faq)
+$ sudo systemctl enable touchegg.service
+$ sudo systemctl start touchegg
+Копируем /usr/share/touchegg/touchegg.conf в ~/.config/touchegg/touchegg.conf:
+$ mkdir -p ~/.config/touchegg && cp -n /usr/share/touchegg/touchegg.conf ~/.config/touchegg/touchegg.conf
+Открываем ~/.config/touchegg/touchegg.conf
+Редактируем
+
 pacui				псевдографический менеджер пакетов
 bpytop-git			системный монитор
 glances				системный монитор
@@ -170,7 +177,7 @@ moc				аудио, радио
 clyrics			текст песни в консоли
 mpd				аудио, радио
 	mpc
-	ncmpcpp
+	ncmpcpp (systemctl --user enable --now mpd)
 
 ## Игры
 pacman4console	ПэкМен
