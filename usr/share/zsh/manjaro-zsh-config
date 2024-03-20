@@ -61,8 +61,7 @@ alias df='df -h'                                                # Human-readable
 alias free='free -m'                                            # Show sizes in MB
 alias gitu='git add . && git commit && git push'
 
-alias q="exit"
-#alias q="exit && tksv"
+alias q="exit && tksv"
 alias /="cd /"
 alias ~="cd ~"
 alias ..="cd .."
@@ -85,8 +84,9 @@ alias rss='newsraft'
 alias почта='aerc'
 
 # Обновление системы
-alias upsys="yay -Syyu && sudo tlmgr update --self --all && rss && fastfetch"
-#alias upsys="yay -Syyu && sudo tlmgr update --self --all && rss && glances"
+#alias upsys="yay -Syyu && sudo tlmgr update --self --all && fastfetch"
+#alias upsys="yay -Syyu && sudo tlmgr update --self --all && rss && neofetch"
+alias upsys="yay -Syyu && sudo tlmgr update --self --all && rss && glances"
 #alias upsys="yay -Syyu && vundle-update && sudo tlmgr update --self --all && rss"
 #alias upsys="yay -Syyu && vundle-update && sudo tlmgr update --self --all"
 #alias upsys="yay -Syyu && vundle-update && rss"
@@ -95,19 +95,16 @@ alias upsys="yay -Syyu && sudo tlmgr update --self --all && rss && fastfetch"
 alias s="BROWSER=w3m ddgr"
 
 # Музыка
-# Cmus
-# alias mm='tmux new-session \; send-keys "rss" C-m \; split-window -v -p 70 \; send-keys "cmus" C-m \; split-window -v -p 20 \; send-keys "cava" C-m \;'
-#alias mm='tmux new-session \; send-keys "cava" C-m \; split-window -v -p 90 \; send-keys "cmus" C-m \; split-window -v -p 50 \; send-keys "rss" C-m \;'
-alias mm='tmux new-session \; send-keys "clyrics -c -k -s 1" C-m \; split-window -h -p 70 \; send-keys "cava" C-m \; split-window -v -p 90\; send-keys "cmus" C-m \; split-window -v -p 30 \; send-keys "rss" C-m \;'
 # Mocp
 # alias mcl='clyrics -m -k -s 10 -P ~/.config/clyrics'
-# alias mm='tmux new-session \; send-keys "clyrics -m -s 1" C-m \; split-window -h -p 70 \; send-keys "cava" C-m \; split-window -v -p 90 \; send-keys "mocp" C-m \;'
-# alias mm='tmux new-session \; send-keys "clyrics -m -k -s 10 -P ~/.config/clyrics" C-m \; split-window -h -p 70 \; send-keys "mocp" C-m \; split-window -v -p 30 \; send-keys "cava" C-m \;'
+#alias m='tmux new-session \; send-keys "clyrics -m -k -s 10 -P ~/.config/clyrics" C-m \; split-window -h -p 70 \; send-keys "cava" C-m \; split-window -v -p 90 \; send-keys "mocp" C-m \;'
+#alias m='tmux new-session \; send-keys "aerc" C-m \; split-window -v -p 70 \; send-keys "cava" C-m \; split-window -h -p 30 \; send-keys "mocp" C-m \; split-window -h -p 30 \; send-keys "rss" C-m \; split-window -v -p 30 \; send-keys "clyrics -m -k -s 10 -P ~/.config/clyrics" C-m \; '
+alias m='tmux attach-session -t "=Музыка"'
 # MPD
-alias m='ncmpcpp -S visualizer'
+alias mn='ncmpcpp -S visualizer'
 # alias m='ncmpcpp'
-alias mp='mpc pause'
-alias ms='mpc stop'
+# alias mp='mpc pause'
+# alias ms='mpc stop'
 
 # Видео
 alias sy='ytfzf -t '
@@ -115,7 +112,7 @@ alias sydH='ytfzf -dH'
 alias porn='mpv http://www.pornhub.com/random'
 
 # dolphin root
-# alias dr="sudo pkexec env DISPLAY=$DISPLAY XAUTHORITY=$XAUTHORITY KDE_SESSION_VERSION=5 KDE_FULL_SESSION=true dbus-launch dolphin"
+alias dr="sudo pkexec env DISPLAY=$DISPLAY XAUTHORITY=$XAUTHORITY KDE_SESSION_VERSION=5 KDE_FULL_SESSION=true dbus-launch dolphin"
 
 # NNN
 # alias ncp="cat ${NNN_SEL:-${XDG_CONFIG_HOME:-$HOME/.config}/nnn/.selection} | tr '\0' '\n'"
@@ -161,21 +158,13 @@ source /usr/share/zsh/plugins/fancy-ctrl-z.plugin.zsh
 source /usr/share/zsh/plugins/magic-enter.plugin.zsh
 # Easily prefix your current or previous commands with sudo by pressing esc twice
 source /usr/share/zsh/plugins/sudo.plugin.zsh
-# This plugin adds functions to control vundle plug-in manager for vim
-source /usr/share/zsh/plugins/vundle.plugin.zsh
 
 # bind UP and DOWN arrow keys to history substring search
 zmodload zsh/terminfo
 bindkey "$terminfo[kcuu1]" history-substring-search-up
 bindkey "$terminfo[kcud1]" history-substring-search-down
-bindkey '^[[A' history-substring-search-up
+bindkey '^[[A' history-substring-search-up			
 bindkey '^[[B' history-substring-search-down
-
-# Offer to install missing package if command is not found
-if [[ -r /usr/share/zsh/functions/command-not-found.zsh ]]; then
-    source /usr/share/zsh/functions/command-not-found.zsh
-    export PKGFILE_PROMPT_INSTALL_MISSING=1
-fi
 
 # Set terminal window and tab/icon title
 #
@@ -386,3 +375,8 @@ add-zsh-hook precmd mzc_termsupport_cwd
 export LS_OPTIONS='--color=auto'
 eval "$(dircolors -b)"
 alias ls='ls $LS_OPTIONS'
+
+# Latex
+export PATH=/usr/local/texlive/2023/bin/x86_64-linux:$PATH
+export MANPATH=/usr/local/texlive/2023/texmf-dist/doc/man:$MANPATH
+export INFOPATH=/usr/local/texlive/2023/texmf-dist/doc/info:$INFOPATH

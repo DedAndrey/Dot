@@ -136,9 +136,6 @@ vim						текстовый редактор
 	Менеджер плагинов:
 	git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 
-tllocalmgr			
-texlive-installer	Установщик Texlive в Arch
-
 ## Файлы
 vifm			файловый менеджер
 nnn				файловый менеджер

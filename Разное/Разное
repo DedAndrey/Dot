@@ -108,6 +108,47 @@ sudo ntfsfix -d /dev/sdb1
 
 ==========================
 
+Настройка Samba и расшаривание папок
+
+# mkdir /var/lib/samba/usershares
+# chown root:sambashare /var/lib/samba/usershares
+# chmod 1770 /var/lib/samba/usershares
+# usermod -a -G sambashare <имя пользователя>
+
+# Примерный рабочий smb.conf
+
+workgroup = WORKGROUP
+server string = Samba Server
+
+[global]
+        server string = Samba Server
+        usershare path = /var/lib/samba/usershare
+        usershare max shares = 100
+        usershare allow guests = yes
+        usershare owner only = False
+        read only = No
+        guest only = Yes
+        guest ok = Yes
+
+[printers]
+        comment = All Printers
+        path = /var/spool/samba
+        read only = Yes
+        guest ok = Yes
+        printable = Yes
+        browseable = Yes
+
+Проверяем, включен ли сервис:
+sudo systemctl status smb.service
+
+если нет, стартуем и включаем его:
+sudo systemctl enable --now smb.service
+
+Тестируем настройки
+testparm -s
+
+==========================
+
 Для проприетарных шрифтов Windows предлагаются свободные альтернативы, которые выглядят аналогично Windows шрифтам и отображают документы без искажений. Список альтернатив:
 
     Carlito — Calibri
