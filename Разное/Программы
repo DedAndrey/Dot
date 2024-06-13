@@ -1,8 +1,5 @@
 Обновление ключей
     Если возникли проблемы с обновлением, или установкой пакетов выполните данные рекомендации.
-sudo pacman-key --init && sudo pacman-key --populate && sudo pacman-key --refresh-keys && sudo pacman -Syy
-
-    Если ошибка с содержанием hkps.pool.sks-keyservers.net, не может достучаться до сервера ключей выполните команды ниже. Указываем другой сервер ключей.
 sudo pacman-key --init && sudo pacman-key --populate
 sudo pacman-key --refresh-keys --keyserver keys.gnupg.net && sudo pacman -Syy
 
@@ -13,6 +10,14 @@ sudo rm -rf /var/lib/pacman/sync/*
 sudo rm /var/lib/pacman/db.lck
 
 	Если не работает виджет погоды, то нужно установить qt5-xmlpatterns
+-----------------
+
+Обновление зеркал
+sudo pacman-mirrors
+sudo pacman -Syu
+Обновление списка зеркал с самыми быстрыми зеркалами
+sudo pacman-mirrors --fasttrack && sudo pacman -Syu
+Из https://wiki.manjaro.org/index.php/Pacman-mirrors/ru
 -----------------
 
 sudo pacman -S binutils make gcc pkg-config fakeroot yay
@@ -26,6 +31,8 @@ manjaro-zsh-config zsh-autosuggestions zsh-completions zsh-history-substring-sea
 yay -S fzf git fd the_silver_searcher ripgrep ripgrep-all
 
 ddgr ytfzf
+
+yayfzf (перед этим sudo pacman -Fy чтоб базы загрузились)
 
 nnn trash-cli exiftool atool lowdown ueberzug mediainfo catimg ffmpegthumbnailer
 
