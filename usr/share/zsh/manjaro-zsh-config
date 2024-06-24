@@ -11,22 +11,37 @@ setopt histignorealldups                                        # If a new comma
 setopt autocd                                                   # if only directory path is entered, cd there.
 setopt inc_append_history                                       # save commands are added to the history immediately, otherwise only when shell exits.
 setopt histignorespace                                          # Don't save commands that start with space
+setopt AUTO_CD                                                  # можно просто набрать путь для перехода в директорию (и использовать только первые буквы папок)
 
-zstyle ':completion:*' matcher-list 'm:{[:lower:][:upper:]}={[:upper:][:lower:]}' # Case insensitive tab completion
-zstyle ':completion:*' list-colors "${(s.:.)LS_COLORS}"         # Colored completion (different colors for dirs/files/etc)
+#zstyle ':completion:*' matcher-list 'm:{[:lower:][:upper:]}={[:upper:][:lower:]}' # Case insensitive tab completion
+#zstyle ':completion:*' list-colors "${(s.:.)LS_COLORS}"         # Colored completion (different colors for dirs/files/etc)
 zstyle ':completion:*' rehash true                              # automatically find new executables in path 
-zstyle ':completion:*' menu select                              # Highlight menu selection
+#zstyle ':completion:*' menu select                              # Highlight menu selection
 # Speed up completions
 zstyle ':completion:*' accept-exact '*(N)'
 zstyle ':completion:*' use-cache on
 zstyle ':completion:*' cache-path ~/.zsh/cache
+zstyle ':completion:*' completer _expand _complete _ignored
+zstyle ':completion:*' group-name ''
+zstyle ':completion:*' list-colors ''
+zstyle ':completion:*' list-prompt '%SAt %p: Hit TAB for more, or the character to insert%s'
+zstyle ':completion:*' max-errors 1
+zstyle ':completion:*' menu select=long-list select=0
+zstyle ':completion:*' select-prompt '%SScrolling active: current selection at %p%s'
+zstyle ':completion:*' use-compctl false
+zstyle ':completion:*' verbose true
+#zstyle :compinstall filename '/home/bosha/.zsh/.zshrc'
+zstyle ':completion:*' matcher-list 'm:{a-z}={A-Z}'
+zstyle ':completion:*:*:kill:*' menu yes select
+zstyle ':completion:*:kill:*' force-list always
+zstyle ':completion:*:*:kill:*:processes' list-colors "=(#b) #([0-9]#)*=$color[cyan]=$color[red]"
+
 HISTFILE=~/.zhistory
 HISTSIZE=10000
 SAVEHIST=10000
 #export EDITOR=/usr/bin/nano
 #export VISUAL=/usr/bin/nano
 WORDCHARS=${WORDCHARS//\/[&.;]}                                 # Don't consider certain characters part of the word
-
 
 ## Keybindings section
 bindkey -e
@@ -72,21 +87,21 @@ alias .....="cd ../../../.."
 # tmux
 alias t="tmux"
 
-# TeX
-#alias tex="sudo tlmgr update --self --all"
-alias uptex="sudo tlmgr --gui"
+#Читалка
+alias -s {fb2}="nohup epy"
 
 # RSS-читалка
-# alias rss='newsboat'
-alias rss='newsraft'
+alias rss='newsboat'
+# alias rss='newsraft'
 
 # Почта
 alias почта='aerc'
 
 # Обновление системы
-#alias upsys="yay -Syyu && sudo tlmgr update --self --all && fastfetch"
+#alias upsys="yay -Syyu && fastfetch"
+alias upsys="yay -Syyu && sudo tlmgr update --self --all && fastfetch"
 #alias upsys="yay -Syyu && sudo tlmgr update --self --all && rss && neofetch"
-alias upsys="yay -Syyu && sudo tlmgr update --self --all && rss && glances"
+#alias upsys="yay -Syyu && sudo tlmgr update --self --all && rss && glances"
 #alias upsys="yay -Syyu && vundle-update && sudo tlmgr update --self --all && rss"
 #alias upsys="yay -Syyu && vundle-update && sudo tlmgr update --self --all"
 #alias upsys="yay -Syyu && vundle-update && rss"
@@ -97,6 +112,7 @@ alias s="BROWSER=w3m ddgr"
 # Музыка
 # Mocp
 # alias mcl='clyrics -m -k -s 10 -P ~/.config/clyrics'
+# alias mcl='clyrics -c -k -s 10 -P ~/.config/clyrics'
 #alias m='tmux new-session \; send-keys "clyrics -m -k -s 10 -P ~/.config/clyrics" C-m \; split-window -h -p 70 \; send-keys "cava" C-m \; split-window -v -p 90 \; send-keys "mocp" C-m \;'
 #alias m='tmux new-session \; send-keys "aerc" C-m \; split-window -v -p 70 \; send-keys "cava" C-m \; split-window -h -p 30 \; send-keys "mocp" C-m \; split-window -h -p 30 \; send-keys "rss" C-m \; split-window -v -p 30 \; send-keys "clyrics -m -k -s 10 -P ~/.config/clyrics" C-m \; '
 alias m='tmux attach-session -t "=Музыка"'
@@ -106,27 +122,26 @@ alias mn='ncmpcpp -S visualizer'
 # alias mp='mpc pause'
 # alias ms='mpc stop'
 
-# Видео
-alias sy='ytfzf -t '
-alias sydH='ytfzf -dH'
-alias porn='mpv http://www.pornhub.com/random'
-
-# dolphin root
-alias dr="sudo pkexec env DISPLAY=$DISPLAY XAUTHORITY=$XAUTHORITY KDE_SESSION_VERSION=5 KDE_FULL_SESSION=true dbus-launch dolphin"
-
 # NNN
 # alias ncp="cat ${NNN_SEL:-${XDG_CONFIG_HOME:-$HOME/.config}/nnn/.selection} | tr '\0' '\n'"
 alias n='tmux new-session nnn -deHP t $@'
 # alias n='tmux new-session -d \; send-keys "nnn -deHP t" C-m \;'
 
 # Погода
+alias погода="curl 'wttr.in/Санкт+Петербург?M&lang=ru'" # ветер в м/с
 alias wtr="curl 'wttr.in/Санкт+Петербург?M&lang=ru'" # ветер в м/с
 # alias wts='curl ru.wttr.in/Санкт+Петербург' # ветер в км/ч
+alias луна='curl ru.wttr.in/Moon'
 alias moon='curl ru.wttr.in/Moon'
 
 # Разное
 alias аквариум='asciiquarium'
 alias матрица='cmatrix'
+
+# Видео
+alias sy='ytfzf -t '
+alias sydH='ytfzf -dH'
+alias porn='mpv http://www.pornhub.com/random'
 
 # Theming section  
 autoload -U compinit colors zcalc
@@ -375,8 +390,3 @@ add-zsh-hook precmd mzc_termsupport_cwd
 export LS_OPTIONS='--color=auto'
 eval "$(dircolors -b)"
 alias ls='ls $LS_OPTIONS'
-
-# Latex
-export PATH=/usr/local/texlive/2023/bin/x86_64-linux:$PATH
-export MANPATH=/usr/local/texlive/2023/texmf-dist/doc/man:$MANPATH
-export INFOPATH=/usr/local/texlive/2023/texmf-dist/doc/info:$INFOPATH

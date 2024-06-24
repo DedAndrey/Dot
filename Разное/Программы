@@ -55,6 +55,7 @@ zathura zathura-ps zathura-pdf-poppler zathura-djvu zathura-cb
 youtube-dl moc clyrics
 
 tmux (git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm)
+prefix + I
 
 vtm # Перспективный оконный менеджер
 
